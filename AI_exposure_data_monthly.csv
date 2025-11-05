@@ -1,0 +1,1891 @@
+year,month,occupation_title,ai_exposure,ai_complementarity,labour_force,employment,full_time_employment,part_time_employment,unemployment,unemployment_rate
+2010,1,Management occupations,High,High,1739.4,1692.9,1560.4,132.5,46.6,2.7
+2010,2,Management occupations,High,High,1776.5,1713.2,1569.9,143.3,63.3,3.6
+2010,3,Management occupations,High,High,1758.7,1707.3,1563,144.3,51.4,2.9
+2010,4,Management occupations,High,High,1768.3,1720.6,1596.1,124.5,47.8,2.7
+2010,5,Management occupations,High,High,1756.3,1711,1589.4,121.6,45.3,2.6
+2010,6,Management occupations,High,High,1744.9,1704,1585.9,118.2,40.9,2.3
+2010,7,Management occupations,High,High,1773.5,1729,1599.2,129.8,44.6,2.5
+2010,8,Management occupations,High,High,1745.4,1708.7,1591.1,117.6,36.6,2.1
+2010,9,Management occupations,High,High,1735.4,1703.1,1580.9,122.2,32.3,1.9
+2010,10,Management occupations,High,High,1685.2,1642.5,1533.9,108.6,42.7,2.5
+2010,11,Management occupations,High,High,1683.5,1645.8,1534.7,111.1,37.7,2.2
+2010,12,Management occupations,High,High,1714.2,1674.2,1556.9,117.3,40,2.3
+2011,1,Management occupations,High,High,1715.9,1671.1,1537.3,133.8,44.8,2.6
+2011,2,Management occupations,High,High,1704.8,1657.4,1522.6,134.8,47.4,2.8
+2011,3,Management occupations,High,High,1691.1,1642.3,1512.9,129.4,48.8,2.9
+2011,4,Management occupations,High,High,1717.4,1670.1,1544.2,125.9,47.3,2.8
+2011,5,Management occupations,High,High,1676.2,1634.2,1500.2,133.9,42,2.5
+2011,6,Management occupations,High,High,1652.6,1618.1,1479.3,138.8,34.4,2.1
+2011,7,Management occupations,High,High,1645.9,1617.5,1478.8,138.7,28.4,1.7
+2011,8,Management occupations,High,High,1648.5,1618,1492.9,125.2,30.4,1.8
+2011,9,Management occupations,High,High,1669.1,1637.4,1509.5,127.9,31.7,1.9
+2011,10,Management occupations,High,High,1664,1631.2,1495.2,136,32.8,2
+2011,11,Management occupations,High,High,1664,1627.2,1493.3,133.9,36.8,2.2
+2011,12,Management occupations,High,High,1675,1640.5,1505.6,134.8,34.5,2.1
+2012,1,Management occupations,High,High,1703.8,1666.4,1523.7,142.8,37.3,2.2
+2012,2,Management occupations,High,High,1635.1,1602.4,1466.1,136.3,32.8,2
+2012,3,Management occupations,High,High,1634.2,1597.4,1467.4,130,36.7,2.2
+2012,4,Management occupations,High,High,1670.9,1641.8,1507.2,134.6,29.1,1.7
+2012,5,Management occupations,High,High,1696.1,1664.6,1550.5,114.2,31.4,1.9
+2012,6,Management occupations,High,High,1705,1676.3,1557.2,119.1,28.7,1.7
+2012,7,Management occupations,High,High,1721.8,1688.5,1572,116.5,33.3,1.9
+2012,8,Management occupations,High,High,1728.5,1700.4,1586.2,114.1,28.1,1.6
+2012,9,Management occupations,High,High,1742.9,1711.3,1585,126.3,31.6,1.8
+2012,10,Management occupations,High,High,1746.6,1713.2,1584.8,128.4,33.4,1.9
+2012,11,Management occupations,High,High,1711.8,1674.3,1552.3,122,37.6,2.2
+2012,12,Management occupations,High,High,1727.5,1692.7,1572.1,120.6,34.8,2
+2013,1,Management occupations,High,High,1705.1,1667.6,1536.1,131.5,37.5,2.2
+2013,2,Management occupations,High,High,1681.6,1643.2,1518.8,124.3,38.5,2.3
+2013,3,Management occupations,High,High,1679.1,1638.3,1519.8,118.5,40.7,2.4
+2013,4,Management occupations,High,High,1700.3,1660.2,1541.4,118.8,40.1,2.4
+2013,5,Management occupations,High,High,1694,1646.4,1519,127.4,47.5,2.8
+2013,6,Management occupations,High,High,1667.3,1623.1,1495.5,127.6,44.2,2.7
+2013,7,Management occupations,High,High,1644.9,1609.3,1491.6,117.7,35.6,2.2
+2013,8,Management occupations,High,High,1656.4,1621.8,1504.7,117.2,34.6,2.1
+2013,9,Management occupations,High,High,1651,1616.6,1501.5,115.1,34.4,2.1
+2013,10,Management occupations,High,High,1634.9,1607.9,1484,123.9,27,1.7
+2013,11,Management occupations,High,High,1647.9,1617.3,1501.5,115.8,30.6,1.9
+2013,12,Management occupations,High,High,1632.2,1592,1476.4,115.6,40.2,2.5
+2014,1,Management occupations,High,High,1677.4,1640.5,1518.4,122.1,36.8,2.2
+2014,2,Management occupations,High,High,1665.1,1622.9,1502.5,120.4,42.2,2.5
+2014,3,Management occupations,High,High,1656.2,1616.2,1488.8,127.3,40,2.4
+2014,4,Management occupations,High,High,1635.2,1595.4,1483.2,112.2,39.9,2.4
+2014,5,Management occupations,High,High,1617.7,1578.8,1455.3,123.4,38.9,2.4
+2014,6,Management occupations,High,High,1626.6,1603.8,1490.1,113.8,22.8,1.4
+2014,7,Management occupations,High,High,1559.4,1530.6,1423.6,107,28.8,1.8
+2014,8,Management occupations,High,High,1565.6,1533.5,1428.1,105.4,32.1,2.1
+2014,9,Management occupations,High,High,1595.1,1574.1,1456.3,117.8,20.9,1.3
+2014,10,Management occupations,High,High,1577.4,1551.1,1429.2,121.9,26.2,1.7
+2014,11,Management occupations,High,High,1574.7,1540.5,1413.1,127.4,34.2,2.2
+2014,12,Management occupations,High,High,1550.9,1524.2,1384.7,139.5,26.7,1.7
+2015,1,Management occupations,High,High,1527.5,1500.3,1371.3,128.9,27.2,1.8
+2015,2,Management occupations,High,High,1538.6,1508.1,1384.1,124,30.5,2
+2015,3,Management occupations,High,High,1553.6,1525.5,1403.7,121.8,28.1,1.8
+2015,4,Management occupations,High,High,1597.9,1568.3,1445.2,123.1,29.6,1.9
+2015,5,Management occupations,High,High,1597,1561,1435.8,125.1,36.1,2.3
+2015,6,Management occupations,High,High,1637.4,1604.1,1491.4,112.8,33.2,2
+2015,7,Management occupations,High,High,1643.4,1612.8,1494.7,118.1,30.6,1.9
+2015,8,Management occupations,High,High,1648.2,1608.9,1477.3,131.6,39.3,2.4
+2015,9,Management occupations,High,High,1636.1,1603.9,1477.4,126.5,32.1,2
+2015,10,Management occupations,High,High,1612.3,1579.8,1465.6,114.2,32.4,2
+2015,11,Management occupations,High,High,1644.6,1618.6,1495.7,123,25.9,1.6
+2015,12,Management occupations,High,High,1609.9,1582.1,1456.6,125.5,27.8,1.7
+2016,1,Management occupations,High,High,1614.3,1579.6,1451.5,128.1,34.7,2.1
+2016,2,Management occupations,High,High,1597.6,1565.7,1438.6,127,31.9,2
+2016,3,Management occupations,High,High,1574.6,1537.1,1414.9,122.2,37.5,2.4
+2016,4,Management occupations,High,High,1578.8,1537.7,1422.2,115.6,41.1,2.6
+2016,5,Management occupations,High,High,1593.1,1561.1,1456.6,104.5,32,2
+2016,6,Management occupations,High,High,1600.3,1564.1,1463.3,100.8,36.2,2.3
+2016,7,Management occupations,High,High,1614.8,1577.8,1474.7,103.1,37,2.3
+2016,8,Management occupations,High,High,1626.9,1587.9,1477.2,110.7,39,2.4
+2016,9,Management occupations,High,High,1648.6,1604.8,1492.6,112.1,43.8,2.7
+2016,10,Management occupations,High,High,1623.5,1584.4,1466.8,117.6,39.2,2.4
+2016,11,Management occupations,High,High,1610,1582.1,1459.4,122.8,27.9,1.7
+2016,12,Management occupations,High,High,1585,1552.2,1424.2,128,32.8,2.1
+2017,1,Management occupations,High,High,1658.9,1623.8,1491.7,132.1,35.1,2.1
+2017,2,Management occupations,High,High,1668.9,1637.6,1499,138.6,31.3,1.9
+2017,3,Management occupations,High,High,1641.4,1612.3,1480.1,132.2,29.1,1.8
+2017,4,Management occupations,High,High,1672.4,1639.7,1510.2,129.5,32.7,2
+2017,5,Management occupations,High,High,1648.2,1619.5,1497.3,122.1,28.8,1.7
+2017,6,Management occupations,High,High,1669,1638.5,1502.9,135.6,30.5,1.8
+2017,7,Management occupations,High,High,1696.6,1671.7,1530.5,141.2,24.9,1.5
+2017,8,Management occupations,High,High,1712.6,1685.8,1543.3,142.5,26.9,1.6
+2017,9,Management occupations,High,High,1703.7,1675.9,1540.1,135.7,27.9,1.6
+2017,10,Management occupations,High,High,1726.5,1695.8,1564.2,131.6,30.7,1.8
+2017,11,Management occupations,High,High,1798.7,1762.5,1608.6,153.9,36.2,2
+2017,12,Management occupations,High,High,1778.4,1750.4,1592.6,157.8,28,1.6
+2018,1,Management occupations,High,High,1758.1,1731.2,1584.3,146.9,26.9,1.5
+2018,2,Management occupations,High,High,1732.8,1702.1,1555.7,146.4,30.7,1.8
+2018,3,Management occupations,High,High,1733.4,1704.9,1568.3,136.6,28.5,1.6
+2018,4,Management occupations,High,High,1699.2,1667.2,1539.3,127.9,32.1,1.9
+2018,5,Management occupations,High,High,1695.8,1669,1544.4,124.7,26.8,1.6
+2018,6,Management occupations,High,High,1670,1651.1,1531.6,119.4,19,1.1
+2018,7,Management occupations,High,High,1635.2,1611.2,1487.9,123.2,24,1.5
+2018,8,Management occupations,High,High,1637.3,1604.5,1480.7,123.8,32.8,2
+2018,9,Management occupations,High,High,1686.1,1654.2,1521.4,132.8,31.9,1.9
+2018,10,Management occupations,High,High,1680.8,1654.4,1521.8,132.6,26.4,1.6
+2018,11,Management occupations,High,High,1713.4,1682.1,1545.5,136.5,31.3,1.8
+2018,12,Management occupations,High,High,1719.4,1687.2,1543.9,143.3,32.2,1.9
+2019,1,Management occupations,High,High,1678.4,1647,1504.6,142.5,31.4,1.9
+2019,2,Management occupations,High,High,1672.6,1646.7,1514,132.7,25.9,1.5
+2019,3,Management occupations,High,High,1679.8,1645.6,1503.2,142.4,34.2,2
+2019,4,Management occupations,High,High,1706.8,1669.3,1523.3,146,37.5,2.2
+2019,5,Management occupations,High,High,1699.5,1671.5,1530.7,140.7,28,1.6
+2019,6,Management occupations,High,High,1726.5,1695.7,1560.3,135.4,30.8,1.8
+2019,7,Management occupations,High,High,1771.3,1746.4,1609.6,136.8,24.9,1.4
+2019,8,Management occupations,High,High,1755.8,1724.2,1594.4,129.9,31.6,1.8
+2019,9,Management occupations,High,High,1761.5,1730.3,1594.5,135.8,31.2,1.8
+2019,10,Management occupations,High,High,1746.4,1717.7,1584,133.6,28.8,1.6
+2019,11,Management occupations,High,High,1726,1695.1,1562.1,133,31,1.8
+2019,12,Management occupations,High,High,1726,1699.1,1548.3,150.8,26.9,1.6
+2020,1,Management occupations,High,High,1723.3,1699.1,1569.2,129.8,24.2,1.4
+2020,2,Management occupations,High,High,1716.9,1684.2,1553.1,131.1,32.7,1.9
+2020,3,Management occupations,High,High,1713.7,1660.6,1528,132.6,53,3.1
+2020,4,Management occupations,High,High,1710.8,1636.1,1515.4,120.8,74.7,4.4
+2020,5,Management occupations,High,High,1684.7,1603.6,1472.5,131.1,81.1,4.8
+2020,6,Management occupations,High,High,1729.2,1666.2,1531.7,134.6,62.9,3.6
+2020,7,Management occupations,High,High,1694.1,1629.3,1487,142.3,64.8,3.8
+2020,8,Management occupations,High,High,1667.5,1609.7,1470.9,138.8,57.8,3.5
+2020,9,Management occupations,High,High,1686,1624.9,1490.5,134.4,61.1,3.6
+2020,10,Management occupations,High,High,1670.1,1627.9,1483.2,144.7,42.2,2.5
+2020,11,Management occupations,High,High,1676,1639.6,1495.8,143.9,36.4,2.2
+2020,12,Management occupations,High,High,1683.1,1646.4,1507.6,138.7,36.8,2.2
+2021,1,Management occupations,High,High,1696,1654.7,1502.2,152.4,41.3,2.4
+2021,2,Management occupations,High,High,1654.8,1615.9,1470.2,145.6,39,2.4
+2021,3,Management occupations,High,High,1650.6,1612.6,1465.3,147.3,38,2.3
+2021,4,Management occupations,High,High,1647,1612.9,1468.9,144,34.1,2.1
+2021,5,Management occupations,High,High,1593.7,1564.1,1417.4,146.8,29.6,1.9
+2021,6,Management occupations,High,High,1655.4,1632.4,1494.1,138.2,23,1.4
+2021,7,Management occupations,High,High,1678,1659.4,1514.8,144.6,18.6,1.1
+2021,8,Management occupations,High,High,1674.7,1654.3,1525.2,129.1,20.5,1.2
+2021,9,Management occupations,High,High,1694.1,1670.4,1542.7,127.7,23.7,1.4
+2021,10,Management occupations,High,High,1697.7,1671.8,1537.7,134.1,25.9,1.5
+2021,11,Management occupations,High,High,1746.1,1722.7,1578.3,144.4,23.4,1.3
+2021,12,Management occupations,High,High,1738.5,1720.2,1585.4,134.9,18.3,1.1
+2022,1,Management occupations,High,High,1763.2,1742.9,1603.9,139,20.3,1.2
+2022,2,Management occupations,High,High,1790.8,1766.8,1625.3,141.5,23.9,1.3
+2022,3,Management occupations,High,High,1786.5,1765.7,1628.7,137.1,20.8,1.2
+2022,4,Management occupations,High,High,1781,1754.5,1640.2,114.3,26.6,1.5
+2022,5,Management occupations,High,High,1812.1,1794.8,1678.7,116.1,17.3,1
+2022,6,Management occupations,High,High,1849.7,1830.7,1711.9,118.8,19,1
+2022,7,Management occupations,High,High,1881.3,1858.1,1737.6,120.5,23.3,1.2
+2022,8,Management occupations,High,High,1913.5,1881.7,1767.7,114,31.9,1.7
+2022,9,Management occupations,High,High,1918.4,1898.5,1784.1,114.4,19.8,1
+2022,10,Management occupations,High,High,1931.4,1911.4,1784.1,127.3,20,1
+2022,11,Management occupations,High,High,1936.3,1916.8,1790.9,126,19.4,1
+2022,12,Management occupations,High,High,1908,1887.3,1757.1,130.3,20.7,1.1
+2023,1,Management occupations,High,High,1934.7,1899.5,1762.6,136.9,35.2,1.8
+2023,2,Management occupations,High,High,1945.4,1914.6,1783.7,130.9,30.8,1.6
+2023,3,Management occupations,High,High,1940,1905.6,1787.7,117.9,34.5,1.8
+2023,4,Management occupations,High,High,1958.6,1929.2,1794.7,134.5,29.4,1.5
+2023,5,Management occupations,High,High,1987.1,1958.4,1831.6,126.7,28.7,1.4
+2023,6,Management occupations,High,High,2011.9,1981.7,1853.3,128.4,30.2,1.5
+2023,7,Management occupations,High,High,2026.6,2005.4,1881.9,123.6,21.1,1
+2023,8,Management occupations,High,High,2086.9,2059.4,1918.1,141.3,27.5,1.3
+2023,9,Management occupations,High,High,2103.2,2066.9,1937.2,129.7,36.3,1.7
+2023,10,Management occupations,High,High,2076.3,2035.3,1899.7,135.5,41,2
+2023,11,Management occupations,High,High,2101.7,2060.4,1924.2,136.2,41.3,2
+2023,12,Management occupations,High,High,2157.2,2109.8,1964.3,145.5,47.4,2.2
+2024,1,Management occupations,High,High,2171.5,2119.9,1974,145.8,51.6,2.4
+2024,2,Management occupations,High,High,2166.8,2118,1977.5,140.5,48.8,2.3
+2024,3,Management occupations,High,High,2183.6,2133.2,1975.9,157.3,50.4,2.3
+2024,4,Management occupations,High,High,2140.5,2107.4,1957.1,150.3,33.1,1.5
+2024,5,Management occupations,High,High,2128.1,2091.7,1947.2,144.5,36.4,1.7
+2024,6,Management occupations,High,High,2074.1,2040,1900.4,139.6,34.1,1.6
+2024,7,Management occupations,High,High,2095.4,2051.1,1918.6,132.5,44.3,2.1
+2024,8,Management occupations,High,High,2067.1,2016.2,1883.2,133,50.9,2.5
+2024,9,Management occupations,High,High,2060.5,2010.4,1884.7,125.6,50.1,2.4
+2024,10,Management occupations,High,High,2099.4,2040,1917.6,122.5,59.3,2.8
+2024,11,Management occupations,High,High,2129.6,2083.9,1947.5,136.4,45.7,2.1
+2024,12,Management occupations,High,High,2098.8,2060.6,1931.9,128.7,38.1,1.8
+2025,1,Management occupations,High,High,2103.7,2049,1909.1,140,54.6,2.6
+2025,2,Management occupations,High,High,2129.1,2077.6,1933.1,144.5,51.6,2.4
+2025,3,Management occupations,High,High,2062.2,2011.1,1861.9,149.3,51,2.5
+2025,4,Management occupations,High,High,2094.9,2050.8,1905.9,144.9,44.1,2.1
+2025,5,Management occupations,High,High,2095.5,2050.3,1919.3,131,45.1,2.2
+2025,6,Management occupations,High,High,2089.6,2045.5,1912.2,133.3,44.1,2.1
+2025,7,Management occupations,High,High,2076.4,2037.3,1914.5,122.9,39,1.9
+2025,8,Management occupations,High,High,2081.3,2035,1907.7,127.3,46.3,2.2
+2025,9,Management occupations,High,High,2075.9,2035.2,1900.3,134.9,40.6,2
+2010,1,"Business, finance and administration occupations",High,High,2726.7,2601.4,2179,422.4,125.2,4.6
+2010,2,"Business, finance and administration occupations",High,High,2705.7,2590.4,2169.2,421.2,115.2,4.3
+2010,3,"Business, finance and administration occupations",High,High,2714.5,2593.8,2157.4,436.4,120.8,4.5
+2010,4,"Business, finance and administration occupations",High,High,2751.3,2652.5,2215.2,437.3,98.8,3.6
+2010,5,"Business, finance and administration occupations",High,High,2800.2,2687.1,2252.7,434.4,113.1,4
+2010,6,"Business, finance and administration occupations",High,High,2841.8,2732.1,2317.8,414.3,109.7,3.9
+2010,7,"Business, finance and administration occupations",High,High,2831.8,2709.5,2285.9,423.6,122.4,4.3
+2010,8,"Business, finance and administration occupations",High,High,2883,2760.2,2336.3,423.9,122.7,4.3
+2010,9,"Business, finance and administration occupations",High,High,2766.5,2664.4,2221.3,443.1,102.1,3.7
+2010,10,"Business, finance and administration occupations",High,High,2748.1,2643.5,2195.7,447.8,104.6,3.8
+2010,11,"Business, finance and administration occupations",High,High,2763.8,2669.9,2220.7,449.2,93.9,3.4
+2010,12,"Business, finance and administration occupations",High,High,2750.1,2661.3,2220,441.3,88.8,3.2
+2011,1,"Business, finance and administration occupations",High,High,2792.4,2686.4,2245.9,440.5,106,3.8
+2011,2,"Business, finance and administration occupations",High,High,2812.2,2714.8,2282.1,432.6,97.5,3.5
+2011,3,"Business, finance and administration occupations",High,High,2842.5,2741.8,2294.2,447.6,100.6,3.5
+2011,4,"Business, finance and administration occupations",High,High,2876.7,2775.2,2318.3,456.9,101.5,3.5
+2011,5,"Business, finance and administration occupations",High,High,2879.8,2775.4,2339.3,436.1,104.4,3.6
+2011,6,"Business, finance and administration occupations",High,High,2879.6,2774,2338.3,435.7,105.6,3.7
+2011,7,"Business, finance and administration occupations",High,High,2830.2,2721.4,2327,394.5,108.8,3.8
+2011,8,"Business, finance and administration occupations",High,High,2867.2,2748.1,2342.2,405.9,119.2,4.2
+2011,9,"Business, finance and administration occupations",High,High,2800.7,2694.6,2282.4,412.1,106.1,3.8
+2011,10,"Business, finance and administration occupations",High,High,2803.4,2699.3,2263.5,435.8,104.1,3.7
+2011,11,"Business, finance and administration occupations",High,High,2777.2,2681.3,2235.8,445.5,95.9,3.5
+2011,12,"Business, finance and administration occupations",High,High,2758.1,2669,2232.7,436.2,89.2,3.2
+2012,1,"Business, finance and administration occupations",High,High,2754,2647,2213.5,433.5,107,3.9
+2012,2,"Business, finance and administration occupations",High,High,2773.5,2674.1,2223.1,450.9,99.4,3.6
+2012,3,"Business, finance and administration occupations",High,High,2795.8,2702.1,2271.2,430.9,93.7,3.4
+2012,4,"Business, finance and administration occupations",High,High,2761.5,2656,2241.7,414.3,105.5,3.8
+2012,5,"Business, finance and administration occupations",High,High,2785.6,2667.8,2271.5,396.3,117.8,4.2
+2012,6,"Business, finance and administration occupations",High,High,2852.8,2750.3,2323.1,427.2,102.5,3.6
+2012,7,"Business, finance and administration occupations",High,High,2867.1,2760.1,2369.9,390.2,107,3.7
+2012,8,"Business, finance and administration occupations",High,High,2838.3,2727.9,2342,385.9,110.4,3.9
+2012,9,"Business, finance and administration occupations",High,High,2791.7,2688.2,2290.4,397.9,103.5,3.7
+2012,10,"Business, finance and administration occupations",High,High,2787.8,2695,2286.3,408.7,92.8,3.3
+2012,11,"Business, finance and administration occupations",High,High,2828.9,2737.4,2305,432.4,91.5,3.2
+2012,12,"Business, finance and administration occupations",High,High,2782.6,2691.7,2273.8,418,90.9,3.3
+2013,1,"Business, finance and administration occupations",High,High,2794,2694.2,2278.4,415.7,99.9,3.6
+2013,2,"Business, finance and administration occupations",High,High,2852.8,2749.3,2308.9,440.4,103.5,3.6
+2013,3,"Business, finance and administration occupations",High,High,2837.5,2733.7,2303.8,429.9,103.8,3.7
+2013,4,"Business, finance and administration occupations",High,High,2844.1,2745.3,2310.5,434.8,98.9,3.5
+2013,5,"Business, finance and administration occupations",High,High,2852.7,2738.9,2338.8,400.1,113.9,4
+2013,6,"Business, finance and administration occupations",High,High,2834.9,2706.6,2311.3,395.4,128.3,4.5
+2013,7,"Business, finance and administration occupations",High,High,2845.6,2730,2352.4,377.6,115.6,4.1
+2013,8,"Business, finance and administration occupations",High,High,2829.9,2714.4,2332.3,382,115.5,4.1
+2013,9,"Business, finance and administration occupations",High,High,2751.5,2653.6,2254.5,399.1,98,3.6
+2013,10,"Business, finance and administration occupations",High,High,2795.5,2699.3,2298.5,400.8,96.3,3.4
+2013,11,"Business, finance and administration occupations",High,High,2787.3,2692.8,2284.7,408.1,94.5,3.4
+2013,12,"Business, finance and administration occupations",High,High,2782.2,2693.1,2286.8,406.3,89,3.2
+2014,1,"Business, finance and administration occupations",High,High,2798.1,2695.8,2281,414.7,102.3,3.7
+2014,2,"Business, finance and administration occupations",High,High,2825,2737,2301.5,435.6,87.9,3.1
+2014,3,"Business, finance and administration occupations",High,High,2853.9,2759.7,2320.8,438.9,94.2,3.3
+2014,4,"Business, finance and administration occupations",High,High,2810.6,2721.9,2280.3,441.6,88.7,3.2
+2014,5,"Business, finance and administration occupations",High,High,2802.3,2681.4,2255,426.4,121,4.3
+2014,6,"Business, finance and administration occupations",High,High,2800.5,2691.6,2287.2,404.4,108.9,3.9
+2014,7,"Business, finance and administration occupations",High,High,2785.3,2678.5,2272.7,405.8,106.9,3.8
+2014,8,"Business, finance and administration occupations",High,High,2786.6,2678.8,2282.7,396.1,107.8,3.9
+2014,9,"Business, finance and administration occupations",High,High,2744.2,2642.1,2217.2,424.9,102.1,3.7
+2014,10,"Business, finance and administration occupations",High,High,2796.6,2696.5,2269.6,426.9,100.1,3.6
+2014,11,"Business, finance and administration occupations",High,High,2834,2734,2284.1,450,100,3.5
+2014,12,"Business, finance and administration occupations",High,High,2811.3,2716.1,2281.7,434.4,95.1,3.4
+2015,1,"Business, finance and administration occupations",High,High,2851,2749.1,2302.7,446.4,101.8,3.6
+2015,2,"Business, finance and administration occupations",High,High,2867.8,2768.4,2332.9,435.5,99.4,3.5
+2015,3,"Business, finance and administration occupations",High,High,2817.4,2715.8,2295.2,420.6,101.6,3.6
+2015,4,"Business, finance and administration occupations",High,High,2765.1,2663.7,2259.1,404.5,101.5,3.7
+2015,5,"Business, finance and administration occupations",High,High,2829.8,2722.1,2314.2,407.9,107.7,3.8
+2015,6,"Business, finance and administration occupations",High,High,2824.7,2731.2,2346.9,384.3,93.5,3.3
+2015,7,"Business, finance and administration occupations",High,High,2837.6,2736.1,2355.3,380.8,101.5,3.6
+2015,8,"Business, finance and administration occupations",High,High,2897,2784.9,2388.4,396.4,112.1,3.9
+2015,9,"Business, finance and administration occupations",High,High,2833,2735,2315.8,419.3,98,3.5
+2015,10,"Business, finance and administration occupations",High,High,2846.6,2744.4,2295.3,449.1,102.2,3.6
+2015,11,"Business, finance and administration occupations",High,High,2839.5,2740.2,2308.2,432,99.3,3.5
+2015,12,"Business, finance and administration occupations",High,High,2843.4,2758.9,2345.6,413.4,84.5,3
+2016,1,"Business, finance and administration occupations",High,High,2813.3,2710.8,2294.6,416.2,102.5,3.6
+2016,2,"Business, finance and administration occupations",High,High,2830.2,2734.8,2281.7,453.1,95.4,3.4
+2016,3,"Business, finance and administration occupations",High,High,2852.5,2758.1,2332.2,425.9,94.3,3.3
+2016,4,"Business, finance and administration occupations",High,High,2840.5,2736.6,2328,408.6,104,3.7
+2016,5,"Business, finance and administration occupations",High,High,2868.6,2761.9,2352.1,409.8,106.7,3.7
+2016,6,"Business, finance and administration occupations",High,High,2870.8,2769.3,2380.5,388.8,101.5,3.5
+2016,7,"Business, finance and administration occupations",High,High,2868.1,2756.9,2361.2,395.7,111.2,3.9
+2016,8,"Business, finance and administration occupations",High,High,2854.5,2731.7,2328.3,403.4,122.7,4.3
+2016,9,"Business, finance and administration occupations",High,High,2792.8,2698.1,2268,430.1,94.7,3.4
+2016,10,"Business, finance and administration occupations",High,High,2859.6,2757.8,2304.5,453.3,101.7,3.6
+2016,11,"Business, finance and administration occupations",High,High,2867.7,2765.8,2311.6,454.2,101.9,3.6
+2016,12,"Business, finance and administration occupations",High,High,2861.6,2761.7,2300.9,460.8,99.9,3.5
+2017,1,"Business, finance and administration occupations",High,High,2870.1,2773,2307.1,465.9,97.1,3.4
+2017,2,"Business, finance and administration occupations",High,High,2882.5,2781.6,2330.2,451.5,100.8,3.5
+2017,3,"Business, finance and administration occupations",High,High,2845.6,2749.8,2297.3,452.5,95.8,3.4
+2017,4,"Business, finance and administration occupations",High,High,2836.3,2736.2,2290.7,445.5,100.1,3.5
+2017,5,"Business, finance and administration occupations",High,High,2881.3,2775.4,2342.4,433,105.9,3.7
+2017,6,"Business, finance and administration occupations",High,High,2926.3,2824.1,2382.5,441.6,102.2,3.5
+2017,7,"Business, finance and administration occupations",High,High,2949.9,2839.8,2398.5,441.3,110.1,3.7
+2017,8,"Business, finance and administration occupations",High,High,2908.7,2801.8,2384.4,417.4,106.8,3.7
+2017,9,"Business, finance and administration occupations",High,High,2889,2798.9,2361.3,437.6,90.1,3.1
+2017,10,"Business, finance and administration occupations",High,High,2920.8,2841.8,2392.8,449,79.1,2.7
+2017,11,"Business, finance and administration occupations",High,High,2896.2,2804.6,2339,465.6,91.6,3.2
+2017,12,"Business, finance and administration occupations",High,High,2919.3,2829.4,2361.9,467.5,89.9,3.1
+2018,1,"Business, finance and administration occupations",High,High,2915.9,2830.5,2388.6,441.9,85.3,2.9
+2018,2,"Business, finance and administration occupations",High,High,2949.6,2865.2,2402.2,463,84.4,2.9
+2018,3,"Business, finance and administration occupations",High,High,2949.2,2861.4,2427.9,433.5,87.8,3
+2018,4,"Business, finance and administration occupations",High,High,2988.8,2910.9,2485.5,425.4,77.9,2.6
+2018,5,"Business, finance and administration occupations",High,High,3013.8,2924.2,2524.3,400,89.6,3
+2018,6,"Business, finance and administration occupations",High,High,3031.9,2944.6,2542.6,401.9,87.3,2.9
+2018,7,"Business, finance and administration occupations",High,High,2976,2882.2,2493.4,388.8,93.8,3.2
+2018,8,"Business, finance and administration occupations",High,High,2954.7,2842.1,2456.8,385.3,112.6,3.8
+2018,9,"Business, finance and administration occupations",High,High,2914.7,2818.3,2402.9,415.4,96.4,3.3
+2018,10,"Business, finance and administration occupations",High,High,2887.4,2793.1,2375.2,417.9,94.3,3.3
+2018,11,"Business, finance and administration occupations",High,High,2881.5,2792.6,2377.3,415.3,88.8,3.1
+2018,12,"Business, finance and administration occupations",High,High,2870.4,2787,2336.7,450.3,83.4,2.9
+2019,1,"Business, finance and administration occupations",High,High,2891.7,2802.2,2351.6,450.6,89.5,3.1
+2019,2,"Business, finance and administration occupations",High,High,2966.4,2880.9,2414.9,466,85.4,2.9
+2019,3,"Business, finance and administration occupations",High,High,2969.5,2888.9,2419.5,469.4,80.6,2.7
+2019,4,"Business, finance and administration occupations",High,High,2969.9,2898,2436.4,461.6,71.9,2.4
+2019,5,"Business, finance and administration occupations",High,High,3027.9,2948.8,2516.7,432.1,79.1,2.6
+2019,6,"Business, finance and administration occupations",High,High,3071.8,2987.4,2578.2,409.2,84.3,2.7
+2019,7,"Business, finance and administration occupations",High,High,3020.8,2927.8,2553,374.8,93,3.1
+2019,8,"Business, finance and administration occupations",High,High,3049.5,2952,2568.3,383.7,97.5,3.2
+2019,9,"Business, finance and administration occupations",High,High,2984.3,2904.7,2472.1,432.6,79.6,2.7
+2019,10,"Business, finance and administration occupations",High,High,2994.3,2926,2472.2,453.7,68.3,2.3
+2019,11,"Business, finance and administration occupations",High,High,3034,2952.4,2498.4,454,81.6,2.7
+2019,12,"Business, finance and administration occupations",High,High,3024.9,2954.1,2509.7,444.4,70.8,2.3
+2020,1,"Business, finance and administration occupations",High,High,3033.9,2949.8,2506.7,443.1,84.1,2.8
+2020,2,"Business, finance and administration occupations",High,High,3028.9,2934.4,2496.2,438.2,94.5,3.1
+2020,3,"Business, finance and administration occupations",High,High,3076.9,2928.7,2511.8,416.9,148.2,4.8
+2020,4,"Business, finance and administration occupations",High,High,2940.5,2660.9,2330.8,330.1,279.6,9.5
+2020,5,"Business, finance and administration occupations",High,High,3042.1,2736.6,2415.5,321.1,305.6,10
+2020,6,"Business, finance and administration occupations",High,High,3059,2814.4,2440,374.4,244.6,8
+2020,7,"Business, finance and administration occupations",High,High,3105.1,2895.6,2506.5,389.1,209.5,6.7
+2020,8,"Business, finance and administration occupations",High,High,3124.1,2891.6,2494.9,396.7,232.4,7.4
+2020,9,"Business, finance and administration occupations",High,High,3061,2897.3,2491.7,405.6,163.7,5.3
+2020,10,"Business, finance and administration occupations",High,High,3085.7,2917.8,2499.3,418.6,167.9,5.4
+2020,11,"Business, finance and administration occupations",High,High,3083.4,2946.2,2515.2,431.1,137.2,4.4
+2020,12,"Business, finance and administration occupations",High,High,3116.7,2984.5,2557.8,426.7,132.2,4.2
+2021,1,"Business, finance and administration occupations",High,High,3050,2901.7,2503.7,398,148.3,4.9
+2021,2,"Business, finance and administration occupations",High,High,3143.3,3013.9,2571.3,442.6,129.4,4.1
+2021,3,"Business, finance and administration occupations",High,High,3156.6,3044.9,2601.1,443.8,111.7,3.5
+2021,4,"Business, finance and administration occupations",High,High,3160.4,3070.7,2625.6,445,89.8,2.8
+2021,5,"Business, finance and administration occupations",High,High,3205.8,3108,2679.6,428.3,97.9,3.1
+2021,6,"Business, finance and administration occupations",High,High,3189.4,3095.9,2676.7,419.2,93.5,2.9
+2021,7,"Business, finance and administration occupations",High,High,3279.8,3167.3,2730,437.3,112.5,3.4
+2021,8,"Business, finance and administration occupations",High,High,3194.5,3078.9,2650,428.9,115.6,3.6
+2021,9,"Business, finance and administration occupations",High,High,3198.7,3109.9,2641,468.8,88.8,2.8
+2021,10,"Business, finance and administration occupations",High,High,3216,3133.2,2664.8,468.4,82.8,2.6
+2021,11,"Business, finance and administration occupations",High,High,3200.2,3117.9,2632.2,485.7,82.3,2.6
+2021,12,"Business, finance and administration occupations",High,High,3261.6,3183.2,2715.5,467.7,78.3,2.4
+2022,1,"Business, finance and administration occupations",High,High,3221.8,3120.5,2671.8,448.7,101.3,3.1
+2022,2,"Business, finance and administration occupations",High,High,3294,3217.5,2762.2,455.4,76.5,2.3
+2022,3,"Business, finance and administration occupations",High,High,3255.7,3191.8,2741,450.8,63.9,2
+2022,4,"Business, finance and administration occupations",High,High,3298.1,3230.2,2768.1,462.1,67.9,2.1
+2022,5,"Business, finance and administration occupations",High,High,3300.3,3215.3,2806.8,408.5,85,2.6
+2022,6,"Business, finance and administration occupations",High,High,3287.2,3225.9,2797.1,428.8,61.3,1.9
+2022,7,"Business, finance and administration occupations",High,High,3260,3190.5,2785.9,404.7,69.5,2.1
+2022,8,"Business, finance and administration occupations",High,High,3292.2,3187.4,2774.7,412.7,104.7,3.2
+2022,9,"Business, finance and administration occupations",High,High,3197.3,3109.1,2665.1,444.1,88.2,2.8
+2022,10,"Business, finance and administration occupations",High,High,3196,3114.5,2660.3,454.2,81.5,2.6
+2022,11,"Business, finance and administration occupations",High,High,3213.2,3140.5,2687.7,452.8,72.7,2.3
+2022,12,"Business, finance and administration occupations",High,High,3250.9,3186.1,2744.4,441.6,64.8,2
+2023,1,"Business, finance and administration occupations",High,High,3256.1,3177.6,2746,431.6,78.5,2.4
+2023,2,"Business, finance and administration occupations",High,High,3299.9,3220.5,2777.6,442.9,79.4,2.4
+2023,3,"Business, finance and administration occupations",High,High,3359.5,3273.9,2822.4,451.5,85.7,2.6
+2023,4,"Business, finance and administration occupations",High,High,3368.2,3282.6,2835.2,447.3,85.6,2.5
+2023,5,"Business, finance and administration occupations",High,High,3404.5,3313.1,2897.9,415.2,91.4,2.7
+2023,6,"Business, finance and administration occupations",High,High,3462.6,3363.1,2951,412.1,99.5,2.9
+2023,7,"Business, finance and administration occupations",High,High,3466.1,3348.2,2949.8,398.4,117.9,3.4
+2023,8,"Business, finance and administration occupations",High,High,3432,3333.2,2949.5,383.7,98.9,2.9
+2023,9,"Business, finance and administration occupations",High,High,3365.6,3263.7,2845.8,418,101.8,3
+2023,10,"Business, finance and administration occupations",High,High,3370.8,3275,2834.7,440.3,95.8,2.8
+2023,11,"Business, finance and administration occupations",High,High,3344.6,3247.9,2793.8,454.1,96.7,2.9
+2023,12,"Business, finance and administration occupations",High,High,3327,3244.1,2780,464.1,82.9,2.5
+2024,1,"Business, finance and administration occupations",High,High,3342,3247.4,2779.6,467.8,94.6,2.8
+2024,2,"Business, finance and administration occupations",High,High,3312.5,3221.6,2753.6,468,90.9,2.7
+2024,3,"Business, finance and administration occupations",High,High,3404.5,3298.4,2829,469.4,106.1,3.1
+2024,4,"Business, finance and administration occupations",High,High,3452.9,3337.3,2858.3,479,115.7,3.4
+2024,5,"Business, finance and administration occupations",High,High,3473.3,3358.3,2896.5,461.8,115.1,3.3
+2024,6,"Business, finance and administration occupations",High,High,3443.8,3321,2869.3,451.6,122.8,3.6
+2024,7,"Business, finance and administration occupations",High,High,3423.1,3321.2,2894.8,426.4,101.9,3
+2024,8,"Business, finance and administration occupations",High,High,3456.9,3336.4,2919.3,417.1,120.5,3.5
+2024,9,"Business, finance and administration occupations",High,High,3382.5,3288,2837.9,450.1,94.4,2.8
+2024,10,"Business, finance and administration occupations",High,High,3404.9,3311.9,2836.5,475.4,93.1,2.7
+2024,11,"Business, finance and administration occupations",High,High,3400.5,3295.6,2839.4,456.2,104.9,3.1
+2024,12,"Business, finance and administration occupations",High,High,3460.8,3367.7,2909.8,457.9,93.1,2.7
+2025,1,"Business, finance and administration occupations",High,High,3405.3,3313,2845.9,467.1,92.2,2.7
+2025,2,"Business, finance and administration occupations",High,High,3429.3,3330.3,2853.1,477.3,98.9,2.9
+2025,3,"Business, finance and administration occupations",High,High,3464.7,3355.1,2856.2,498.9,109.6,3.2
+2025,4,"Business, finance and administration occupations",High,High,3520.3,3404.3,2887.3,517,116,3.3
+2025,5,"Business, finance and administration occupations",High,High,3536.9,3409.1,2931.3,477.8,127.9,3.6
+2025,6,"Business, finance and administration occupations",High,High,3517,3418.2,2960,458.2,98.8,2.8
+2025,7,"Business, finance and administration occupations",High,High,3573.9,3455.4,2998.9,456.6,118.4,3.3
+2025,8,"Business, finance and administration occupations",High,High,3608.2,3471.5,3030.7,440.8,136.8,3.8
+2025,9,"Business, finance and administration occupations",High,High,3474.1,3360.7,2897.2,463.5,113.4,3.3
+2010,1,Natural and applied sciences and related occupations,High,High,1219.1,1162.7,1092.1,70.6,56.4,4.6
+2010,2,Natural and applied sciences and related occupations,High,High,1234.4,1176,1101.2,74.9,58.3,4.7
+2010,3,Natural and applied sciences and related occupations,High,High,1237.7,1188,1112.8,75.2,49.7,4
+2010,4,Natural and applied sciences and related occupations,High,High,1229.8,1175.5,1104.7,70.8,54.3,4.4
+2010,5,Natural and applied sciences and related occupations,High,High,1255.3,1199.3,1128.4,70.9,56,4.5
+2010,6,Natural and applied sciences and related occupations,High,High,1258.9,1215.9,1142.5,73.5,43,3.4
+2010,7,Natural and applied sciences and related occupations,High,High,1240.5,1201.8,1137.2,64.6,38.7,3.1
+2010,8,Natural and applied sciences and related occupations,High,High,1244.5,1200.5,1134.3,66.2,44,3.5
+2010,9,Natural and applied sciences and related occupations,High,High,1229.9,1193,1123.7,69.3,36.9,3
+2010,10,Natural and applied sciences and related occupations,High,High,1208.1,1167.7,1097.7,70,40.4,3.3
+2010,11,Natural and applied sciences and related occupations,High,High,1217.1,1179.8,1105.6,74.1,37.3,3.1
+2010,12,Natural and applied sciences and related occupations,High,High,1237.2,1194.1,1123.4,70.7,43.1,3.5
+2011,1,Natural and applied sciences and related occupations,High,High,1207.1,1161.8,1100,61.8,45.3,3.8
+2011,2,Natural and applied sciences and related occupations,High,High,1244,1194.2,1133.5,60.6,49.8,4
+2011,3,Natural and applied sciences and related occupations,High,High,1240.5,1199.5,1142,57.6,40.9,3.3
+2011,4,Natural and applied sciences and related occupations,High,High,1257.8,1217.1,1159,58.2,40.7,3.2
+2011,5,Natural and applied sciences and related occupations,High,High,1233.8,1192.2,1138.5,53.7,41.6,3.4
+2011,6,Natural and applied sciences and related occupations,High,High,1262.3,1225.1,1170.9,54.2,37.3,3
+2011,7,Natural and applied sciences and related occupations,High,High,1275.6,1238.2,1186.7,51.5,37.4,2.9
+2011,8,Natural and applied sciences and related occupations,High,High,1267.7,1232,1178.5,53.5,35.7,2.8
+2011,9,Natural and applied sciences and related occupations,High,High,1220.5,1192.2,1136,56.2,28.3,2.3
+2011,10,Natural and applied sciences and related occupations,High,High,1220.6,1189.2,1130.2,58.9,31.4,2.6
+2011,11,Natural and applied sciences and related occupations,High,High,1245.3,1206.5,1151.6,54.9,38.9,3.1
+2011,12,Natural and applied sciences and related occupations,High,High,1224.3,1185.6,1129.7,55.8,38.8,3.2
+2012,1,Natural and applied sciences and related occupations,High,High,1233.8,1189.1,1133.9,55.1,44.8,3.6
+2012,2,Natural and applied sciences and related occupations,High,High,1224.9,1177.2,1119.5,57.7,47.7,3.9
+2012,3,Natural and applied sciences and related occupations,High,High,1235,1188.3,1128.8,59.4,46.8,3.8
+2012,4,Natural and applied sciences and related occupations,High,High,1240.9,1193.6,1141.3,52.3,47.2,3.8
+2012,5,Natural and applied sciences and related occupations,High,High,1254,1203.8,1153.5,50.2,50.2,4
+2012,6,Natural and applied sciences and related occupations,High,High,1279.5,1234.3,1185.3,49.1,45.1,3.5
+2012,7,Natural and applied sciences and related occupations,High,High,1283.6,1245.4,1188.1,57.3,38.2,3
+2012,8,Natural and applied sciences and related occupations,High,High,1289.6,1253.6,1202.6,51,36,2.8
+2012,9,Natural and applied sciences and related occupations,High,High,1282.3,1236.5,1175.8,60.7,45.7,3.6
+2012,10,Natural and applied sciences and related occupations,High,High,1263.6,1224.5,1160.8,63.7,39.2,3.1
+2012,11,Natural and applied sciences and related occupations,High,High,1275.6,1235.9,1163,72.9,39.7,3.1
+2012,12,Natural and applied sciences and related occupations,High,High,1284,1246.4,1179.5,67,37.6,2.9
+2013,1,Natural and applied sciences and related occupations,High,High,1297.2,1254.8,1179.7,75.1,42.4,3.3
+2013,2,Natural and applied sciences and related occupations,High,High,1293.3,1248,1181.6,66.4,45.3,3.5
+2013,3,Natural and applied sciences and related occupations,High,High,1281.6,1233.9,1161.1,72.9,47.7,3.7
+2013,4,Natural and applied sciences and related occupations,High,High,1303.1,1251.6,1186.1,65.6,51.5,4
+2013,5,Natural and applied sciences and related occupations,High,High,1314.8,1266.2,1208.8,57.5,48.6,3.7
+2013,6,Natural and applied sciences and related occupations,High,High,1330.4,1286.2,1218.4,67.8,44.1,3.3
+2013,7,Natural and applied sciences and related occupations,High,High,1300.9,1258.4,1197.7,60.7,42.5,3.3
+2013,8,Natural and applied sciences and related occupations,High,High,1304.5,1262.5,1204.6,57.9,42,3.2
+2013,9,Natural and applied sciences and related occupations,High,High,1276.5,1243.5,1187.1,56.4,33,2.6
+2013,10,Natural and applied sciences and related occupations,High,High,1309.7,1271.3,1213.9,57.5,38.4,2.9
+2013,11,Natural and applied sciences and related occupations,High,High,1308.8,1269.3,1212.7,56.6,39.6,3
+2013,12,Natural and applied sciences and related occupations,High,High,1291.2,1251,1185.6,65.5,40.2,3.1
+2014,1,Natural and applied sciences and related occupations,High,High,1290.3,1241.3,1180.3,61,49,3.8
+2014,2,Natural and applied sciences and related occupations,High,High,1317.4,1267.7,1207.2,60.5,49.7,3.8
+2014,3,Natural and applied sciences and related occupations,High,High,1308,1261.2,1189.4,71.8,46.8,3.6
+2014,4,Natural and applied sciences and related occupations,High,High,1321.5,1271.7,1201.9,69.8,49.8,3.8
+2014,5,Natural and applied sciences and related occupations,High,High,1369.8,1320.7,1254.7,65.9,49.1,3.6
+2014,6,Natural and applied sciences and related occupations,High,High,1383.2,1336.3,1279.1,57.2,46.9,3.4
+2014,7,Natural and applied sciences and related occupations,High,High,1418.3,1369.4,1306.8,62.6,49,3.5
+2014,8,Natural and applied sciences and related occupations,High,High,1369,1322.8,1260.7,62.1,46.2,3.4
+2014,9,Natural and applied sciences and related occupations,High,High,1347.9,1306.4,1234.8,71.6,41.5,3.1
+2014,10,Natural and applied sciences and related occupations,High,High,1324.4,1295.7,1227,68.7,28.7,2.2
+2014,11,Natural and applied sciences and related occupations,High,High,1336,1296.6,1225.6,71.1,39.4,2.9
+2014,12,Natural and applied sciences and related occupations,High,High,1341.3,1293.3,1230.7,62.6,48,3.6
+2015,1,Natural and applied sciences and related occupations,High,High,1322,1282.6,1221.8,60.8,39.3,3
+2015,2,Natural and applied sciences and related occupations,High,High,1315.5,1268.3,1211.2,57.2,47.2,3.6
+2015,3,Natural and applied sciences and related occupations,High,High,1310.3,1260.9,1205.3,55.6,49.4,3.8
+2015,4,Natural and applied sciences and related occupations,High,High,1352,1306.7,1246.6,60,45.3,3.4
+2015,5,Natural and applied sciences and related occupations,High,High,1358.5,1314.9,1257.2,57.6,43.6,3.2
+2015,6,Natural and applied sciences and related occupations,High,High,1406,1359.5,1300.8,58.7,46.5,3.3
+2015,7,Natural and applied sciences and related occupations,High,High,1449.2,1401.4,1337.8,63.6,47.8,3.3
+2015,8,Natural and applied sciences and related occupations,High,High,1431,1385.7,1323.9,61.7,45.4,3.2
+2015,9,Natural and applied sciences and related occupations,High,High,1396.1,1349.1,1276.7,72.4,47.1,3.4
+2015,10,Natural and applied sciences and related occupations,High,High,1411.6,1366.5,1294.7,71.7,45.2,3.2
+2015,11,Natural and applied sciences and related occupations,High,High,1426.3,1374.4,1301.9,72.4,51.9,3.6
+2015,12,Natural and applied sciences and related occupations,High,High,1419.2,1355.9,1284.9,71,63.3,4.5
+2016,1,Natural and applied sciences and related occupations,High,High,1408,1341.6,1275,66.6,66.4,4.7
+2016,2,Natural and applied sciences and related occupations,High,High,1448.6,1375,1304.6,70.4,73.5,5.1
+2016,3,Natural and applied sciences and related occupations,High,High,1451.7,1385.5,1316.8,68.7,66.2,4.6
+2016,4,Natural and applied sciences and related occupations,High,High,1412.2,1360.4,1287.7,72.6,51.8,3.7
+2016,5,Natural and applied sciences and related occupations,High,High,1406.6,1364,1290.1,73.9,42.6,3
+2016,6,Natural and applied sciences and related occupations,High,High,1437.4,1391.4,1317.9,73.5,46.1,3.2
+2016,7,Natural and applied sciences and related occupations,High,High,1404.2,1364.1,1298.3,65.8,40.1,2.9
+2016,8,Natural and applied sciences and related occupations,High,High,1390.1,1342.4,1280.6,61.8,47.7,3.4
+2016,9,Natural and applied sciences and related occupations,High,High,1339.7,1295.1,1223.1,72,44.6,3.3
+2016,10,Natural and applied sciences and related occupations,High,High,1314.6,1276.6,1196.4,80.2,38,2.9
+2016,11,Natural and applied sciences and related occupations,High,High,1316.6,1281.6,1204.4,77.2,35,2.7
+2016,12,Natural and applied sciences and related occupations,High,High,1342.3,1302.2,1225.7,76.5,40.1,3
+2017,1,Natural and applied sciences and related occupations,High,High,1332.9,1286.4,1212.5,74,46.5,3.5
+2017,2,Natural and applied sciences and related occupations,High,High,1340.8,1297.1,1222.9,74.2,43.6,3.3
+2017,3,Natural and applied sciences and related occupations,High,High,1383.6,1330.2,1246.5,83.7,53.4,3.9
+2017,4,Natural and applied sciences and related occupations,High,High,1354.8,1309.2,1231.6,77.6,45.6,3.4
+2017,5,Natural and applied sciences and related occupations,High,High,1399,1363.3,1287.9,75.4,35.6,2.5
+2017,6,Natural and applied sciences and related occupations,High,High,1445,1411.2,1344.1,67.2,33.8,2.3
+2017,7,Natural and applied sciences and related occupations,High,High,1426.9,1384.4,1317.9,66.5,42.5,3
+2017,8,Natural and applied sciences and related occupations,High,High,1420.6,1381,1301.1,79.8,39.6,2.8
+2017,9,Natural and applied sciences and related occupations,High,High,1413.6,1372.2,1284.6,87.6,41.4,2.9
+2017,10,Natural and applied sciences and related occupations,High,High,1414,1376,1284,92,38,2.7
+2017,11,Natural and applied sciences and related occupations,High,High,1404.9,1369.8,1285.1,84.7,35,2.5
+2017,12,Natural and applied sciences and related occupations,High,High,1444.7,1402.1,1314.2,87.9,42.6,2.9
+2018,1,Natural and applied sciences and related occupations,High,High,1452.5,1410.7,1335.3,75.4,41.8,2.9
+2018,2,Natural and applied sciences and related occupations,High,High,1486.4,1443.4,1372,71.3,43,2.9
+2018,3,Natural and applied sciences and related occupations,High,High,1470.9,1426.2,1356.1,70.1,44.7,3
+2018,4,Natural and applied sciences and related occupations,High,High,1448.8,1409.3,1339,70.3,39.5,2.7
+2018,5,Natural and applied sciences and related occupations,High,High,1479.5,1436.1,1373.5,62.6,43.4,2.9
+2018,6,Natural and applied sciences and related occupations,High,High,1487.7,1449.6,1376,73.6,38.1,2.6
+2018,7,Natural and applied sciences and related occupations,High,High,1483.5,1449.1,1384.1,65,34.4,2.3
+2018,8,Natural and applied sciences and related occupations,High,High,1460.6,1422.4,1367,55.4,38.2,2.6
+2018,9,Natural and applied sciences and related occupations,High,High,1405.7,1372.3,1303.4,68.9,33.3,2.4
+2018,10,Natural and applied sciences and related occupations,High,High,1419.4,1389.3,1319.8,69.5,30.1,2.1
+2018,11,Natural and applied sciences and related occupations,High,High,1437.9,1408.3,1336.1,72.3,29.6,2.1
+2018,12,Natural and applied sciences and related occupations,High,High,1442,1407.1,1339.5,67.7,34.9,2.4
+2019,1,Natural and applied sciences and related occupations,High,High,1468.5,1430.2,1357.6,72.7,38.3,2.6
+2019,2,Natural and applied sciences and related occupations,High,High,1506.4,1458.3,1388.9,69.5,48.1,3.2
+2019,3,Natural and applied sciences and related occupations,High,High,1524.9,1476.1,1404.9,71.2,48.8,3.2
+2019,4,Natural and applied sciences and related occupations,High,High,1529.6,1484,1409.2,74.7,45.6,3
+2019,5,Natural and applied sciences and related occupations,High,High,1572.5,1532,1457.5,74.5,40.5,2.6
+2019,6,Natural and applied sciences and related occupations,High,High,1606.7,1574.4,1495.5,78.8,32.3,2
+2019,7,Natural and applied sciences and related occupations,High,High,1574.3,1533.4,1451,82.4,40.9,2.6
+2019,8,Natural and applied sciences and related occupations,High,High,1585.5,1539.8,1464.2,75.6,45.7,2.9
+2019,9,Natural and applied sciences and related occupations,High,High,1550,1519.9,1431.8,88.1,30.1,1.9
+2019,10,Natural and applied sciences and related occupations,High,High,1535,1503.9,1425.3,78.6,31.1,2
+2019,11,Natural and applied sciences and related occupations,High,High,1534.1,1493.9,1412.4,81.5,40.2,2.6
+2019,12,Natural and applied sciences and related occupations,High,High,1541.6,1506.2,1435.9,70.2,35.4,2.3
+2020,1,Natural and applied sciences and related occupations,High,High,1538.8,1504.1,1435.6,68.5,34.8,2.3
+2020,2,Natural and applied sciences and related occupations,High,High,1569.1,1525.4,1460.7,64.6,43.8,2.8
+2020,3,Natural and applied sciences and related occupations,High,High,1582.2,1534.2,1466.8,67.4,48,3
+2020,4,Natural and applied sciences and related occupations,High,High,1576.4,1467.7,1401,66.7,108.7,6.9
+2020,5,Natural and applied sciences and related occupations,High,High,1648,1529.2,1464.8,64.4,118.7,7.2
+2020,6,Natural and applied sciences and related occupations,High,High,1671.5,1583.5,1520.1,63.4,88,5.3
+2020,7,Natural and applied sciences and related occupations,High,High,1709.4,1618.2,1538.8,79.3,91.3,5.3
+2020,8,Natural and applied sciences and related occupations,High,High,1760.6,1674.7,1601.8,72.8,85.9,4.9
+2020,9,Natural and applied sciences and related occupations,High,High,1749.7,1673.1,1586.7,86.4,76.6,4.4
+2020,10,Natural and applied sciences and related occupations,High,High,1742.6,1686,1585,101,56.6,3.2
+2020,11,Natural and applied sciences and related occupations,High,High,1733.8,1671.4,1571.6,99.8,62.5,3.6
+2020,12,Natural and applied sciences and related occupations,High,High,1703.9,1637.6,1543.2,94.4,66.3,3.9
+2021,1,Natural and applied sciences and related occupations,High,High,1698.6,1643.5,1554.4,89.2,55.1,3.2
+2021,2,Natural and applied sciences and related occupations,High,High,1637.7,1577.3,1487.4,89.9,60.4,3.7
+2021,3,Natural and applied sciences and related occupations,High,High,1647.7,1588.2,1497.6,90.6,59.5,3.6
+2021,4,Natural and applied sciences and related occupations,High,High,1645.9,1602.8,1520.2,82.5,43.2,2.6
+2021,5,Natural and applied sciences and related occupations,High,High,1692.4,1649.3,1570,79.3,43.1,2.5
+2021,6,Natural and applied sciences and related occupations,High,High,1731.2,1689.2,1612.3,76.9,42.1,2.4
+2021,7,Natural and applied sciences and related occupations,High,High,1737.6,1703.8,1615.1,88.7,33.8,1.9
+2021,8,Natural and applied sciences and related occupations,High,High,1760.7,1730.9,1654.4,76.5,29.8,1.7
+2021,9,Natural and applied sciences and related occupations,High,High,1756.9,1725.2,1643.6,81.5,31.7,1.8
+2021,10,Natural and applied sciences and related occupations,High,High,1727.4,1700.4,1615,85.4,27,1.6
+2021,11,Natural and applied sciences and related occupations,High,High,1815.3,1781.2,1684.4,96.8,34.1,1.9
+2021,12,Natural and applied sciences and related occupations,High,High,1754.5,1717,1639.4,77.6,37.5,2.1
+2022,1,Natural and applied sciences and related occupations,High,High,1784.1,1744.2,1663.5,80.6,40,2.2
+2022,2,Natural and applied sciences and related occupations,High,High,1792.6,1757.5,1679.5,78.1,35.1,2
+2022,3,Natural and applied sciences and related occupations,High,High,1786.2,1754,1654.9,99,32.2,1.8
+2022,4,Natural and applied sciences and related occupations,High,High,1821.1,1778.9,1682.9,95.9,42.2,2.3
+2022,5,Natural and applied sciences and related occupations,High,High,1860.6,1819,1737.3,81.6,41.6,2.2
+2022,6,Natural and applied sciences and related occupations,High,High,1868.7,1834.1,1753.2,80.9,34.7,1.9
+2022,7,Natural and applied sciences and related occupations,High,High,1845,1813.3,1746.4,67,31.7,1.7
+2022,8,Natural and applied sciences and related occupations,High,High,1854.6,1820.6,1745.3,75.3,34,1.8
+2022,9,Natural and applied sciences and related occupations,High,High,1806.5,1755.6,1676.2,79.4,50.9,2.8
+2022,10,Natural and applied sciences and related occupations,High,High,1789.6,1752,1663.4,88.7,37.6,2.1
+2022,11,Natural and applied sciences and related occupations,High,High,1800.6,1761.8,1684.2,77.6,38.8,2.2
+2022,12,Natural and applied sciences and related occupations,High,High,1803.5,1768.4,1692.2,76.3,35.1,1.9
+2023,1,Natural and applied sciences and related occupations,High,High,1805.3,1771.2,1694.5,76.7,34.1,1.9
+2023,2,Natural and applied sciences and related occupations,High,High,1797.1,1750.7,1682.3,68.4,46.4,2.6
+2023,3,Natural and applied sciences and related occupations,High,High,1781,1743.2,1662.8,80.5,37.8,2.1
+2023,4,Natural and applied sciences and related occupations,High,High,1788.5,1753.1,1672,81.1,35.4,2
+2023,5,Natural and applied sciences and related occupations,High,High,1794.4,1749.8,1666.6,83.2,44.7,2.5
+2023,6,Natural and applied sciences and related occupations,High,High,1824.9,1790.3,1715,75.3,34.6,1.9
+2023,7,Natural and applied sciences and related occupations,High,High,1870.5,1816.1,1739.9,76.1,54.4,2.9
+2023,8,Natural and applied sciences and related occupations,High,High,1843.7,1794.1,1717.7,76.3,49.7,2.7
+2023,9,Natural and applied sciences and related occupations,High,High,1802,1755.7,1675.8,80,46.2,2.6
+2023,10,Natural and applied sciences and related occupations,High,High,1814.2,1763.9,1687.8,76.1,50.3,2.8
+2023,11,Natural and applied sciences and related occupations,High,High,1883.8,1817.8,1724.9,92.9,66,3.5
+2023,12,Natural and applied sciences and related occupations,High,High,1860.7,1799.2,1713.1,86.1,61.5,3.3
+2024,1,Natural and applied sciences and related occupations,High,High,1865.2,1799.3,1708.5,90.8,65.9,3.5
+2024,2,Natural and applied sciences and related occupations,High,High,1920.7,1861.9,1767.4,94.5,58.8,3.1
+2024,3,Natural and applied sciences and related occupations,High,High,1878.5,1812,1727.8,84.2,66.4,3.5
+2024,4,Natural and applied sciences and related occupations,High,High,1894.2,1831.1,1757.4,73.7,63.2,3.3
+2024,5,Natural and applied sciences and related occupations,High,High,1896.2,1835.5,1766.6,68.9,60.7,3.2
+2024,6,Natural and applied sciences and related occupations,High,High,1911.1,1856.2,1790.8,65.4,54.8,2.9
+2024,7,Natural and applied sciences and related occupations,High,High,1923.6,1863.4,1802.1,61.2,60.2,3.1
+2024,8,Natural and applied sciences and related occupations,High,High,1912,1845.8,1778.8,67,66.2,3.5
+2024,9,Natural and applied sciences and related occupations,High,High,1916.4,1855,1778,77,61.4,3.2
+2024,10,Natural and applied sciences and related occupations,High,High,1912.9,1865.2,1775,90.2,47.7,2.5
+2024,11,Natural and applied sciences and related occupations,High,High,1952.1,1876,1795.7,80.3,76.1,3.9
+2024,12,Natural and applied sciences and related occupations,High,High,1921.6,1852.4,1767.3,85.1,69.2,3.6
+2025,1,Natural and applied sciences and related occupations,High,High,1969.2,1900.8,1817.3,83.5,68.3,3.5
+2025,2,Natural and applied sciences and related occupations,High,High,1942,1863.8,1785,78.8,78.2,4
+2025,3,Natural and applied sciences and related occupations,High,High,1926,1847.9,1765.3,82.6,78.1,4.1
+2025,4,Natural and applied sciences and related occupations,High,High,1913.1,1850.6,1767.6,83,62.6,3.3
+2025,5,Natural and applied sciences and related occupations,High,High,1965.8,1900.2,1817.8,82.4,65.6,3.3
+2025,6,Natural and applied sciences and related occupations,High,High,2041.7,1968.8,1869.6,99.2,73,3.6
+2025,7,Natural and applied sciences and related occupations,High,High,2014.2,1956.8,1860.1,96.7,57.4,2.8
+2025,8,Natural and applied sciences and related occupations,High,High,2057.1,1985.9,1894.8,91.1,71.2,3.5
+2025,9,Natural and applied sciences and related occupations,High,High,2035.5,1990,1880.9,109,45.5,2.2
+2010,1,Health occupations,Medium,High,1101.7,1083.4,821.5,261.9,18.3,1.7
+2010,2,Health occupations,Medium,High,1095.1,1075,819.7,255.3,20.2,1.8
+2010,3,Health occupations,Medium,High,1110.3,1093.6,816.6,277,16.6,1.5
+2010,4,Health occupations,Medium,High,1112,1094.5,809.3,285.2,17.5,1.6
+2010,5,Health occupations,Medium,High,1116.6,1099.3,828,271.3,17.3,1.5
+2010,6,Health occupations,Medium,High,1145.2,1129.4,840.7,288.8,15.7,1.4
+2010,7,Health occupations,Medium,High,1155.8,1138.2,853.4,284.8,17.6,1.5
+2010,8,Health occupations,Medium,High,1176,1154.2,875.9,278.3,21.8,1.9
+2010,9,Health occupations,Medium,High,1132,1113.3,829.2,284.1,18.7,1.7
+2010,10,Health occupations,Medium,High,1133.5,1109,838.1,270.8,24.6,2.2
+2010,11,Health occupations,Medium,High,1146.1,1124.2,849.4,274.8,21.9,1.9
+2010,12,Health occupations,Medium,High,1131.3,1111,838.4,272.6,20.2,1.8
+2011,1,Health occupations,Medium,High,1150.2,1132.5,844,288.5,17.7,1.5
+2011,2,Health occupations,Medium,High,1161.4,1142.7,858.8,284,18.7,1.6
+2011,3,Health occupations,Medium,High,1154.9,1134.4,840.5,293.9,20.5,1.8
+2011,4,Health occupations,Medium,High,1165.1,1144.9,859.9,285,20.1,1.7
+2011,5,Health occupations,Medium,High,1185.6,1161.4,878.9,282.4,24.3,2
+2011,6,Health occupations,Medium,High,1189.3,1171.6,885.4,286.2,17.7,1.5
+2011,7,Health occupations,Medium,High,1191.1,1175.5,913.2,262.3,15.6,1.3
+2011,8,Health occupations,Medium,High,1204.4,1182.3,918.5,263.7,22.2,1.8
+2011,9,Health occupations,Medium,High,1177.5,1162.3,890.3,272,15.3,1.3
+2011,10,Health occupations,Medium,High,1196.2,1182.2,903.4,278.8,14,1.2
+2011,11,Health occupations,Medium,High,1192.1,1177.8,890.1,287.7,14.3,1.2
+2011,12,Health occupations,Medium,High,1196.4,1179.9,904.1,275.8,16.4,1.4
+2012,1,Health occupations,Medium,High,1188.4,1174.2,883,291.2,14.2,1.2
+2012,2,Health occupations,Medium,High,1199.6,1184.7,912.8,271.8,14.9,1.2
+2012,3,Health occupations,Medium,High,1207.4,1196.4,912,284.3,11,0.9
+2012,4,Health occupations,Medium,High,1216.8,1198,898.3,299.7,18.8,1.5
+2012,5,Health occupations,Medium,High,1228,1206.7,924.4,282.2,21.3,1.7
+2012,6,Health occupations,Medium,High,1220.4,1199,931.6,267.4,21.4,1.8
+2012,7,Health occupations,Medium,High,1206,1185.5,917.7,267.8,20.5,1.7
+2012,8,Health occupations,Medium,High,1211.1,1189.7,923.2,266.5,21.4,1.8
+2012,9,Health occupations,Medium,High,1204.1,1185.9,891.9,294,18.2,1.5
+2012,10,Health occupations,Medium,High,1191.9,1172,888.8,283.2,19.9,1.7
+2012,11,Health occupations,Medium,High,1190.1,1170,888.3,281.7,20.1,1.7
+2012,12,Health occupations,Medium,High,1183.6,1167.6,894.8,272.8,16,1.4
+2013,1,Health occupations,Medium,High,1190.8,1171,887,284,19.8,1.7
+2013,2,Health occupations,Medium,High,1205.9,1190.5,907.9,282.6,15.4,1.3
+2013,3,Health occupations,Medium,High,1203.1,1187,901.8,285.2,16.1,1.3
+2013,4,Health occupations,Medium,High,1205.3,1189.1,899.1,290,16.2,1.3
+2013,5,Health occupations,Medium,High,1206.1,1190.3,911.5,278.8,15.8,1.3
+2013,6,Health occupations,Medium,High,1221.9,1206.4,925.3,281.1,15.5,1.3
+2013,7,Health occupations,Medium,High,1231.4,1214.5,931,283.5,16.9,1.4
+2013,8,Health occupations,Medium,High,1240.3,1222.8,950.6,272.2,17.5,1.4
+2013,9,Health occupations,Medium,High,1235.5,1222.4,939.6,282.8,13.1,1.1
+2013,10,Health occupations,Medium,High,1240.8,1226.5,924.4,302.1,14.4,1.2
+2013,11,Health occupations,Medium,High,1219.7,1206.4,918,288.4,13.3,1.1
+2013,12,Health occupations,Medium,High,1227.8,1210.4,905.8,304.7,17.4,1.4
+2014,1,Health occupations,Medium,High,1211.3,1197.7,901.4,296.3,13.7,1.1
+2014,2,Health occupations,Medium,High,1222.9,1203.3,919.4,284,19.6,1.6
+2014,3,Health occupations,Medium,High,1224.7,1203.4,914.7,288.6,21.3,1.7
+2014,4,Health occupations,Medium,High,1245.9,1224.4,929.7,294.7,21.6,1.7
+2014,5,Health occupations,Medium,High,1271.3,1245.1,937.4,307.7,26.2,2.1
+2014,6,Health occupations,Medium,High,1268.5,1254.1,962.3,291.8,14.4,1.1
+2014,7,Health occupations,Medium,High,1268,1251.8,956.5,295.3,16.2,1.3
+2014,8,Health occupations,Medium,High,1251.1,1228.8,949.4,279.4,22.3,1.8
+2014,9,Health occupations,Medium,High,1233.4,1218.6,919.2,299.4,14.8,1.2
+2014,10,Health occupations,Medium,High,1250.6,1233.9,917.6,316.3,16.7,1.3
+2014,11,Health occupations,Medium,High,1243.2,1226,911.9,314.1,17.2,1.4
+2014,12,Health occupations,Medium,High,1234.9,1215.8,914,301.8,19.1,1.5
+2015,1,Health occupations,Medium,High,1229,1212.2,923.8,288.4,16.8,1.4
+2015,2,Health occupations,Medium,High,1228.2,1210.2,916.3,294,17.9,1.5
+2015,3,Health occupations,Medium,High,1247.4,1235.1,932.5,302.6,12.4,1
+2015,4,Health occupations,Medium,High,1271.2,1258.7,967.4,291.3,12.5,1
+2015,5,Health occupations,Medium,High,1285.2,1271.2,984.3,286.9,14,1.1
+2015,6,Health occupations,Medium,High,1317.6,1302.4,1006.2,296.2,15.2,1.2
+2015,7,Health occupations,Medium,High,1327.5,1314.5,1020.9,293.6,13,1
+2015,8,Health occupations,Medium,High,1340.9,1322.8,1041,281.8,18.1,1.3
+2015,9,Health occupations,Medium,High,1312,1293.2,989,304.2,18.8,1.4
+2015,10,Health occupations,Medium,High,1283.9,1269.7,948.1,321.6,14.2,1.1
+2015,11,Health occupations,Medium,High,1285.3,1273.1,962.4,310.6,12.3,1
+2015,12,Health occupations,Medium,High,1313.3,1299.6,979.6,320,13.7,1
+2016,1,Health occupations,Medium,High,1329.1,1313.4,992.7,320.7,15.7,1.2
+2016,2,Health occupations,Medium,High,1311,1296.3,986.7,309.5,14.8,1.1
+2016,3,Health occupations,Medium,High,1337.9,1326.8,1018.3,308.5,11.1,0.8
+2016,4,Health occupations,Medium,High,1337,1321.4,1004,317.4,15.6,1.2
+2016,5,Health occupations,Medium,High,1336.7,1320.8,1023.9,296.9,15.9,1.2
+2016,6,Health occupations,Medium,High,1342.8,1324.2,1024.7,299.5,18.7,1.4
+2016,7,Health occupations,Medium,High,1364,1346.9,1040.5,306.4,17,1.2
+2016,8,Health occupations,Medium,High,1359.6,1340.7,1041.5,299.2,18.9,1.4
+2016,9,Health occupations,Medium,High,1329.6,1307,994.5,312.5,22.5,1.7
+2016,10,Health occupations,Medium,High,1337.8,1316.2,995.5,320.7,21.5,1.6
+2016,11,Health occupations,Medium,High,1329.9,1308,987.7,320.2,21.9,1.6
+2016,12,Health occupations,Medium,High,1345.4,1323.6,1020.9,302.7,21.8,1.6
+2017,1,Health occupations,Medium,High,1343,1321.3,998.8,322.5,21.8,1.6
+2017,2,Health occupations,Medium,High,1361.9,1343.7,1029,314.7,18.1,1.3
+2017,3,Health occupations,Medium,High,1368.5,1358.2,1049.3,308.9,10.3,0.8
+2017,4,Health occupations,Medium,High,1396.2,1384.1,1061.3,322.7,12.1,0.9
+2017,5,Health occupations,Medium,High,1426.3,1405.5,1083.5,322,20.7,1.5
+2017,6,Health occupations,Medium,High,1430.1,1418.2,1093.5,324.7,11.9,0.8
+2017,7,Health occupations,Medium,High,1431.3,1414,1124,290.1,17.3,1.2
+2017,8,Health occupations,Medium,High,1438.2,1422.1,1103.5,318.6,16.2,1.1
+2017,9,Health occupations,Medium,High,1388.3,1370.7,1055.2,315.5,17.7,1.3
+2017,10,Health occupations,Medium,High,1386.9,1368.5,1046.4,322.1,18.5,1.3
+2017,11,Health occupations,Medium,High,1388.7,1374.4,1031.1,343.3,14.3,1
+2017,12,Health occupations,Medium,High,1398.9,1388.7,1038.4,350.3,10.2,0.7
+2018,1,Health occupations,Medium,High,1398.9,1381.9,1046.9,335,17,1.2
+2018,2,Health occupations,Medium,High,1400.3,1389.3,1050,339.3,11,0.8
+2018,3,Health occupations,Medium,High,1409.6,1395.1,1056.8,338.3,14.5,1
+2018,4,Health occupations,Medium,High,1417.3,1403.3,1078.1,325.2,14,1
+2018,5,Health occupations,Medium,High,1420,1402.2,1080.9,321.3,17.7,1.2
+2018,6,Health occupations,Medium,High,1434.7,1419.8,1102.7,317.1,14.9,1
+2018,7,Health occupations,Medium,High,1431.8,1421.6,1111.2,310.4,10.2,0.7
+2018,8,Health occupations,Medium,High,1443.6,1425.6,1123.2,302.5,18,1.2
+2018,9,Health occupations,Medium,High,1437.6,1425.7,1094.3,331.4,11.9,0.8
+2018,10,Health occupations,Medium,High,1454.5,1440.2,1097.8,342.4,14.3,1
+2018,11,Health occupations,Medium,High,1432.2,1419.9,1076.8,343.1,12.3,0.9
+2018,12,Health occupations,Medium,High,1432.2,1417.6,1090.2,327.4,14.6,1
+2019,1,Health occupations,Medium,High,1425.9,1409.4,1097,312.4,16.5,1.2
+2019,2,Health occupations,Medium,High,1428.1,1412.3,1094,318.3,15.9,1.1
+2019,3,Health occupations,Medium,High,1418.3,1400.4,1096.5,303.9,18,1.3
+2019,4,Health occupations,Medium,High,1418.4,1404.3,1091.4,312.8,14.1,1
+2019,5,Health occupations,Medium,High,1430.6,1410.8,1090.2,320.7,19.7,1.4
+2019,6,Health occupations,Medium,High,1474.1,1455.6,1147.5,308.1,18.5,1.3
+2019,7,Health occupations,Medium,High,1481,1463.4,1142.9,320.5,17.6,1.2
+2019,8,Health occupations,Medium,High,1502.8,1486.6,1159.4,327.3,16.2,1.1
+2019,9,Health occupations,Medium,High,1476.1,1463.2,1132.6,330.6,12.9,0.9
+2019,10,Health occupations,Medium,High,1459.8,1449.3,1121.7,327.5,10.5,0.7
+2019,11,Health occupations,Medium,High,1456.6,1446.2,1126.3,319.9,10.4,0.7
+2019,12,Health occupations,Medium,High,1454.9,1447.6,1130.4,317.2,7.2,0.5
+2020,1,Health occupations,Medium,High,1486.5,1474.4,1152.8,321.6,12.1,0.8
+2020,2,Health occupations,Medium,High,1462.5,1449.8,1141.7,308.1,12.6,0.9
+2020,3,Health occupations,Medium,High,1447.3,1401.8,1116.6,285.2,45.5,3.1
+2020,4,Health occupations,Medium,High,1430.6,1351.6,1070,281.6,79,5.5
+2020,5,Health occupations,Medium,High,1448.9,1377,1098.5,278.5,71.9,5
+2020,6,Health occupations,Medium,High,1510.4,1469.7,1171.7,298,40.7,2.7
+2020,7,Health occupations,Medium,High,1483.9,1454.5,1172,282.4,29.4,2
+2020,8,Health occupations,Medium,High,1473.6,1444.1,1167.6,276.5,29.5,2
+2020,9,Health occupations,Medium,High,1489.3,1452.1,1134.1,318.1,37.2,2.5
+2020,10,Health occupations,Medium,High,1474.9,1441,1132,309,33.9,2.3
+2020,11,Health occupations,Medium,High,1451.4,1428.6,1118.9,309.8,22.7,1.6
+2020,12,Health occupations,Medium,High,1466.3,1439.3,1113.8,325.5,26.9,1.8
+2021,1,Health occupations,Medium,High,1500.5,1480.2,1161.9,318.3,20.3,1.4
+2021,2,Health occupations,Medium,High,1507.3,1489.4,1161.8,327.6,17.8,1.2
+2021,3,Health occupations,Medium,High,1531.4,1510.2,1193.5,316.7,21.2,1.4
+2021,4,Health occupations,Medium,High,1498.7,1484.1,1158.4,325.7,14.6,1
+2021,5,Health occupations,Medium,High,1521.1,1503.3,1165.3,338,17.9,1.2
+2021,6,Health occupations,Medium,High,1570.6,1549.9,1198.7,351.2,20.7,1.3
+2021,7,Health occupations,Medium,High,1581.3,1557.2,1212.7,344.5,24.1,1.5
+2021,8,Health occupations,Medium,High,1567.5,1534.6,1187.2,347.4,32.9,2.1
+2021,9,Health occupations,Medium,High,1533.1,1512.2,1175.9,336.3,20.9,1.4
+2021,10,Health occupations,Medium,High,1526.9,1511,1179.5,331.5,15.9,1
+2021,11,Health occupations,Medium,High,1563.6,1549.7,1203,346.7,14,0.9
+2021,12,Health occupations,Medium,High,1558.3,1545.3,1197.5,347.8,13.1,0.8
+2022,1,Health occupations,Medium,High,1567.1,1546,1211.4,334.5,21.1,1.3
+2022,2,Health occupations,Medium,High,1562.9,1551.1,1207.5,343.6,11.8,0.8
+2022,3,Health occupations,Medium,High,1563.6,1540.4,1186.7,353.7,23.3,1.5
+2022,4,Health occupations,Medium,High,1572.4,1553.8,1201.6,352.2,18.6,1.2
+2022,5,Health occupations,Medium,High,1600.7,1586.1,1268.7,317.4,14.6,0.9
+2022,6,Health occupations,Medium,High,1621.9,1604.2,1291.2,313.1,17.7,1.1
+2022,7,Health occupations,Medium,High,1589.6,1571,1247.1,324,18.6,1.2
+2022,8,Health occupations,Medium,High,1608.4,1587.3,1256.4,330.9,21,1.3
+2022,9,Health occupations,Medium,High,1589.1,1566.6,1221.7,344.9,22.4,1.4
+2022,10,Health occupations,Medium,High,1609.1,1592.3,1237.7,354.6,16.9,1.1
+2022,11,Health occupations,Medium,High,1616.8,1603.5,1248.9,354.6,13.3,0.8
+2022,12,Health occupations,Medium,High,1622,1602.5,1283.6,318.9,19.5,1.2
+2023,1,Health occupations,Medium,High,1624.1,1611.9,1292.9,318.9,12.2,0.8
+2023,2,Health occupations,Medium,High,1633.8,1620.7,1292.9,327.8,13.1,0.8
+2023,3,Health occupations,Medium,High,1600.5,1587.2,1272.3,314.9,13.3,0.8
+2023,4,Health occupations,Medium,High,1570.6,1552.9,1251.8,301.2,17.7,1.1
+2023,5,Health occupations,Medium,High,1579.5,1563,1247.9,315.1,16.4,1
+2023,6,Health occupations,Medium,High,1616.3,1595,1284.8,310.1,21.4,1.3
+2023,7,Health occupations,Medium,High,1622.3,1595,1291.1,303.9,27.3,1.7
+2023,8,Health occupations,Medium,High,1628.2,1604.8,1282.5,322.2,23.4,1.4
+2023,9,Health occupations,Medium,High,1622.6,1606.6,1238,368.6,16,1
+2023,10,Health occupations,Medium,High,1611.8,1592.5,1249.2,343.3,19.3,1.2
+2023,11,Health occupations,Medium,High,1603.3,1589.1,1243.6,345.5,14.2,0.9
+2023,12,Health occupations,Medium,High,1587,1569.7,1229.3,340.4,17.3,1.1
+2024,1,Health occupations,Medium,High,1584.1,1573,1238,335,11.1,0.7
+2024,2,Health occupations,Medium,High,1581.3,1565.8,1238.7,327.1,15.4,1
+2024,3,Health occupations,Medium,High,1597.7,1574.6,1266.5,308.1,23.1,1.4
+2024,4,Health occupations,Medium,High,1615.6,1598,1271.7,326.3,17.6,1.1
+2024,5,Health occupations,Medium,High,1650.3,1628.5,1293.1,335.4,21.7,1.3
+2024,6,Health occupations,Medium,High,1652.9,1619.7,1297.8,321.9,33.2,2
+2024,7,Health occupations,Medium,High,1664.5,1639.2,1320.6,318.6,25.3,1.5
+2024,8,Health occupations,Medium,High,1684.8,1663.7,1344.7,319,21.2,1.3
+2024,9,Health occupations,Medium,High,1681.7,1661.9,1327.4,334.5,19.8,1.2
+2024,10,Health occupations,Medium,High,1688,1670.1,1335.8,334.3,17.9,1.1
+2024,11,Health occupations,Medium,High,1682.2,1663.1,1336.3,326.8,19.2,1.1
+2024,12,Health occupations,Medium,High,1727.4,1705.2,1369.7,335.5,22.2,1.3
+2025,1,Health occupations,Medium,High,1751.1,1731.5,1367.2,364.4,19.5,1.1
+2025,2,Health occupations,Medium,High,1751.4,1731.8,1360.2,371.6,19.6,1.1
+2025,3,Health occupations,Medium,High,1748.1,1731.5,1356.3,375.2,16.6,0.9
+2025,4,Health occupations,Medium,High,1750.6,1724.1,1356.9,367.2,26.5,1.5
+2025,5,Health occupations,Medium,High,1743.5,1724.3,1369.8,354.5,19.2,1.1
+2025,6,Health occupations,Medium,High,1734,1711.7,1362.7,349.1,22.3,1.3
+2025,7,Health occupations,Medium,High,1719,1701.1,1358.7,342.4,17.9,1
+2025,8,Health occupations,Medium,High,1702.8,1680.3,1359.1,321.2,22.5,1.3
+2025,9,Health occupations,Medium,High,1724.6,1706.8,1370.6,336.2,17.8,1
+2010,1,"Occupations in education, law and social, community and government services",High,Low,1934.1,1892.2,1474.1,418.1,41.9,2.2
+2010,2,"Occupations in education, law and social, community and government services",High,Low,1964.7,1922.9,1497.8,425.1,41.8,2.1
+2010,3,"Occupations in education, law and social, community and government services",High,Low,1946.3,1902,1491.7,410.3,44.3,2.3
+2010,4,"Occupations in education, law and social, community and government services",High,Low,1935,1895.7,1481.1,414.6,39.3,2
+2010,5,"Occupations in education, law and social, community and government services",High,Low,1911.1,1864.5,1473.3,391.2,46.6,2.4
+2010,6,"Occupations in education, law and social, community and government services",High,Low,1920.5,1868.8,1482.7,386.2,51.7,2.7
+2010,7,"Occupations in education, law and social, community and government services",High,Low,1808.2,1692.9,1398.7,294.3,115.3,6.4
+2010,8,"Occupations in education, law and social, community and government services",High,Low,1889.7,1683.2,1393.8,289.3,206.5,10.9
+2010,9,"Occupations in education, law and social, community and government services",High,Low,1925.1,1861.6,1473,388.6,63.6,3.3
+2010,10,"Occupations in education, law and social, community and government services",High,Low,1963.8,1916.3,1496.2,420.1,47.5,2.4
+2010,11,"Occupations in education, law and social, community and government services",High,Low,1952.2,1903.6,1458.6,445,48.7,2.5
+2010,12,"Occupations in education, law and social, community and government services",High,Low,1954.9,1906.9,1466.4,440.4,48,2.5
+2011,1,"Occupations in education, law and social, community and government services",High,Low,1920.4,1876.2,1431.3,444.8,44.2,2.3
+2011,2,"Occupations in education, law and social, community and government services",High,Low,1922.1,1878.6,1410.1,468.4,43.5,2.3
+2011,3,"Occupations in education, law and social, community and government services",High,Low,1916.1,1873.3,1426.6,446.7,42.8,2.2
+2011,4,"Occupations in education, law and social, community and government services",High,Low,1917.2,1870.6,1432.3,438.3,46.6,2.4
+2011,5,"Occupations in education, law and social, community and government services",High,Low,1932.7,1877.3,1476.4,400.9,55.4,2.9
+2011,6,"Occupations in education, law and social, community and government services",High,Low,1944.4,1878.8,1495.8,383,65.6,3.4
+2011,7,"Occupations in education, law and social, community and government services",High,Low,1802.9,1692.9,1413.4,279.5,109.9,6.1
+2011,8,"Occupations in education, law and social, community and government services",High,Low,1861.7,1676,1416.1,259.9,185.7,10
+2011,9,"Occupations in education, law and social, community and government services",High,Low,1902.1,1836.6,1461.9,374.7,65.5,3.4
+2011,10,"Occupations in education, law and social, community and government services",High,Low,1886.2,1838.7,1445.2,393.5,47.5,2.5
+2011,11,"Occupations in education, law and social, community and government services",High,Low,1894.7,1850.7,1449.6,401.1,43.9,2.3
+2011,12,"Occupations in education, law and social, community and government services",High,Low,1892.9,1858.8,1451.3,407.4,34.1,1.8
+2012,1,"Occupations in education, law and social, community and government services",High,Low,1897.5,1854.5,1454.1,400.4,42.9,2.3
+2012,2,"Occupations in education, law and social, community and government services",High,Low,1923.3,1876.1,1458.5,417.6,47.2,2.5
+2012,3,"Occupations in education, law and social, community and government services",High,Low,1928.8,1870.9,1444,426.9,57.9,3
+2012,4,"Occupations in education, law and social, community and government services",High,Low,1938.8,1893,1466.2,426.8,45.8,2.4
+2012,5,"Occupations in education, law and social, community and government services",High,Low,1948.1,1896.1,1494.9,401.2,52,2.7
+2012,6,"Occupations in education, law and social, community and government services",High,Low,1972.6,1924.9,1533.2,391.7,47.7,2.4
+2012,7,"Occupations in education, law and social, community and government services",High,Low,1849,1747,1468.7,278.3,102,5.5
+2012,8,"Occupations in education, law and social, community and government services",High,Low,1930.5,1739.1,1469.9,269.2,191.4,9.9
+2012,9,"Occupations in education, law and social, community and government services",High,Low,1963.7,1909.2,1533.9,375.4,54.4,2.8
+2012,10,"Occupations in education, law and social, community and government services",High,Low,2014.8,1969.1,1547.8,421.4,45.7,2.3
+2012,11,"Occupations in education, law and social, community and government services",High,Low,1989.9,1947.9,1540.8,407.2,42,2.1
+2012,12,"Occupations in education, law and social, community and government services",High,Low,1985.9,1949.7,1518.7,431,36.2,1.8
+2013,1,"Occupations in education, law and social, community and government services",High,Low,1991.5,1936.3,1515.3,421,55.2,2.8
+2013,2,"Occupations in education, law and social, community and government services",High,Low,1970.8,1927.1,1485.2,441.9,43.6,2.2
+2013,3,"Occupations in education, law and social, community and government services",High,Low,1995.8,1938.5,1500.3,438.2,57.3,2.9
+2013,4,"Occupations in education, law and social, community and government services",High,Low,2030.4,1987.9,1539.2,448.7,42.5,2.1
+2013,5,"Occupations in education, law and social, community and government services",High,Low,2040.6,1996,1559.1,436.9,44.6,2.2
+2013,6,"Occupations in education, law and social, community and government services",High,Low,2039.4,1997,1591.3,405.7,42.5,2.1
+2013,7,"Occupations in education, law and social, community and government services",High,Low,1884.2,1762.6,1471.5,291.1,121.6,6.5
+2013,8,"Occupations in education, law and social, community and government services",High,Low,1964.2,1775.1,1484.1,291.1,189,9.6
+2013,9,"Occupations in education, law and social, community and government services",High,Low,1988,1929.5,1530.7,398.8,58.5,2.9
+2013,10,"Occupations in education, law and social, community and government services",High,Low,1999.3,1946.1,1519.4,426.7,53.1,2.7
+2013,11,"Occupations in education, law and social, community and government services",High,Low,2030.5,1989,1536.9,452.2,41.4,2
+2013,12,"Occupations in education, law and social, community and government services",High,Low,2017.8,1978.8,1529.1,449.7,38.9,1.9
+2014,1,"Occupations in education, law and social, community and government services",High,Low,2018.3,1971.2,1525.3,445.9,47.1,2.3
+2014,2,"Occupations in education, law and social, community and government services",High,Low,2000.6,1964.9,1513.2,451.6,35.8,1.8
+2014,3,"Occupations in education, law and social, community and government services",High,Low,2010.5,1961.9,1535.6,426.3,48.6,2.4
+2014,4,"Occupations in education, law and social, community and government services",High,Low,1991.6,1954.3,1517.5,436.8,37.3,1.9
+2014,5,"Occupations in education, law and social, community and government services",High,Low,1999.9,1943.9,1522.5,421.3,56.1,2.8
+2014,6,"Occupations in education, law and social, community and government services",High,Low,1973.7,1925.3,1546.8,378.5,48.4,2.5
+2014,7,"Occupations in education, law and social, community and government services",High,Low,1863.3,1759.1,1465.4,293.6,104.2,5.6
+2014,8,"Occupations in education, law and social, community and government services",High,Low,1941.5,1760,1469,290.9,181.6,9.4
+2014,9,"Occupations in education, law and social, community and government services",High,Low,2006.8,1947.5,1539.9,407.6,59.3,3
+2014,10,"Occupations in education, law and social, community and government services",High,Low,2042,1986.3,1546.7,439.6,55.6,2.7
+2014,11,"Occupations in education, law and social, community and government services",High,Low,2045.6,2004.6,1544.1,460.6,40.9,2
+2014,12,"Occupations in education, law and social, community and government services",High,Low,2044.9,2008.1,1561.4,446.7,36.9,1.8
+2015,1,"Occupations in education, law and social, community and government services",High,Low,2071.9,2020.4,1575,445.4,51.5,2.5
+2015,2,"Occupations in education, law and social, community and government services",High,Low,2100,2048.2,1575.8,472.4,51.9,2.5
+2015,3,"Occupations in education, law and social, community and government services",High,Low,2118.4,2065.8,1589.7,476.1,52.6,2.5
+2015,4,"Occupations in education, law and social, community and government services",High,Low,2075.5,2026.2,1571.7,454.4,49.4,2.4
+2015,5,"Occupations in education, law and social, community and government services",High,Low,2104.5,2042.9,1629.6,413.3,61.5,2.9
+2015,6,"Occupations in education, law and social, community and government services",High,Low,2077.2,2018.6,1636.4,382.3,58.6,2.8
+2015,7,"Occupations in education, law and social, community and government services",High,Low,1932.2,1829.9,1530.7,299.2,102.3,5.3
+2015,8,"Occupations in education, law and social, community and government services",High,Low,2011.8,1828.1,1538.3,289.7,183.8,9.1
+2015,9,"Occupations in education, law and social, community and government services",High,Low,2030.2,1976.5,1566.4,410.2,53.6,2.6
+2015,10,"Occupations in education, law and social, community and government services",High,Low,2066.6,2021.6,1589.9,431.7,45,2.2
+2015,11,"Occupations in education, law and social, community and government services",High,Low,2062.4,2022.2,1574.3,447.8,40.3,2
+2015,12,"Occupations in education, law and social, community and government services",High,Low,2074.1,2028.8,1582.8,446,45.3,2.2
+2016,1,"Occupations in education, law and social, community and government services",High,Low,2063.2,2012.4,1577.5,435,50.8,2.5
+2016,2,"Occupations in education, law and social, community and government services",High,Low,2057.9,2016.6,1557.1,459.5,41.3,2
+2016,3,"Occupations in education, law and social, community and government services",High,Low,2075.2,2015.8,1555.8,460,59.5,2.9
+2016,4,"Occupations in education, law and social, community and government services",High,Low,2107.4,2068.7,1589,479.7,38.7,1.8
+2016,5,"Occupations in education, law and social, community and government services",High,Low,2136.3,2078.7,1652.7,426,57.5,2.7
+2016,6,"Occupations in education, law and social, community and government services",High,Low,2155.3,2100.6,1684,416.5,54.7,2.5
+2016,7,"Occupations in education, law and social, community and government services",High,Low,1969.6,1861.1,1548.6,312.6,108.4,5.5
+2016,8,"Occupations in education, law and social, community and government services",High,Low,2066.3,1854.5,1560.4,294.2,211.8,10.3
+2016,9,"Occupations in education, law and social, community and government services",High,Low,2096,2038.4,1601.6,436.7,57.6,2.7
+2016,10,"Occupations in education, law and social, community and government services",High,Low,2122.9,2071.8,1601,470.8,51,2.4
+2016,11,"Occupations in education, law and social, community and government services",High,Low,2087.1,2043.8,1585.6,458.2,43.3,2.1
+2016,12,"Occupations in education, law and social, community and government services",High,Low,2100.6,2063,1593,470,37.6,1.8
+2017,1,"Occupations in education, law and social, community and government services",High,Low,2113,2066.2,1584.6,481.6,46.8,2.2
+2017,2,"Occupations in education, law and social, community and government services",High,Low,2060.3,2028.2,1573.4,454.7,32.2,1.6
+2017,3,"Occupations in education, law and social, community and government services",High,Low,2084.6,2039.3,1596.2,443.2,45.3,2.2
+2017,4,"Occupations in education, law and social, community and government services",High,Low,2061.5,2027.2,1578.8,448.4,34.4,1.7
+2017,5,"Occupations in education, law and social, community and government services",High,Low,2053.7,2009.2,1594,415.2,44.5,2.2
+2017,6,"Occupations in education, law and social, community and government services",High,Low,2053.7,2004.9,1608.4,396.6,48.8,2.4
+2017,7,"Occupations in education, law and social, community and government services",High,Low,1886.2,1769.3,1465.5,303.7,116.9,6.2
+2017,8,"Occupations in education, law and social, community and government services",High,Low,1977.9,1780.6,1476.3,304.4,197.3,10
+2017,9,"Occupations in education, law and social, community and government services",High,Low,2063.2,2015.2,1600.1,415.1,47.9,2.3
+2017,10,"Occupations in education, law and social, community and government services",High,Low,2048.8,2014.3,1575.2,439.1,34.4,1.7
+2017,11,"Occupations in education, law and social, community and government services",High,Low,2071.9,2042.1,1626.8,415.3,29.9,1.4
+2017,12,"Occupations in education, law and social, community and government services",High,Low,2050.8,2024,1614.5,409.5,26.8,1.3
+2018,1,"Occupations in education, law and social, community and government services",High,Low,2051.1,2018.2,1606.5,411.7,32.9,1.6
+2018,2,"Occupations in education, law and social, community and government services",High,Low,2049.9,2021.1,1574.4,446.6,28.9,1.4
+2018,3,"Occupations in education, law and social, community and government services",High,Low,2053.8,2004,1566.1,438,49.8,2.4
+2018,4,"Occupations in education, law and social, community and government services",High,Low,2096,2064.5,1622.4,442.1,31.5,1.5
+2018,5,"Occupations in education, law and social, community and government services",High,Low,2082.8,2037.7,1610.3,427.4,45.1,2.2
+2018,6,"Occupations in education, law and social, community and government services",High,Low,2088.8,2035.5,1632.6,402.9,53.4,2.6
+2018,7,"Occupations in education, law and social, community and government services",High,Low,1993.1,1873.3,1546.1,327.2,119.8,6
+2018,8,"Occupations in education, law and social, community and government services",High,Low,2048.5,1850.7,1544.5,306.2,197.8,9.7
+2018,9,"Occupations in education, law and social, community and government services",High,Low,2066.9,2014.8,1591.7,423.1,52.1,2.5
+2018,10,"Occupations in education, law and social, community and government services",High,Low,2100.5,2060.2,1598.2,462,40.2,1.9
+2018,11,"Occupations in education, law and social, community and government services",High,Low,2143.6,2106.7,1627.1,479.6,36.9,1.7
+2018,12,"Occupations in education, law and social, community and government services",High,Low,2193.7,2158.5,1667.4,491,35.2,1.6
+2019,1,"Occupations in education, law and social, community and government services",High,Low,2174.5,2128.2,1649.6,478.5,46.3,2.1
+2019,2,"Occupations in education, law and social, community and government services",High,Low,2154.5,2113.2,1645.7,467.5,41.3,1.9
+2019,3,"Occupations in education, law and social, community and government services",High,Low,2149.2,2103.3,1656.2,447.1,45.9,2.1
+2019,4,"Occupations in education, law and social, community and government services",High,Low,2137.7,2091.5,1659.1,432.5,46.2,2.2
+2019,5,"Occupations in education, law and social, community and government services",High,Low,2149,2093,1687.6,405.4,56,2.6
+2019,6,"Occupations in education, law and social, community and government services",High,Low,2128,2075.5,1685,390.4,52.6,2.5
+2019,7,"Occupations in education, law and social, community and government services",High,Low,1990.9,1876.4,1570.6,305.8,114.5,5.8
+2019,8,"Occupations in education, law and social, community and government services",High,Low,2069.4,1861,1559.7,301.3,208.4,10.1
+2019,9,"Occupations in education, law and social, community and government services",High,Low,2150.7,2095.2,1653.2,442,55.5,2.6
+2019,10,"Occupations in education, law and social, community and government services",High,Low,2191.5,2142.8,1660.1,482.7,48.7,2.2
+2019,11,"Occupations in education, law and social, community and government services",High,Low,2212.1,2164.9,1679.9,485,47.2,2.1
+2019,12,"Occupations in education, law and social, community and government services",High,Low,2194.8,2148.3,1675.2,473.1,46.5,2.1
+2020,1,"Occupations in education, law and social, community and government services",High,Low,2165.3,2123.8,1672.6,451.2,41.5,1.9
+2020,2,"Occupations in education, law and social, community and government services",High,Low,2189.7,2150.9,1688.3,462.6,38.8,1.8
+2020,3,"Occupations in education, law and social, community and government services",High,Low,2083.4,1955.6,1598.3,357.3,127.8,6.1
+2020,4,"Occupations in education, law and social, community and government services",High,Low,2068.8,1923.2,1584.5,338.7,145.6,7
+2020,5,"Occupations in education, law and social, community and government services",High,Low,2088.9,1942.2,1643,299.2,146.7,7
+2020,6,"Occupations in education, law and social, community and government services",High,Low,2154.4,1991.7,1662,329.7,162.7,7.6
+2020,7,"Occupations in education, law and social, community and government services",High,Low,2030.1,1844.6,1574.7,269.9,185.5,9.1
+2020,8,"Occupations in education, law and social, community and government services",High,Low,2174.8,1871.4,1586,285.4,303.4,14
+2020,9,"Occupations in education, law and social, community and government services",High,Low,2214.3,2134.2,1688.2,446,80.1,3.6
+2020,10,"Occupations in education, law and social, community and government services",High,Low,2265.8,2198.1,1718.1,480,67.7,3
+2020,11,"Occupations in education, law and social, community and government services",High,Low,2265.6,2197.9,1724.8,473.1,67.7,3
+2020,12,"Occupations in education, law and social, community and government services",High,Low,2295.6,2229.7,1779.2,450.6,65.9,2.9
+2021,1,"Occupations in education, law and social, community and government services",High,Low,2283.9,2215.3,1767.5,447.8,68.6,3
+2021,2,"Occupations in education, law and social, community and government services",High,Low,2308.1,2241.3,1766.9,474.3,66.9,2.9
+2021,3,"Occupations in education, law and social, community and government services",High,Low,2329.3,2263.2,1780.1,483.2,66,2.8
+2021,4,"Occupations in education, law and social, community and government services",High,Low,2303.8,2237.1,1785.1,451.9,66.8,2.9
+2021,5,"Occupations in education, law and social, community and government services",High,Low,2301.1,2243.6,1817.7,425.9,57.5,2.5
+2021,6,"Occupations in education, law and social, community and government services",High,Low,2314.2,2242.8,1835.9,406.9,71.4,3.1
+2021,7,"Occupations in education, law and social, community and government services",High,Low,2128.1,1983.5,1672.9,310.6,144.6,6.8
+2021,8,"Occupations in education, law and social, community and government services",High,Low,2221.9,1984.2,1699.8,284.4,237.7,10.7
+2021,9,"Occupations in education, law and social, community and government services",High,Low,2313.8,2258.8,1839.1,419.7,54.9,2.4
+2021,10,"Occupations in education, law and social, community and government services",High,Low,2326.9,2284.3,1839.6,444.7,42.6,1.8
+2021,11,"Occupations in education, law and social, community and government services",High,Low,2302.3,2263.3,1834.9,428.4,39,1.7
+2021,12,"Occupations in education, law and social, community and government services",High,Low,2325.7,2289.6,1853.9,435.7,36.1,1.6
+2022,1,"Occupations in education, law and social, community and government services",High,Low,2321.6,2252.7,1833.9,418.8,68.9,3
+2022,2,"Occupations in education, law and social, community and government services",High,Low,2333.7,2298.9,1833.7,465.2,34.8,1.5
+2022,3,"Occupations in education, law and social, community and government services",High,Low,2399.5,2344.4,1859.8,484.6,55.1,2.3
+2022,4,"Occupations in education, law and social, community and government services",High,Low,2379.3,2340.4,1861.9,478.6,38.8,1.6
+2022,5,"Occupations in education, law and social, community and government services",High,Low,2436.6,2396.3,1931.8,464.5,40.3,1.7
+2022,6,"Occupations in education, law and social, community and government services",High,Low,2443.3,2398.6,1971.4,427.2,44.7,1.8
+2022,7,"Occupations in education, law and social, community and government services",High,Low,2219.2,2087.6,1774.3,313.3,131.6,5.9
+2022,8,"Occupations in education, law and social, community and government services",High,Low,2266.6,2041.3,1736.4,304.9,225.3,9.9
+2022,9,"Occupations in education, law and social, community and government services",High,Low,2344.6,2296.2,1855.9,440.3,48.4,2.1
+2022,10,"Occupations in education, law and social, community and government services",High,Low,2424,2378.3,1922.4,455.9,45.7,1.9
+2022,11,"Occupations in education, law and social, community and government services",High,Low,2433.9,2390.2,1935.3,454.9,43.6,1.8
+2022,12,"Occupations in education, law and social, community and government services",High,Low,2427.1,2389.6,1939.8,449.7,37.6,1.5
+2023,1,"Occupations in education, law and social, community and government services",High,Low,2428.6,2390.1,1935.8,454.2,38.5,1.6
+2023,2,"Occupations in education, law and social, community and government services",High,Low,2405.3,2374.4,1918.9,455.6,30.9,1.3
+2023,3,"Occupations in education, law and social, community and government services",High,Low,2414.9,2375.7,1905,470.7,39.2,1.6
+2023,4,"Occupations in education, law and social, community and government services",High,Low,2420.4,2383.3,1890.1,493.3,37.1,1.5
+2023,5,"Occupations in education, law and social, community and government services",High,Low,2440.5,2391.3,1932.1,459.2,49.2,2
+2023,6,"Occupations in education, law and social, community and government services",High,Low,2410.6,2350.2,1930.5,419.7,60.3,2.5
+2023,7,"Occupations in education, law and social, community and government services",High,Low,2227.7,2108.6,1780.4,328.2,119.2,5.4
+2023,8,"Occupations in education, law and social, community and government services",High,Low,2286.3,2059.6,1760.2,299.4,226.7,9.9
+2023,9,"Occupations in education, law and social, community and government services",High,Low,2430.7,2374.5,1905.9,468.6,56.2,2.3
+2023,10,"Occupations in education, law and social, community and government services",High,Low,2489.3,2442.1,1941.1,501,47.3,1.9
+2023,11,"Occupations in education, law and social, community and government services",High,Low,2501.2,2444.1,1929.6,514.5,57.1,2.3
+2023,12,"Occupations in education, law and social, community and government services",High,Low,2512.3,2473.8,1960.2,513.7,38.5,1.5
+2024,1,"Occupations in education, law and social, community and government services",High,Low,2542.1,2495,1971,524,47.1,1.9
+2024,2,"Occupations in education, law and social, community and government services",High,Low,2536,2496.6,1992.6,504,39.5,1.6
+2024,3,"Occupations in education, law and social, community and government services",High,Low,2525.4,2477.3,1977.8,499.5,48.1,1.9
+2024,4,"Occupations in education, law and social, community and government services",High,Low,2490.9,2453.1,1949.1,504,37.7,1.5
+2024,5,"Occupations in education, law and social, community and government services",High,Low,2542.8,2494.2,2009.1,485.1,48.6,1.9
+2024,6,"Occupations in education, law and social, community and government services",High,Low,2541.6,2492.9,2055.7,437.2,48.7,1.9
+2024,7,"Occupations in education, law and social, community and government services",High,Low,2372.7,2233.1,1912.2,321,139.6,5.9
+2024,8,"Occupations in education, law and social, community and government services",High,Low,2486.6,2237.5,1906.4,331.1,249.2,10
+2024,9,"Occupations in education, law and social, community and government services",High,Low,2574,2520.4,2015,505.3,53.7,2.1
+2024,10,"Occupations in education, law and social, community and government services",High,Low,2560.1,2512.4,2008.2,504.2,47.8,1.9
+2024,11,"Occupations in education, law and social, community and government services",High,Low,2618.9,2570.7,2040,530.7,48.1,1.8
+2024,12,"Occupations in education, law and social, community and government services",High,Low,2612.1,2565.8,2021.3,544.5,46.3,1.8
+2025,1,"Occupations in education, law and social, community and government services",High,Low,2608.3,2552.6,2018.1,534.5,55.6,2.1
+2025,2,"Occupations in education, law and social, community and government services",High,Low,2598,2559.6,2018.9,540.7,38.4,1.5
+2025,3,"Occupations in education, law and social, community and government services",High,Low,2602.1,2544.5,2008.6,535.9,57.6,2.2
+2025,4,"Occupations in education, law and social, community and government services",High,Low,2569.2,2512.7,1990.8,521.9,56.6,2.2
+2025,5,"Occupations in education, law and social, community and government services",High,Low,2590.6,2528.8,2051.5,477.3,61.8,2.4
+2025,6,"Occupations in education, law and social, community and government services",High,Low,2608.1,2551.7,2111,440.8,56.3,2.2
+2025,7,"Occupations in education, law and social, community and government services",High,Low,2419.8,2275,1933.3,341.7,144.8,6
+2025,8,"Occupations in education, law and social, community and government services",High,Low,2490.2,2208.2,1891.7,316.5,282,11.3
+2025,9,"Occupations in education, law and social, community and government services",High,Low,2562.6,2484.2,2036.1,448.1,78.4,3.1
+2010,1,"Occupations in art, culture, recreation and sport",Medium,High,524.9,494.4,293.2,201.1,30.6,5.8
+2010,2,"Occupations in art, culture, recreation and sport",Medium,High,518.7,490.9,297.2,193.8,27.7,5.3
+2010,3,"Occupations in art, culture, recreation and sport",Medium,High,516.6,491.4,298.2,193.2,25.2,4.9
+2010,4,"Occupations in art, culture, recreation and sport",Medium,High,505.3,477.9,289.7,188.2,27.4,5.4
+2010,5,"Occupations in art, culture, recreation and sport",Medium,High,506.9,478.2,315.3,162.9,28.6,5.6
+2010,6,"Occupations in art, culture, recreation and sport",Medium,High,524.9,499,335.8,163.2,25.9,4.9
+2010,7,"Occupations in art, culture, recreation and sport",Medium,High,578.7,554,387.5,166.5,24.7,4.3
+2010,8,"Occupations in art, culture, recreation and sport",Medium,High,563.2,527.4,371.8,155.6,35.8,6.4
+2010,9,"Occupations in art, culture, recreation and sport",Medium,High,507.5,469.9,308.9,160.9,37.7,7.4
+2010,10,"Occupations in art, culture, recreation and sport",Medium,High,499.2,480.5,300.5,180,18.7,3.7
+2010,11,"Occupations in art, culture, recreation and sport",Medium,High,499.5,470.7,289.3,181.4,28.8,5.8
+2010,12,"Occupations in art, culture, recreation and sport",Medium,High,495.5,467.7,287.1,180.5,27.8,5.6
+2011,1,"Occupations in art, culture, recreation and sport",Medium,High,502.3,472.9,280.7,192.2,29.4,5.9
+2011,2,"Occupations in art, culture, recreation and sport",Medium,High,501.5,475.7,284.8,190.9,25.8,5.1
+2011,3,"Occupations in art, culture, recreation and sport",Medium,High,501.2,475.3,289.4,185.9,25.8,5.1
+2011,4,"Occupations in art, culture, recreation and sport",Medium,High,530.1,506.8,318.8,188,23.3,4.4
+2011,5,"Occupations in art, culture, recreation and sport",Medium,High,542.5,504.6,322,182.6,37.9,7
+2011,6,"Occupations in art, culture, recreation and sport",Medium,High,550.2,523.7,334.8,188.9,26.5,4.8
+2011,7,"Occupations in art, culture, recreation and sport",Medium,High,602.2,574.2,399.4,174.8,28,4.6
+2011,8,"Occupations in art, culture, recreation and sport",Medium,High,598.1,560.9,382.2,178.7,37.1,6.2
+2011,9,"Occupations in art, culture, recreation and sport",Medium,High,532.1,491.8,321.5,170.4,40.3,7.6
+2011,10,"Occupations in art, culture, recreation and sport",Medium,High,534.2,505.7,318.3,187.5,28.5,5.3
+2011,11,"Occupations in art, culture, recreation and sport",Medium,High,546.8,523.1,324.2,198.9,23.7,4.3
+2011,12,"Occupations in art, culture, recreation and sport",Medium,High,538.7,516.2,317,199.2,22.5,4.2
+2012,1,"Occupations in art, culture, recreation and sport",Medium,High,524.3,493,300.9,192.1,31.3,6
+2012,2,"Occupations in art, culture, recreation and sport",Medium,High,517.6,494.8,302.1,192.7,22.8,4.4
+2012,3,"Occupations in art, culture, recreation and sport",Medium,High,521.5,495.9,296.8,199.1,25.6,4.9
+2012,4,"Occupations in art, culture, recreation and sport",Medium,High,521.4,493.6,296.8,196.8,27.8,5.3
+2012,5,"Occupations in art, culture, recreation and sport",Medium,High,503.1,471.7,288.9,182.8,31.4,6.2
+2012,6,"Occupations in art, culture, recreation and sport",Medium,High,502,467.5,292.3,175.2,34.4,6.9
+2012,7,"Occupations in art, culture, recreation and sport",Medium,High,560.1,536,386.8,149.2,24.1,4.3
+2012,8,"Occupations in art, culture, recreation and sport",Medium,High,555.8,522.8,360.2,162.6,33.1,6
+2012,9,"Occupations in art, culture, recreation and sport",Medium,High,490.9,451.9,289.8,162.1,39,7.9
+2012,10,"Occupations in art, culture, recreation and sport",Medium,High,496.4,474.9,302.5,172.5,21.4,4.3
+2012,11,"Occupations in art, culture, recreation and sport",Medium,High,522.7,488.6,295.8,192.9,34.1,6.5
+2012,12,"Occupations in art, culture, recreation and sport",Medium,High,515.8,486.4,290.1,196.3,29.4,5.7
+2013,1,"Occupations in art, culture, recreation and sport",Medium,High,537.5,510.6,304.2,206.4,26.9,5
+2013,2,"Occupations in art, culture, recreation and sport",Medium,High,552.2,524.3,316.5,207.8,27.9,5.1
+2013,3,"Occupations in art, culture, recreation and sport",Medium,High,542.6,515,309.3,205.7,27.6,5.1
+2013,4,"Occupations in art, culture, recreation and sport",Medium,High,520.6,501.4,306.5,194.9,19.2,3.7
+2013,5,"Occupations in art, culture, recreation and sport",Medium,High,537.3,509,326.8,182.2,28.4,5.3
+2013,6,"Occupations in art, culture, recreation and sport",Medium,High,573.2,540.6,357,183.6,32.6,5.7
+2013,7,"Occupations in art, culture, recreation and sport",Medium,High,604.5,571.7,406.6,165.1,32.7,5.4
+2013,8,"Occupations in art, culture, recreation and sport",Medium,High,618.1,585.9,415,171,32.2,5.2
+2013,9,"Occupations in art, culture, recreation and sport",Medium,High,550.1,512.2,322.7,189.5,37.9,6.9
+2013,10,"Occupations in art, culture, recreation and sport",Medium,High,531.8,506.8,325,181.7,25.1,4.7
+2013,11,"Occupations in art, culture, recreation and sport",Medium,High,559,537.9,324.2,213.7,21.1,3.8
+2013,12,"Occupations in art, culture, recreation and sport",Medium,High,538,518.9,307,211.9,19.1,3.6
+2014,1,"Occupations in art, culture, recreation and sport",Medium,High,538.2,512.7,289,223.6,25.5,4.7
+2014,2,"Occupations in art, culture, recreation and sport",Medium,High,522.8,503.7,279,224.8,19.1,3.7
+2014,3,"Occupations in art, culture, recreation and sport",Medium,High,546.7,521.9,292,229.9,24.8,4.5
+2014,4,"Occupations in art, culture, recreation and sport",Medium,High,536.8,509,301.7,207.3,27.8,5.2
+2014,5,"Occupations in art, culture, recreation and sport",Medium,High,549.6,515.4,311,204.5,34.1,6.2
+2014,6,"Occupations in art, culture, recreation and sport",Medium,High,584.3,554.1,340.3,213.8,30.3,5.2
+2014,7,"Occupations in art, culture, recreation and sport",Medium,High,632.7,601,398.8,202.2,31.6,5
+2014,8,"Occupations in art, culture, recreation and sport",Medium,High,625,593.4,406.8,186.6,31.6,5.1
+2014,9,"Occupations in art, culture, recreation and sport",Medium,High,552.3,525,326.4,198.6,27.3,4.9
+2014,10,"Occupations in art, culture, recreation and sport",Medium,High,573.1,543.7,339.2,204.5,29.4,5.1
+2014,11,"Occupations in art, culture, recreation and sport",Medium,High,559.7,528.9,321.2,207.6,30.9,5.5
+2014,12,"Occupations in art, culture, recreation and sport",Medium,High,548.7,518.1,314.6,203.5,30.6,5.6
+2015,1,"Occupations in art, culture, recreation and sport",Medium,High,563.6,534.9,317.7,217.2,28.6,5.1
+2015,2,"Occupations in art, culture, recreation and sport",Medium,High,533,507.7,291.2,216.5,25.2,4.7
+2015,3,"Occupations in art, culture, recreation and sport",Medium,High,560.8,534.2,310.4,223.8,26.6,4.7
+2015,4,"Occupations in art, culture, recreation and sport",Medium,High,532.5,495.9,302.6,193.3,36.5,6.9
+2015,5,"Occupations in art, culture, recreation and sport",Medium,High,564.6,529.4,320.5,208.8,35.2,6.2
+2015,6,"Occupations in art, culture, recreation and sport",Medium,High,560.2,521.6,342.9,178.8,38.6,6.9
+2015,7,"Occupations in art, culture, recreation and sport",Medium,High,587.4,560.9,400.9,160,26.5,4.5
+2015,8,"Occupations in art, culture, recreation and sport",Medium,High,620.9,590.6,423.5,167.2,30.2,4.9
+2015,9,"Occupations in art, culture, recreation and sport",Medium,High,536.5,502.1,325,177.1,34.5,6.4
+2015,10,"Occupations in art, culture, recreation and sport",Medium,High,529,509,313.3,195.7,20,3.8
+2015,11,"Occupations in art, culture, recreation and sport",Medium,High,516.8,496,306.8,189.2,20.8,4
+2015,12,"Occupations in art, culture, recreation and sport",Medium,High,523,497.3,306.9,190.4,25.7,4.9
+2016,1,"Occupations in art, culture, recreation and sport",Medium,High,527.4,502.2,308.4,193.8,25.2,4.8
+2016,2,"Occupations in art, culture, recreation and sport",Medium,High,524.1,502.1,308.3,193.8,22.1,4.2
+2016,3,"Occupations in art, culture, recreation and sport",Medium,High,534.7,503.2,308,195.2,31.4,5.9
+2016,4,"Occupations in art, culture, recreation and sport",Medium,High,521.2,492.4,302.1,190.2,28.8,5.5
+2016,5,"Occupations in art, culture, recreation and sport",Medium,High,554.4,522.1,342.2,179.9,32.3,5.8
+2016,6,"Occupations in art, culture, recreation and sport",Medium,High,559.2,525.4,334.5,190.9,33.8,6
+2016,7,"Occupations in art, culture, recreation and sport",Medium,High,638.1,616.6,420.8,195.8,21.4,3.4
+2016,8,"Occupations in art, culture, recreation and sport",Medium,High,635.4,607.8,414.2,193.7,27.6,4.3
+2016,9,"Occupations in art, culture, recreation and sport",Medium,High,577.5,539,323.8,215.2,38.5,6.7
+2016,10,"Occupations in art, culture, recreation and sport",Medium,High,572.4,551.5,329.4,222.1,20.9,3.7
+2016,11,"Occupations in art, culture, recreation and sport",Medium,High,586.9,565.1,330.8,234.2,21.9,3.7
+2016,12,"Occupations in art, culture, recreation and sport",Medium,High,596.4,571.7,331.1,240.6,24.7,4.1
+2017,1,"Occupations in art, culture, recreation and sport",Medium,High,579.6,555.4,315.6,239.9,24.1,4.2
+2017,2,"Occupations in art, culture, recreation and sport",Medium,High,582,545.8,317.2,228.7,36.1,6.2
+2017,3,"Occupations in art, culture, recreation and sport",Medium,High,589,564.4,333.5,230.9,24.6,4.2
+2017,4,"Occupations in art, culture, recreation and sport",Medium,High,576.2,553.1,336.4,216.7,23.1,4
+2017,5,"Occupations in art, culture, recreation and sport",Medium,High,570.9,534.4,345.2,189.2,36.6,6.4
+2017,6,"Occupations in art, culture, recreation and sport",Medium,High,586.9,549.3,365.2,184.1,37.5,6.4
+2017,7,"Occupations in art, culture, recreation and sport",Medium,High,652.8,621.2,447.1,174.1,31.5,4.8
+2017,8,"Occupations in art, culture, recreation and sport",Medium,High,629.5,591,421.1,169.9,38.5,6.1
+2017,9,"Occupations in art, culture, recreation and sport",Medium,High,552.1,517.6,347,170.6,34.6,6.3
+2017,10,"Occupations in art, culture, recreation and sport",Medium,High,565,539.4,338.3,201.1,25.5,4.5
+2017,11,"Occupations in art, culture, recreation and sport",Medium,High,569.6,546.8,330.6,216.2,22.7,4
+2017,12,"Occupations in art, culture, recreation and sport",Medium,High,575.7,544.9,331.2,213.8,30.8,5.4
+2018,1,"Occupations in art, culture, recreation and sport",Medium,High,569.5,543.2,329.7,213.5,26.3,4.6
+2018,2,"Occupations in art, culture, recreation and sport",Medium,High,547.6,521.7,300.3,221.3,25.9,4.7
+2018,3,"Occupations in art, culture, recreation and sport",Medium,High,550.5,518.1,298.7,219.4,32.4,5.9
+2018,4,"Occupations in art, culture, recreation and sport",Medium,High,531.4,504.8,297.9,206.9,26.6,5
+2018,5,"Occupations in art, culture, recreation and sport",Medium,High,544.4,515.7,312.8,202.9,28.6,5.3
+2018,6,"Occupations in art, culture, recreation and sport",Medium,High,561.8,529.4,327.7,201.6,32.4,5.8
+2018,7,"Occupations in art, culture, recreation and sport",Medium,High,667.7,645.7,441.3,204.4,22,3.3
+2018,8,"Occupations in art, culture, recreation and sport",Medium,High,655.7,631.2,447.4,183.8,24.5,3.7
+2018,9,"Occupations in art, culture, recreation and sport",Medium,High,598.4,561.5,349.2,212.3,36.9,6.2
+2018,10,"Occupations in art, culture, recreation and sport",Medium,High,599.1,574.4,351.1,223.3,24.7,4.1
+2018,11,"Occupations in art, culture, recreation and sport",Medium,High,593.9,569.3,345.9,223.4,24.6,4.1
+2018,12,"Occupations in art, culture, recreation and sport",Medium,High,551.6,532.9,319.7,213.2,18.7,3.4
+2019,1,"Occupations in art, culture, recreation and sport",Medium,High,550.1,530.2,298.1,232.1,19.9,3.6
+2019,2,"Occupations in art, culture, recreation and sport",Medium,High,580.3,555.1,315.5,239.6,25.2,4.3
+2019,3,"Occupations in art, culture, recreation and sport",Medium,High,568.9,545.6,320.5,225.1,23.4,4.1
+2019,4,"Occupations in art, culture, recreation and sport",Medium,High,563.6,543.8,320.1,223.6,19.9,3.5
+2019,5,"Occupations in art, culture, recreation and sport",Medium,High,583.5,549,332.2,216.9,34.5,5.9
+2019,6,"Occupations in art, culture, recreation and sport",Medium,High,578.9,550,346.6,203.4,28.8,5
+2019,7,"Occupations in art, culture, recreation and sport",Medium,High,636.6,606.2,432.2,174,30.3,4.8
+2019,8,"Occupations in art, culture, recreation and sport",Medium,High,643.7,622.2,438.6,183.7,21.4,3.3
+2019,9,"Occupations in art, culture, recreation and sport",Medium,High,564.8,541.2,336.6,204.5,23.7,4.2
+2019,10,"Occupations in art, culture, recreation and sport",Medium,High,581.8,551.8,341.5,210.4,30,5.2
+2019,11,"Occupations in art, culture, recreation and sport",Medium,High,568.2,536.3,318,218.3,31.8,5.6
+2019,12,"Occupations in art, culture, recreation and sport",Medium,High,575,548.8,324.7,224.1,26.2,4.6
+2020,1,"Occupations in art, culture, recreation and sport",Medium,High,551.5,529.7,309.3,220.4,21.8,4
+2020,2,"Occupations in art, culture, recreation and sport",Medium,High,555.6,532.9,321.4,211.4,22.8,4.1
+2020,3,"Occupations in art, culture, recreation and sport",Medium,High,496.3,437.1,286.2,150.9,59.1,11.9
+2020,4,"Occupations in art, culture, recreation and sport",Medium,High,467,388.5,254.3,134.2,78.5,16.8
+2020,5,"Occupations in art, culture, recreation and sport",Medium,High,501.1,412.9,282.3,130.6,88.2,17.6
+2020,6,"Occupations in art, culture, recreation and sport",Medium,High,534.8,426.7,286.6,140.2,108,20.2
+2020,7,"Occupations in art, culture, recreation and sport",Medium,High,619.2,515.6,346,169.6,103.6,16.7
+2020,8,"Occupations in art, culture, recreation and sport",Medium,High,617,539.2,359.5,179.7,77.8,12.6
+2020,9,"Occupations in art, culture, recreation and sport",Medium,High,573.8,514.3,314.9,199.4,59.5,10.4
+2020,10,"Occupations in art, culture, recreation and sport",Medium,High,579.7,522.4,303.4,219,57.3,9.9
+2020,11,"Occupations in art, culture, recreation and sport",Medium,High,544,498.9,312.8,186.1,45.2,8.3
+2020,12,"Occupations in art, culture, recreation and sport",Medium,High,566.8,502.1,319.5,182.6,64.7,11.4
+2021,1,"Occupations in art, culture, recreation and sport",Medium,High,557.8,490.1,337.7,152.4,67.8,12.2
+2021,2,"Occupations in art, culture, recreation and sport",Medium,High,547.7,490.3,331.8,158.5,57.4,10.5
+2021,3,"Occupations in art, culture, recreation and sport",Medium,High,561.2,515.6,329.2,186.4,45.5,8.1
+2021,4,"Occupations in art, culture, recreation and sport",Medium,High,546.2,520.3,359.6,160.7,25.9,4.7
+2021,5,"Occupations in art, culture, recreation and sport",Medium,High,558.6,520.4,384.6,135.8,38.3,6.9
+2021,6,"Occupations in art, culture, recreation and sport",Medium,High,545.1,511.7,352.3,159.3,33.4,6.1
+2021,7,"Occupations in art, culture, recreation and sport",Medium,High,619.9,588.3,440.4,147.9,31.5,5.1
+2021,8,"Occupations in art, culture, recreation and sport",Medium,High,621.2,584.2,429.9,154.4,37,6
+2021,9,"Occupations in art, culture, recreation and sport",Medium,High,561.8,532.4,367.9,164.5,29.4,5.2
+2021,10,"Occupations in art, culture, recreation and sport",Medium,High,590.3,565.3,382,183.3,25,4.2
+2021,11,"Occupations in art, culture, recreation and sport",Medium,High,562.2,544.7,352.7,192,17.5,3.1
+2021,12,"Occupations in art, culture, recreation and sport",Medium,High,574.7,560.6,359.8,200.8,14.1,2.5
+2022,1,"Occupations in art, culture, recreation and sport",Medium,High,559.6,520.4,348.1,172.3,39.3,7
+2022,2,"Occupations in art, culture, recreation and sport",Medium,High,573.4,556.2,337.6,218.6,17.3,3
+2022,3,"Occupations in art, culture, recreation and sport",Medium,High,583.8,559.8,345.3,214.5,24,4.1
+2022,4,"Occupations in art, culture, recreation and sport",Medium,High,564.6,541,341.1,199.9,23.6,4.2
+2022,5,"Occupations in art, culture, recreation and sport",Medium,High,576.7,557.9,347.1,210.8,18.8,3.3
+2022,6,"Occupations in art, culture, recreation and sport",Medium,High,598.9,572.3,376.2,196,26.6,4.4
+2022,7,"Occupations in art, culture, recreation and sport",Medium,High,645.1,622.2,432.9,189.3,22.9,3.5
+2022,8,"Occupations in art, culture, recreation and sport",Medium,High,661.9,625.6,423.1,202.6,36.3,5.5
+2022,9,"Occupations in art, culture, recreation and sport",Medium,High,578.1,553,346.6,206.4,25.1,4.3
+2022,10,"Occupations in art, culture, recreation and sport",Medium,High,585.5,562,346.1,215.9,23.5,4
+2022,11,"Occupations in art, culture, recreation and sport",Medium,High,608.1,584.2,366.6,217.6,23.9,3.9
+2022,12,"Occupations in art, culture, recreation and sport",Medium,High,617,590.9,355.2,235.7,26.1,4.2
+2023,1,"Occupations in art, culture, recreation and sport",Medium,High,623.8,593.7,374.8,218.9,30.1,4.8
+2023,2,"Occupations in art, culture, recreation and sport",Medium,High,623.1,603.7,364,239.7,19.4,3.1
+2023,3,"Occupations in art, culture, recreation and sport",Medium,High,643.3,615.2,378.6,236.6,28.1,4.4
+2023,4,"Occupations in art, culture, recreation and sport",Medium,High,648.6,616.6,379.8,236.8,32,4.9
+2023,5,"Occupations in art, culture, recreation and sport",Medium,High,680.4,642.8,399.6,243.3,37.6,5.5
+2023,6,"Occupations in art, culture, recreation and sport",Medium,High,717.7,678.5,432.1,246.4,39.2,5.5
+2023,7,"Occupations in art, culture, recreation and sport",Medium,High,797.8,764.9,550.9,213.9,33,4.1
+2023,8,"Occupations in art, culture, recreation and sport",Medium,High,767.1,729.9,504.4,225.5,37.2,4.8
+2023,9,"Occupations in art, culture, recreation and sport",Medium,High,658.5,614.2,400.7,213.5,44.4,6.7
+2023,10,"Occupations in art, culture, recreation and sport",Medium,High,642.6,605.2,375.2,230,37.4,5.8
+2023,11,"Occupations in art, culture, recreation and sport",Medium,High,652.1,619.3,368.8,250.6,32.8,5
+2023,12,"Occupations in art, culture, recreation and sport",Medium,High,642,613.1,361.2,251.9,28.9,4.5
+2024,1,"Occupations in art, culture, recreation and sport",Medium,High,631.7,598.5,363.7,234.8,33.2,5.3
+2024,2,"Occupations in art, culture, recreation and sport",Medium,High,645,619.3,376.5,242.7,25.7,4
+2024,3,"Occupations in art, culture, recreation and sport",Medium,High,648.9,608.2,361.2,247,40.6,6.3
+2024,4,"Occupations in art, culture, recreation and sport",Medium,High,644,601,358.8,242.2,43,6.7
+2024,5,"Occupations in art, culture, recreation and sport",Medium,High,654.6,607,366.8,240.2,47.6,7.3
+2024,6,"Occupations in art, culture, recreation and sport",Medium,High,690.1,638.8,396.4,242.4,51.3,7.4
+2024,7,"Occupations in art, culture, recreation and sport",Medium,High,756.1,709,478.6,230.4,47.2,6.2
+2024,8,"Occupations in art, culture, recreation and sport",Medium,High,736.2,690.6,452.2,238.4,45.6,6.2
+2024,9,"Occupations in art, culture, recreation and sport",Medium,High,625.6,594.6,341.3,253.3,31,5
+2024,10,"Occupations in art, culture, recreation and sport",Medium,High,649.8,614.5,347.7,266.8,35.3,5.4
+2024,11,"Occupations in art, culture, recreation and sport",Medium,High,650,620.5,360.2,260.3,29.5,4.5
+2024,12,"Occupations in art, culture, recreation and sport",Medium,High,667.6,627.4,342.8,284.5,40.2,6
+2025,1,"Occupations in art, culture, recreation and sport",Medium,High,675.1,627.4,355.5,271.9,47.6,7.1
+2025,2,"Occupations in art, culture, recreation and sport",Medium,High,691.7,655.1,374.4,280.6,36.6,5.3
+2025,3,"Occupations in art, culture, recreation and sport",Medium,High,707,662.5,376.9,285.7,44.4,6.3
+2025,4,"Occupations in art, culture, recreation and sport",Medium,High,684.5,638.6,373.7,264.9,45.8,6.7
+2025,5,"Occupations in art, culture, recreation and sport",Medium,High,715.5,662.8,377.8,285,52.7,7.4
+2025,6,"Occupations in art, culture, recreation and sport",Medium,High,731.6,681.9,407.1,274.8,49.7,6.8
+2025,7,"Occupations in art, culture, recreation and sport",Medium,High,763.1,725.2,483.1,242.1,37.9,5
+2025,8,"Occupations in art, culture, recreation and sport",Medium,High,727.8,691.1,469.8,221.3,36.6,5
+2025,9,"Occupations in art, culture, recreation and sport",Medium,High,647,615.9,361.7,254.2,31.1,4.8
+2010,1,Sales and service occupations,Low,Low,4373.2,4042.6,2513.6,1528.9,330.7,7.6
+2010,2,Sales and service occupations,Low,Low,4356.4,4042.6,2508.1,1534.5,313.8,7.2
+2010,3,Sales and service occupations,Low,Low,4422.6,4100.2,2549.7,1550.5,322.3,7.3
+2010,4,Sales and service occupations,Low,Low,4434.5,4120.1,2527.7,1592.4,314.3,7.1
+2010,5,Sales and service occupations,Low,Low,4547.9,4216,2657.4,1558.6,332,7.3
+2010,6,Sales and service occupations,Low,Low,4557.5,4270.1,2772.6,1497.5,287.4,6.3
+2010,7,Sales and service occupations,Low,Low,4577.6,4273.7,2816.1,1457.6,303.8,6.6
+2010,8,Sales and service occupations,Low,Low,4573.5,4253.4,2822.5,1430.9,320.1,7
+2010,9,Sales and service occupations,Low,Low,4455.8,4171.6,2622.4,1549.3,284.2,6.4
+2010,10,Sales and service occupations,Low,Low,4464,4195.7,2619.5,1576.2,268.3,6
+2010,11,Sales and service occupations,Low,Low,4481.8,4210.9,2593.4,1617.5,270.9,6
+2010,12,Sales and service occupations,Low,Low,4456.6,4219.4,2610.5,1608.9,237.2,5.3
+2011,1,Sales and service occupations,Low,Low,4482.6,4179.2,2557.3,1621.8,303.4,6.8
+2011,2,Sales and service occupations,Low,Low,4461.3,4156.1,2506.7,1649.4,305.2,6.8
+2011,3,Sales and service occupations,Low,Low,4428.7,4125.9,2551.7,1574.2,302.8,6.8
+2011,4,Sales and service occupations,Low,Low,4410.5,4129.5,2573.2,1556.3,281,6.4
+2011,5,Sales and service occupations,Low,Low,4513.3,4222,2676.6,1545.5,291.2,6.5
+2011,6,Sales and service occupations,Low,Low,4543.5,4276.6,2780.2,1496.4,267,5.9
+2011,7,Sales and service occupations,Low,Low,4583.9,4319.4,2877.9,1441.4,264.5,5.8
+2011,8,Sales and service occupations,Low,Low,4571.5,4301.6,2896.5,1405.1,269.9,5.9
+2011,9,Sales and service occupations,Low,Low,4457.6,4208.6,2655,1553.6,249,5.6
+2011,10,Sales and service occupations,Low,Low,4433.5,4166.9,2606.1,1560.9,266.6,6
+2011,11,Sales and service occupations,Low,Low,4427.9,4161.4,2584.7,1576.7,266.5,6
+2011,12,Sales and service occupations,Low,Low,4464.9,4225.6,2620.9,1604.7,239.4,5.4
+2012,1,Sales and service occupations,Low,Low,4453.6,4169.3,2568.8,1600.5,284.3,6.4
+2012,2,Sales and service occupations,Low,Low,4503.1,4214.1,2592.3,1621.8,288.9,6.4
+2012,3,Sales and service occupations,Low,Low,4492.1,4213.6,2616.1,1597.4,278.5,6.2
+2012,4,Sales and service occupations,Low,Low,4543.2,4277.4,2655.1,1622.3,265.9,5.9
+2012,5,Sales and service occupations,Low,Low,4665.6,4367.1,2759.4,1607.7,298.5,6.4
+2012,6,Sales and service occupations,Low,Low,4590.7,4313,2802.2,1510.8,277.7,6
+2012,7,Sales and service occupations,Low,Low,4564,4295.7,2871.9,1423.8,268.3,5.9
+2012,8,Sales and service occupations,Low,Low,4598.5,4322.8,2904.5,1418.4,275.6,6
+2012,9,Sales and service occupations,Low,Low,4442.8,4214.1,2698.2,1515.8,228.7,5.1
+2012,10,Sales and service occupations,Low,Low,4481.4,4229.3,2693.4,1535.9,252.1,5.6
+2012,11,Sales and service occupations,Low,Low,4472.9,4222.2,2634.1,1588.2,250.7,5.6
+2012,12,Sales and service occupations,Low,Low,4531.8,4303.2,2657.7,1645.6,228.6,5
+2013,1,Sales and service occupations,Low,Low,4496.5,4226.8,2589.4,1637.4,269.7,6
+2013,2,Sales and service occupations,Low,Low,4536.3,4270.4,2615.1,1655.3,265.9,5.9
+2013,3,Sales and service occupations,Low,Low,4525,4247.9,2620.2,1627.7,277.1,6.1
+2013,4,Sales and service occupations,Low,Low,4475.8,4207.2,2629.6,1577.6,268.6,6
+2013,5,Sales and service occupations,Low,Low,4682.7,4406.9,2855.8,1551.1,275.8,5.9
+2013,6,Sales and service occupations,Low,Low,4664.1,4430.3,2901.9,1528.4,233.8,5
+2013,7,Sales and service occupations,Low,Low,4738.7,4480.6,3031.7,1448.9,258.1,5.4
+2013,8,Sales and service occupations,Low,Low,4722.7,4453.9,3015.5,1438.4,268.7,5.7
+2013,9,Sales and service occupations,Low,Low,4666.3,4444.5,2839.1,1605.4,221.8,4.8
+2013,10,Sales and service occupations,Low,Low,4628,4397.2,2787.5,1609.7,230.8,5
+2013,11,Sales and service occupations,Low,Low,4596.4,4370.4,2748.7,1621.6,226.1,4.9
+2013,12,Sales and service occupations,Low,Low,4646,4418.3,2757.5,1660.8,227.7,4.9
+2014,1,Sales and service occupations,Low,Low,4568.7,4302.7,2671.3,1631.3,266,5.8
+2014,2,Sales and service occupations,Low,Low,4533.4,4280.9,2656.1,1624.8,252.5,5.6
+2014,3,Sales and service occupations,Low,Low,4545.5,4284,2639.4,1644.6,261.5,5.8
+2014,4,Sales and service occupations,Low,Low,4551.9,4305.7,2681.4,1624.2,246.2,5.4
+2014,5,Sales and service occupations,Low,Low,4705.8,4435.1,2843.6,1591.4,270.7,5.8
+2014,6,Sales and service occupations,Low,Low,4715.2,4457.5,2929.3,1528.2,257.7,5.5
+2014,7,Sales and service occupations,Low,Low,4809.1,4554.1,3062.1,1492,254.9,5.3
+2014,8,Sales and service occupations,Low,Low,4803.5,4542.3,3059.8,1482.5,261.1,5.4
+2014,9,Sales and service occupations,Low,Low,4644,4414,2855.9,1558.1,230,5
+2014,10,Sales and service occupations,Low,Low,4647.1,4413.4,2826.4,1587,233.7,5
+2014,11,Sales and service occupations,Low,Low,4637.2,4407.8,2787.6,1620.2,229.4,4.9
+2014,12,Sales and service occupations,Low,Low,4668.5,4456.6,2824.4,1632.2,211.9,4.5
+2015,1,Sales and service occupations,Low,Low,4568.7,4319.2,2720.9,1598.2,249.5,5.5
+2015,2,Sales and service occupations,Low,Low,4669.7,4403.7,2765,1638.7,266,5.7
+2015,3,Sales and service occupations,Low,Low,4680.1,4406.1,2762.1,1644,273.9,5.9
+2015,4,Sales and service occupations,Low,Low,4648.9,4381,2764.3,1616.7,267.9,5.8
+2015,5,Sales and service occupations,Low,Low,4649.9,4392,2807,1585,257.9,5.5
+2015,6,Sales and service occupations,Low,Low,4627.4,4406.1,2923.7,1482.4,221.3,4.8
+2015,7,Sales and service occupations,Low,Low,4688.9,4459.6,3019.3,1440.3,229.4,4.9
+2015,8,Sales and service occupations,Low,Low,4668.5,4408.5,3026.3,1382.2,260,5.6
+2015,9,Sales and service occupations,Low,Low,4611.5,4374.7,2811.8,1562.9,236.7,5.1
+2015,10,Sales and service occupations,Low,Low,4660.9,4420.1,2878.3,1541.8,240.8,5.2
+2015,11,Sales and service occupations,Low,Low,4640.7,4404,2827.8,1576.2,236.7,5.1
+2015,12,Sales and service occupations,Low,Low,4643.4,4416.6,2771.2,1645.5,226.7,4.9
+2016,1,Sales and service occupations,Low,Low,4603.3,4327.1,2716.7,1610.4,276.2,6
+2016,2,Sales and service occupations,Low,Low,4618,4346.1,2708.2,1637.9,271.8,5.9
+2016,3,Sales and service occupations,Low,Low,4619.5,4347.4,2719.1,1628.3,272.1,5.9
+2016,4,Sales and service occupations,Low,Low,4632.6,4372.2,2749.1,1623.1,260.4,5.6
+2016,5,Sales and service occupations,Low,Low,4720.6,4447.8,2875.3,1572.5,272.8,5.8
+2016,6,Sales and service occupations,Low,Low,4698.7,4468.6,2943.8,1524.8,230.1,4.9
+2016,7,Sales and service occupations,Low,Low,4743.2,4506.8,3036.6,1470.2,236.4,5
+2016,8,Sales and service occupations,Low,Low,4752.1,4544.5,3105.1,1439.4,207.6,4.4
+2016,9,Sales and service occupations,Low,Low,4651.7,4441.3,2885.8,1555.5,210.4,4.5
+2016,10,Sales and service occupations,Low,Low,4634.1,4418.2,2794.2,1624,215.9,4.7
+2016,11,Sales and service occupations,Low,Low,4725.6,4497.6,2826.6,1671,228,4.8
+2016,12,Sales and service occupations,Low,Low,4726.6,4507.4,2837.7,1669.8,219.2,4.6
+2017,1,Sales and service occupations,Low,Low,4655.2,4395.4,2740.5,1654.9,259.8,5.6
+2017,2,Sales and service occupations,Low,Low,4661.8,4412.6,2734.8,1677.8,249.2,5.3
+2017,3,Sales and service occupations,Low,Low,4705.3,4440.5,2750.2,1690.3,264.8,5.6
+2017,4,Sales and service occupations,Low,Low,4710.5,4464.3,2814.8,1649.5,246.2,5.2
+2017,5,Sales and service occupations,Low,Low,4830,4582.1,2952,1630.1,247.9,5.1
+2017,6,Sales and service occupations,Low,Low,4832.6,4598.2,3029.6,1568.6,234.4,4.9
+2017,7,Sales and service occupations,Low,Low,4857,4640.8,3145.8,1494.9,216.3,4.5
+2017,8,Sales and service occupations,Low,Low,4885.1,4674.6,3155.9,1518.7,210.5,4.3
+2017,9,Sales and service occupations,Low,Low,4744.2,4563.4,2962.8,1600.6,180.8,3.8
+2017,10,Sales and service occupations,Low,Low,4732.5,4532.5,2911,1621.5,200,4.2
+2017,11,Sales and service occupations,Low,Low,4767,4563.2,2883.2,1680,203.8,4.3
+2017,12,Sales and service occupations,Low,Low,4808.7,4611.2,2871.1,1740.1,197.5,4.1
+2018,1,Sales and service occupations,Low,Low,4704.2,4470.4,2796.3,1674.2,233.8,5
+2018,2,Sales and service occupations,Low,Low,4687.1,4448.6,2781.6,1667,238.5,5.1
+2018,3,Sales and service occupations,Low,Low,4713.5,4479.7,2811.4,1668.4,233.7,5
+2018,4,Sales and service occupations,Low,Low,4655.9,4430.2,2834,1596.3,225.6,4.8
+2018,5,Sales and service occupations,Low,Low,4832.4,4602.3,2990.8,1611.5,230.1,4.8
+2018,6,Sales and service occupations,Low,Low,4843.9,4603.2,3041.2,1562,240.7,5
+2018,7,Sales and service occupations,Low,Low,4966.1,4751.6,3230,1521.6,214.5,4.3
+2018,8,Sales and service occupations,Low,Low,4945.1,4711.8,3229.4,1482.4,233.3,4.7
+2018,9,Sales and service occupations,Low,Low,4806.4,4609.9,2975.4,1634.5,196.6,4.1
+2018,10,Sales and service occupations,Low,Low,4823,4628.1,2965.7,1662.3,194.9,4
+2018,11,Sales and service occupations,Low,Low,4852,4653.6,2934.5,1719.1,198.4,4.1
+2018,12,Sales and service occupations,Low,Low,4843.6,4656,2938.5,1717.4,187.7,3.9
+2019,1,Sales and service occupations,Low,Low,4851.1,4615.5,2904.8,1710.7,235.6,4.9
+2019,2,Sales and service occupations,Low,Low,4838.9,4624.8,2902,1722.8,214.1,4.4
+2019,3,Sales and service occupations,Low,Low,4826.8,4600.2,2906.4,1693.8,226.6,4.7
+2019,4,Sales and service occupations,Low,Low,4907.2,4678.1,2974.7,1703.4,229.2,4.7
+2019,5,Sales and service occupations,Low,Low,4976.8,4752.9,3070.2,1682.7,224,4.5
+2019,6,Sales and service occupations,Low,Low,4944.9,4741.3,3105.4,1635.9,203.6,4.1
+2019,7,Sales and service occupations,Low,Low,4933.4,4721.3,3167.4,1553.8,212.1,4.3
+2019,8,Sales and service occupations,Low,Low,4926.2,4705.8,3193.9,1511.9,220.4,4.5
+2019,9,Sales and service occupations,Low,Low,4839.4,4626.1,3008,1618,213.3,4.4
+2019,10,Sales and service occupations,Low,Low,4839.8,4640,2954.4,1685.6,199.8,4.1
+2019,11,Sales and service occupations,Low,Low,4834.9,4635.6,2930.2,1705.4,199.3,4.1
+2019,12,Sales and service occupations,Low,Low,4837.4,4657.2,2938.3,1718.9,180.2,3.7
+2020,1,Sales and service occupations,Low,Low,4813.5,4593.6,2868.7,1724.9,219.9,4.6
+2020,2,Sales and service occupations,Low,Low,4848.4,4631.2,2859.6,1771.6,217.2,4.5
+2020,3,Sales and service occupations,Low,Low,4534.9,4029.5,2642.5,1387,505.4,11.1
+2020,4,Sales and service occupations,Low,Low,4046,3255.2,2261.5,993.7,790.8,19.5
+2020,5,Sales and service occupations,Low,Low,4245.3,3324.3,2319.3,1005,921.1,21.7
+2020,6,Sales and service occupations,Low,Low,4579.5,3835.2,2610.5,1224.7,744.3,16.3
+2020,7,Sales and service occupations,Low,Low,4635.8,4025.9,2653,1372.9,609.9,13.2
+2020,8,Sales and service occupations,Low,Low,4661.9,4131.7,2728.3,1403.3,530.2,11.4
+2020,9,Sales and service occupations,Low,Low,4609.8,4186,2677,1509,423.8,9.2
+2020,10,Sales and service occupations,Low,Low,4592.4,4172.4,2610.6,1561.7,420,9.1
+2020,11,Sales and service occupations,Low,Low,4611.1,4187.7,2662.1,1525.6,423.4,9.2
+2020,12,Sales and service occupations,Low,Low,4525.4,4117.2,2621.3,1495.9,408.2,9
+2021,1,Sales and service occupations,Low,Low,4354.3,3754.8,2451,1303.8,599.5,13.8
+2021,2,Sales and service occupations,Low,Low,4499,4012,2552.2,1459.8,487,10.8
+2021,3,Sales and service occupations,Low,Low,4501.6,4113.2,2579.8,1533.4,388.4,8.6
+2021,4,Sales and service occupations,Low,Low,4342.2,4007.1,2592.5,1414.7,335.1,7.7
+2021,5,Sales and service occupations,Low,Low,4393.6,4028.7,2654.7,1373.9,364.9,8.3
+2021,6,Sales and service occupations,Low,Low,4509.6,4277.3,2775.2,1502.2,232.3,5.2
+2021,7,Sales and service occupations,Low,Low,4527.8,4327,2851.8,1475.3,200.8,4.4
+2021,8,Sales and service occupations,Low,Low,4683.8,4502.5,2959.6,1542.9,181.3,3.9
+2021,9,Sales and service occupations,Low,Low,4494.6,4320.3,2735.2,1585,174.4,3.9
+2021,10,Sales and service occupations,Low,Low,4511.2,4345.2,2730.1,1615.1,166,3.7
+2021,11,Sales and service occupations,Low,Low,4511,4336.7,2677,1659.8,174.3,3.9
+2021,12,Sales and service occupations,Low,Low,4506.8,4339.2,2678.8,1660.4,167.7,3.7
+2022,1,Sales and service occupations,Low,Low,4391.8,4088,2570.4,1517.7,303.8,6.9
+2022,2,Sales and service occupations,Low,Low,4433.6,4244,2625.6,1618.4,189.6,4.3
+2022,3,Sales and service occupations,Low,Low,4423.9,4236.6,2620.1,1616.5,187.3,4.2
+2022,4,Sales and service occupations,Low,Low,4468.8,4288.4,2660.3,1628.1,180.5,4
+2022,5,Sales and service occupations,Low,Low,4552.4,4383.2,2798.6,1584.6,169.2,3.7
+2022,6,Sales and service occupations,Low,Low,4500.7,4329,2833.8,1495.2,171.7,3.8
+2022,7,Sales and service occupations,Low,Low,4615.9,4448.2,2988.9,1459.3,167.7,3.6
+2022,8,Sales and service occupations,Low,Low,4582.9,4408.3,2924.7,1483.6,174.6,3.8
+2022,9,Sales and service occupations,Low,Low,4495.9,4336.1,2754.7,1581.4,159.8,3.6
+2022,10,Sales and service occupations,Low,Low,4500.1,4331.1,2689.2,1642,168.9,3.8
+2022,11,Sales and service occupations,Low,Low,4475.3,4314,2659.3,1654.7,161.3,3.6
+2022,12,Sales and service occupations,Low,Low,4467.6,4321.5,2644.9,1676.6,146.1,3.3
+2023,1,Sales and service occupations,Low,Low,4428,4239.6,2564.5,1675.1,188.4,4.3
+2023,2,Sales and service occupations,Low,Low,4489.7,4316.1,2624.6,1691.5,173.6,3.9
+2023,3,Sales and service occupations,Low,Low,4557.9,4373.7,2675.2,1698.5,184.3,4
+2023,4,Sales and service occupations,Low,Low,4593.2,4408.2,2719.9,1688.3,185,4
+2023,5,Sales and service occupations,Low,Low,4702.1,4491.4,2837.2,1654.2,210.7,4.5
+2023,6,Sales and service occupations,Low,Low,4692.6,4488.4,2923.6,1564.8,204.2,4.4
+2023,7,Sales and service occupations,Low,Low,4722.7,4508.4,2992,1516.4,214.3,4.5
+2023,8,Sales and service occupations,Low,Low,4691.3,4493,3018,1475,198.3,4.2
+2023,9,Sales and service occupations,Low,Low,4582.8,4409.8,2817.3,1592.5,173,3.8
+2023,10,Sales and service occupations,Low,Low,4637.8,4424.6,2798.3,1626.3,213.3,4.6
+2023,11,Sales and service occupations,Low,Low,4599.5,4401.3,2778.9,1622.5,198.2,4.3
+2023,12,Sales and service occupations,Low,Low,4577.5,4388.9,2761.4,1627.5,188.6,4.1
+2024,1,Sales and service occupations,Low,Low,4514.9,4284.6,2655.9,1628.7,230.3,5.1
+2024,2,Sales and service occupations,Low,Low,4549,4302.7,2631.1,1671.6,246.3,5.4
+2024,3,Sales and service occupations,Low,Low,4592.5,4334.8,2651.3,1683.5,257.6,5.6
+2024,4,Sales and service occupations,Low,Low,4615.9,4369,2657.6,1711.4,246.9,5.3
+2024,5,Sales and service occupations,Low,Low,4719.6,4453.7,2745.9,1707.8,265.9,5.6
+2024,6,Sales and service occupations,Low,Low,4782.5,4526.1,2851.4,1674.7,256.4,5.4
+2024,7,Sales and service occupations,Low,Low,4715.6,4489.3,2929.6,1559.7,226.2,4.8
+2024,8,Sales and service occupations,Low,Low,4741.2,4504.4,2902.7,1601.7,236.9,5
+2024,9,Sales and service occupations,Low,Low,4587.7,4383,2749.3,1633.8,204.7,4.5
+2024,10,Sales and service occupations,Low,Low,4572.1,4353.8,2703.8,1650.1,218.2,4.8
+2024,11,Sales and service occupations,Low,Low,4578.3,4366.9,2703.9,1663,211.4,4.6
+2024,12,Sales and service occupations,Low,Low,4567.9,4369.9,2708.7,1661.2,198,4.3
+2025,1,Sales and service occupations,Low,Low,4537.2,4294.7,2639.2,1655.5,242.5,5.3
+2025,2,Sales and service occupations,Low,Low,4618.2,4392.2,2697.7,1694.5,226,4.9
+2025,3,Sales and service occupations,Low,Low,4650.9,4417.6,2728.7,1688.9,233.3,5
+2025,4,Sales and service occupations,Low,Low,4655.9,4427.1,2768.9,1658.1,228.9,4.9
+2025,5,Sales and service occupations,Low,Low,4774.9,4540.8,2891.5,1649.3,234,4.9
+2025,6,Sales and service occupations,Low,Low,4808.2,4608.8,2992.3,1616.5,199.4,4.1
+2025,7,Sales and service occupations,Low,Low,4820.2,4606,3016.2,1589.8,214.2,4.4
+2025,8,Sales and service occupations,Low,Low,4767.9,4557.6,2975.5,1582.1,210.3,4.4
+2025,9,Sales and service occupations,Low,Low,4686.8,4470.5,2825.7,1644.8,216.3,4.6
+2010,1,"Trades, transport and equipment operators and related occupations",Low,Low,2791.1,2447.1,2204,243.2,344,12.3
+2010,2,"Trades, transport and equipment operators and related occupations",Low,Low,2777.6,2450.7,2204.3,246.4,326.9,11.8
+2010,3,"Trades, transport and equipment operators and related occupations",Low,Low,2765.7,2435.7,2206.6,229.1,330,11.9
+2010,4,"Trades, transport and equipment operators and related occupations",Low,Low,2815.4,2522.8,2294.2,228.6,292.6,10.4
+2010,5,"Trades, transport and equipment operators and related occupations",Low,Low,2906.7,2654.8,2432.5,222.3,252,8.7
+2010,6,"Trades, transport and equipment operators and related occupations",Low,Low,2915.7,2709.3,2496.8,212.5,206.5,7.1
+2010,7,"Trades, transport and equipment operators and related occupations",Low,Low,2961.7,2745.8,2533.5,212.3,215.9,7.3
+2010,8,"Trades, transport and equipment operators and related occupations",Low,Low,2961,2733.9,2540.6,193.3,227.1,7.7
+2010,9,"Trades, transport and equipment operators and related occupations",Low,Low,2920.7,2735.1,2521.1,214.1,185.6,6.4
+2010,10,"Trades, transport and equipment operators and related occupations",Low,Low,2929.9,2745.9,2523.1,222.8,184,6.3
+2010,11,"Trades, transport and equipment operators and related occupations",Low,Low,2925,2725.3,2495.5,229.8,199.7,6.8
+2010,12,"Trades, transport and equipment operators and related occupations",Low,Low,2903.5,2675.9,2430.7,245.2,227.6,7.8
+2011,1,"Trades, transport and equipment operators and related occupations",Low,Low,2831.7,2541.8,2314.4,227.3,290,10.2
+2011,2,"Trades, transport and equipment operators and related occupations",Low,Low,2872.3,2592.7,2336.3,256.4,279.6,9.7
+2011,3,"Trades, transport and equipment operators and related occupations",Low,Low,2880.2,2589.4,2348.2,241.2,290.8,10.1
+2011,4,"Trades, transport and equipment operators and related occupations",Low,Low,2891.2,2613.4,2373.9,239.5,277.8,9.6
+2011,5,"Trades, transport and equipment operators and related occupations",Low,Low,2977.2,2755.2,2524.9,230.4,222,7.5
+2011,6,"Trades, transport and equipment operators and related occupations",Low,Low,3009.9,2827.2,2594.1,233.1,182.7,6.1
+2011,7,"Trades, transport and equipment operators and related occupations",Low,Low,3058.2,2887.5,2684.1,203.4,170.7,5.6
+2011,8,"Trades, transport and equipment operators and related occupations",Low,Low,3037.3,2863,2668.5,194.4,174.3,5.7
+2011,9,"Trades, transport and equipment operators and related occupations",Low,Low,2984.4,2844.4,2618.7,225.7,139.9,4.7
+2011,10,"Trades, transport and equipment operators and related occupations",Low,Low,3023.3,2871,2646,225,152.3,5
+2011,11,"Trades, transport and equipment operators and related occupations",Low,Low,3010.1,2834,2600.4,233.6,176.1,5.9
+2011,12,"Trades, transport and equipment operators and related occupations",Low,Low,2972.8,2756,2528.3,227.8,216.8,7.3
+2012,1,"Trades, transport and equipment operators and related occupations",Low,Low,2919.9,2626.5,2386.2,240.3,293.3,10
+2012,2,"Trades, transport and equipment operators and related occupations",Low,Low,2931.5,2667.5,2415.2,252.4,264,9
+2012,3,"Trades, transport and equipment operators and related occupations",Low,Low,2954.6,2675.7,2435.2,240.4,278.9,9.4
+2012,4,"Trades, transport and equipment operators and related occupations",Low,Low,2993.5,2755.1,2513.1,242,238.4,8
+2012,5,"Trades, transport and equipment operators and related occupations",Low,Low,3060.6,2869,2631.5,237.6,191.5,6.3
+2012,6,"Trades, transport and equipment operators and related occupations",Low,Low,3080.6,2905.7,2670.4,235.3,174.9,5.7
+2012,7,"Trades, transport and equipment operators and related occupations",Low,Low,3104.9,2929.3,2730.8,198.5,175.6,5.7
+2012,8,"Trades, transport and equipment operators and related occupations",Low,Low,3116.6,2931.4,2734.1,197.3,185.2,5.9
+2012,9,"Trades, transport and equipment operators and related occupations",Low,Low,3102.6,2938,2700.9,237,164.6,5.3
+2012,10,"Trades, transport and equipment operators and related occupations",Low,Low,3068.7,2884.7,2647.4,237.2,184.1,6
+2012,11,"Trades, transport and equipment operators and related occupations",Low,Low,3048.2,2870.8,2632.7,238,177.4,5.8
+2012,12,"Trades, transport and equipment operators and related occupations",Low,Low,3014.6,2807,2564.9,242.1,207.6,6.9
+2013,1,"Trades, transport and equipment operators and related occupations",Low,Low,2977.7,2712.3,2444.2,268.2,265.4,8.9
+2013,2,"Trades, transport and equipment operators and related occupations",Low,Low,2969.1,2719.4,2457.5,261.9,249.7,8.4
+2013,3,"Trades, transport and equipment operators and related occupations",Low,Low,2976.5,2703.5,2452.7,250.8,273,9.2
+2013,4,"Trades, transport and equipment operators and related occupations",Low,Low,3015.6,2766.4,2524,242.4,249.2,8.3
+2013,5,"Trades, transport and equipment operators and related occupations",Low,Low,3038.1,2845.9,2597.4,248.5,192.2,6.3
+2013,6,"Trades, transport and equipment operators and related occupations",Low,Low,3083.9,2910,2650.6,259.5,173.9,5.6
+2013,7,"Trades, transport and equipment operators and related occupations",Low,Low,3104.5,2931.9,2715.7,216.2,172.6,5.6
+2013,8,"Trades, transport and equipment operators and related occupations",Low,Low,3101.2,2929.8,2709.9,219.9,171.4,5.5
+2013,9,"Trades, transport and equipment operators and related occupations",Low,Low,3035.6,2879.2,2644,235.2,156.4,5.2
+2013,10,"Trades, transport and equipment operators and related occupations",Low,Low,3041.2,2874.7,2647,227.7,166.5,5.5
+2013,11,"Trades, transport and equipment operators and related occupations",Low,Low,3043.3,2834.6,2586.4,248.3,208.7,6.9
+2013,12,"Trades, transport and equipment operators and related occupations",Low,Low,3012.7,2753.1,2516.4,236.7,259.6,8.6
+2014,1,"Trades, transport and equipment operators and related occupations",Low,Low,2977.9,2661.7,2419,242.7,316.3,10.6
+2014,2,"Trades, transport and equipment operators and related occupations",Low,Low,2978.1,2671.1,2421.1,250,307,10.3
+2014,3,"Trades, transport and equipment operators and related occupations",Low,Low,2971.2,2682.6,2440.5,242.1,288.6,9.7
+2014,4,"Trades, transport and equipment operators and related occupations",Low,Low,2976.7,2719.7,2472.7,247,257,8.6
+2014,5,"Trades, transport and equipment operators and related occupations",Low,Low,3052.6,2851.2,2590.1,261.1,201.4,6.6
+2014,6,"Trades, transport and equipment operators and related occupations",Low,Low,3092.9,2915.8,2671.9,243.9,177.1,5.7
+2014,7,"Trades, transport and equipment operators and related occupations",Low,Low,3088.5,2909.1,2697.9,211.2,179.5,5.8
+2014,8,"Trades, transport and equipment operators and related occupations",Low,Low,3119.6,2942.3,2740.6,201.7,177.3,5.7
+2014,9,"Trades, transport and equipment operators and related occupations",Low,Low,3077.4,2922.7,2677.6,245.1,154.7,5
+2014,10,"Trades, transport and equipment operators and related occupations",Low,Low,3039.1,2898.9,2662.3,236.5,140.2,4.6
+2014,11,"Trades, transport and equipment operators and related occupations",Low,Low,3002.5,2843,2598.8,244.2,159.5,5.3
+2014,12,"Trades, transport and equipment operators and related occupations",Low,Low,3016.9,2806.1,2558.6,247.5,210.8,7
+2015,1,"Trades, transport and equipment operators and related occupations",Low,Low,3012.5,2724.8,2460.9,263.9,287.7,9.6
+2015,2,"Trades, transport and equipment operators and related occupations",Low,Low,3004.5,2708.2,2460.2,247.9,296.3,9.9
+2015,3,"Trades, transport and equipment operators and related occupations",Low,Low,2997.9,2704.5,2456.4,248.1,293.4,9.8
+2015,4,"Trades, transport and equipment operators and related occupations",Low,Low,3024.8,2755.5,2501.6,253.9,269.3,8.9
+2015,5,"Trades, transport and equipment operators and related occupations",Low,Low,3111.8,2890,2642.4,247.5,221.8,7.1
+2015,6,"Trades, transport and equipment operators and related occupations",Low,Low,3136.4,2945.9,2709.7,236.2,190.5,6.1
+2015,7,"Trades, transport and equipment operators and related occupations",Low,Low,3095.2,2890.7,2699,191.8,204.5,6.6
+2015,8,"Trades, transport and equipment operators and related occupations",Low,Low,3089.8,2880,2699.5,180.5,209.8,6.8
+2015,9,"Trades, transport and equipment operators and related occupations",Low,Low,3036.3,2876.6,2655.3,221.3,159.7,5.3
+2015,10,"Trades, transport and equipment operators and related occupations",Low,Low,3048.4,2868.8,2640.1,228.8,179.6,5.9
+2015,11,"Trades, transport and equipment operators and related occupations",Low,Low,3024,2806.9,2589.6,217.3,217.1,7.2
+2015,12,"Trades, transport and equipment operators and related occupations",Low,Low,2978.4,2716.1,2473.7,242.4,262.4,8.8
+2016,1,"Trades, transport and equipment operators and related occupations",Low,Low,2910.3,2605.1,2358.2,247,305.1,10.5
+2016,2,"Trades, transport and equipment operators and related occupations",Low,Low,2951.4,2629.7,2374,255.7,321.7,10.9
+2016,3,"Trades, transport and equipment operators and related occupations",Low,Low,2930.9,2612,2354,258.1,318.9,10.9
+2016,4,"Trades, transport and equipment operators and related occupations",Low,Low,2950.7,2657.8,2414.8,242.9,293,9.9
+2016,5,"Trades, transport and equipment operators and related occupations",Low,Low,2992.4,2773.8,2525.3,248.4,218.6,7.3
+2016,6,"Trades, transport and equipment operators and related occupations",Low,Low,3027.4,2837,2582.3,254.7,190.5,6.3
+2016,7,"Trades, transport and equipment operators and related occupations",Low,Low,3048.6,2838.8,2618.6,220.2,209.8,6.9
+2016,8,"Trades, transport and equipment operators and related occupations",Low,Low,3069.6,2862.3,2645.6,216.6,207.3,6.8
+2016,9,"Trades, transport and equipment operators and related occupations",Low,Low,3038.9,2883.2,2643.8,239.4,155.8,5.1
+2016,10,"Trades, transport and equipment operators and related occupations",Low,Low,3045.4,2888.7,2645.7,243.1,156.7,5.1
+2016,11,"Trades, transport and equipment operators and related occupations",Low,Low,3014.1,2820.6,2567.3,253.3,193.5,6.4
+2016,12,"Trades, transport and equipment operators and related occupations",Low,Low,2970,2755.2,2493.8,261.4,214.8,7.2
+2017,1,"Trades, transport and equipment operators and related occupations",Low,Low,2953.3,2679.3,2429.5,249.8,274,9.3
+2017,2,"Trades, transport and equipment operators and related occupations",Low,Low,2967.3,2702.6,2443.6,259,264.7,8.9
+2017,3,"Trades, transport and equipment operators and related occupations",Low,Low,2976.4,2701,2437.8,263.2,275.4,9.3
+2017,4,"Trades, transport and equipment operators and related occupations",Low,Low,2998.9,2733.4,2476.5,256.9,265.4,8.8
+2017,5,"Trades, transport and equipment operators and related occupations",Low,Low,3100.9,2911.4,2660.5,251,189.4,6.1
+2017,6,"Trades, transport and equipment operators and related occupations",Low,Low,3096.4,2941.3,2689.1,252.2,155,5
+2017,7,"Trades, transport and equipment operators and related occupations",Low,Low,3112.9,2953.2,2722.3,230.8,159.7,5.1
+2017,8,"Trades, transport and equipment operators and related occupations",Low,Low,3096.3,2930.9,2708.4,222.5,165.4,5.3
+2017,9,"Trades, transport and equipment operators and related occupations",Low,Low,3018.3,2876.7,2641.5,235.3,141.6,4.7
+2017,10,"Trades, transport and equipment operators and related occupations",Low,Low,3034,2885.3,2629.5,255.8,148.6,4.9
+2017,11,"Trades, transport and equipment operators and related occupations",Low,Low,2999.2,2828.9,2590.1,238.8,170.2,5.7
+2017,12,"Trades, transport and equipment operators and related occupations",Low,Low,2947.6,2767.9,2526.9,241,179.6,6.1
+2018,1,"Trades, transport and equipment operators and related occupations",Low,Low,2910.3,2661.9,2428.8,233,248.4,8.5
+2018,2,"Trades, transport and equipment operators and related occupations",Low,Low,2919.9,2684.5,2434.2,250.3,235.5,8.1
+2018,3,"Trades, transport and equipment operators and related occupations",Low,Low,2979.9,2739.7,2482.2,257.6,240.1,8.1
+2018,4,"Trades, transport and equipment operators and related occupations",Low,Low,3024.3,2812,2552.8,259.2,212.2,7
+2018,5,"Trades, transport and equipment operators and related occupations",Low,Low,3051.3,2895.1,2641.9,253.2,156.2,5.1
+2018,6,"Trades, transport and equipment operators and related occupations",Low,Low,3111.7,2978.1,2714.2,263.9,133.6,4.3
+2018,7,"Trades, transport and equipment operators and related occupations",Low,Low,3122.1,2971.3,2747.4,223.8,150.9,4.8
+2018,8,"Trades, transport and equipment operators and related occupations",Low,Low,3182.4,3034.6,2820.4,214.2,147.8,4.6
+2018,9,"Trades, transport and equipment operators and related occupations",Low,Low,3127.2,3014.8,2771.6,243.2,112.4,3.6
+2018,10,"Trades, transport and equipment operators and related occupations",Low,Low,3140.8,3015.7,2775.1,240.6,125.1,4
+2018,11,"Trades, transport and equipment operators and related occupations",Low,Low,3114.1,2990.7,2739.9,250.8,123.4,4
+2018,12,"Trades, transport and equipment operators and related occupations",Low,Low,3095.5,2938.3,2696.4,242,157.2,5.1
+2019,1,"Trades, transport and equipment operators and related occupations",Low,Low,3046.1,2815.7,2565.2,250.5,230.4,7.6
+2019,2,"Trades, transport and equipment operators and related occupations",Low,Low,3031.6,2793.9,2534.2,259.7,237.7,7.8
+2019,3,"Trades, transport and equipment operators and related occupations",Low,Low,3083.9,2840.3,2571.7,268.6,243.6,7.9
+2019,4,"Trades, transport and equipment operators and related occupations",Low,Low,3122.2,2904.6,2631.8,272.8,217.6,7
+2019,5,"Trades, transport and equipment operators and related occupations",Low,Low,3153,2985.5,2727.3,258.3,167.5,5.3
+2019,6,"Trades, transport and equipment operators and related occupations",Low,Low,3135.3,2989.2,2729.8,259.5,146.1,4.7
+2019,7,"Trades, transport and equipment operators and related occupations",Low,Low,3214.4,3065.3,2815.6,249.7,149.1,4.6
+2019,8,"Trades, transport and equipment operators and related occupations",Low,Low,3212,3066.9,2830.1,236.9,145.1,4.5
+2019,9,"Trades, transport and equipment operators and related occupations",Low,Low,3168.7,3062.3,2806.8,255.5,106.4,3.4
+2019,10,"Trades, transport and equipment operators and related occupations",Low,Low,3160.6,3037.6,2801.2,236.4,122.9,3.9
+2019,11,"Trades, transport and equipment operators and related occupations",Low,Low,3167,3004,2744.7,259.2,163,5.1
+2019,12,"Trades, transport and equipment operators and related occupations",Low,Low,3174.7,2996.1,2726.7,269.5,178.6,5.6
+2020,1,"Trades, transport and equipment operators and related occupations",Low,Low,3051.8,2828.5,2568.2,260.3,223.3,7.3
+2020,2,"Trades, transport and equipment operators and related occupations",Low,Low,3065.8,2856.2,2589.3,266.9,209.6,6.8
+2020,3,"Trades, transport and equipment operators and related occupations",Low,Low,3008.6,2737.9,2506.6,231.4,270.7,9
+2020,4,"Trades, transport and equipment operators and related occupations",Low,Low,2835.9,2304.5,2101.8,202.7,531.4,18.7
+2020,5,"Trades, transport and equipment operators and related occupations",Low,Low,2980.9,2546.1,2319.2,226.9,434.8,14.6
+2020,6,"Trades, transport and equipment operators and related occupations",Low,Low,3120.5,2805.2,2549.1,256.1,315.3,10.1
+2020,7,"Trades, transport and equipment operators and related occupations",Low,Low,3143.7,2858.6,2602.3,256.3,285.1,9.1
+2020,8,"Trades, transport and equipment operators and related occupations",Low,Low,3151.7,2885.9,2655.7,230.2,265.8,8.4
+2020,9,"Trades, transport and equipment operators and related occupations",Low,Low,3129.3,2924,2658.6,265.4,205.3,6.6
+2020,10,"Trades, transport and equipment operators and related occupations",Low,Low,3166.6,2949.6,2667.2,282.5,216.9,6.8
+2020,11,"Trades, transport and equipment operators and related occupations",Low,Low,3166.6,2937.8,2629.3,308.5,228.8,7.2
+2020,12,"Trades, transport and equipment operators and related occupations",Low,Low,3060.2,2819.6,2528.8,290.8,240.6,7.9
+2021,1,"Trades, transport and equipment operators and related occupations",Low,Low,3057.9,2768.6,2466.3,302.4,289.2,9.5
+2021,2,"Trades, transport and equipment operators and related occupations",Low,Low,3069.3,2808.4,2517.5,290.9,260.9,8.5
+2021,3,"Trades, transport and equipment operators and related occupations",Low,Low,3085,2835,2580.6,254.4,250,8.1
+2021,4,"Trades, transport and equipment operators and related occupations",Low,Low,3033.7,2819.1,2554.4,264.7,214.6,7.1
+2021,5,"Trades, transport and equipment operators and related occupations",Low,Low,3065.3,2926.8,2662.8,263.9,138.5,4.5
+2021,6,"Trades, transport and equipment operators and related occupations",Low,Low,3112.4,2988.2,2729.9,258.3,124.1,4
+2021,7,"Trades, transport and equipment operators and related occupations",Low,Low,3134.4,2992.2,2751.4,240.8,142.2,4.5
+2021,8,"Trades, transport and equipment operators and related occupations",Low,Low,3106.5,2958.4,2740.1,218.3,148.1,4.8
+2021,9,"Trades, transport and equipment operators and related occupations",Low,Low,3101.6,2963.6,2686.9,276.6,138,4.4
+2021,10,"Trades, transport and equipment operators and related occupations",Low,Low,3084.9,2965.9,2669.1,296.8,119.1,3.9
+2021,11,"Trades, transport and equipment operators and related occupations",Low,Low,3109.6,2982.1,2673.9,308.2,127.5,4.1
+2021,12,"Trades, transport and equipment operators and related occupations",Low,Low,3034.9,2909.9,2623,287,125,4.1
+2022,1,"Trades, transport and equipment operators and related occupations",Low,Low,3003.3,2801.5,2496.5,305,201.8,6.7
+2022,2,"Trades, transport and equipment operators and related occupations",Low,Low,3011.9,2823.5,2498.8,324.7,188.4,6.3
+2022,3,"Trades, transport and equipment operators and related occupations",Low,Low,3055.4,2869,2577.4,291.6,186.4,6.1
+2022,4,"Trades, transport and equipment operators and related occupations",Low,Low,3036.1,2866.2,2566.7,299.6,169.8,5.6
+2022,5,"Trades, transport and equipment operators and related occupations",Low,Low,3071.8,2940.4,2682.1,258.3,131.4,4.3
+2022,6,"Trades, transport and equipment operators and related occupations",Low,Low,3084.9,2984,2711.2,272.8,100.9,3.3
+2022,7,"Trades, transport and equipment operators and related occupations",Low,Low,3123.2,3035.6,2795.4,240.2,87.6,2.8
+2022,8,"Trades, transport and equipment operators and related occupations",Low,Low,3151.9,3048.9,2831.9,217,103,3.3
+2022,9,"Trades, transport and equipment operators and related occupations",Low,Low,3111.4,3028,2773.4,254.6,83.4,2.7
+2022,10,"Trades, transport and equipment operators and related occupations",Low,Low,3116.9,3026.6,2768,258.7,90.3,2.9
+2022,11,"Trades, transport and equipment operators and related occupations",Low,Low,3093,2988,2728.3,259.7,105,3.4
+2022,12,"Trades, transport and equipment operators and related occupations",Low,Low,3120.1,2993.8,2724.1,269.7,126.3,4
+2023,1,"Trades, transport and equipment operators and related occupations",Low,Low,3151.3,2964.2,2679.4,284.8,187.1,5.9
+2023,2,"Trades, transport and equipment operators and related occupations",Low,Low,3152.1,2963.3,2678.8,284.5,188.9,6
+2023,3,"Trades, transport and equipment operators and related occupations",Low,Low,3189,2983.3,2694.8,288.5,205.7,6.5
+2023,4,"Trades, transport and equipment operators and related occupations",Low,Low,3225.3,3046,2767.5,278.5,179.3,5.6
+2023,5,"Trades, transport and equipment operators and related occupations",Low,Low,3264.2,3135.6,2882.5,253.1,128.6,3.9
+2023,6,"Trades, transport and equipment operators and related occupations",Low,Low,3295.3,3169.7,2907.4,262.3,125.6,3.8
+2023,7,"Trades, transport and equipment operators and related occupations",Low,Low,3237.1,3096.3,2842.3,253.9,140.8,4.3
+2023,8,"Trades, transport and equipment operators and related occupations",Low,Low,3294.7,3153.3,2900.2,253.2,141.4,4.3
+2023,9,"Trades, transport and equipment operators and related occupations",Low,Low,3231.1,3122.6,2840.3,282.3,108.5,3.4
+2023,10,"Trades, transport and equipment operators and related occupations",Low,Low,3237.2,3124.6,2828.4,296.2,112.6,3.5
+2023,11,"Trades, transport and equipment operators and related occupations",Low,Low,3237.3,3114.6,2826,288.6,122.8,3.8
+2023,12,"Trades, transport and equipment operators and related occupations",Low,Low,3265.2,3104.1,2815.3,288.7,161.1,4.9
+2024,1,"Trades, transport and equipment operators and related occupations",Low,Low,3195.9,2989.3,2676.8,312.6,206.6,6.5
+2024,2,"Trades, transport and equipment operators and related occupations",Low,Low,3246.5,3046.3,2734.4,311.9,200.3,6.2
+2024,3,"Trades, transport and equipment operators and related occupations",Low,Low,3256.6,3040.9,2727.1,313.8,215.7,6.6
+2024,4,"Trades, transport and equipment operators and related occupations",Low,Low,3282.6,3099.7,2818.3,281.4,182.9,5.6
+2024,5,"Trades, transport and equipment operators and related occupations",Low,Low,3331.2,3171.5,2902.1,269.4,159.7,4.8
+2024,6,"Trades, transport and equipment operators and related occupations",Low,Low,3369.2,3219.7,2945.9,273.7,149.6,4.4
+2024,7,"Trades, transport and equipment operators and related occupations",Low,Low,3366.8,3229,2987.7,241.3,137.8,4.1
+2024,8,"Trades, transport and equipment operators and related occupations",Low,Low,3394.3,3236.6,2994,242.6,157.8,4.6
+2024,9,"Trades, transport and equipment operators and related occupations",Low,Low,3372,3244.2,2964.7,279.6,127.7,3.8
+2024,10,"Trades, transport and equipment operators and related occupations",Low,Low,3409.2,3279.6,3017.1,262.6,129.6,3.8
+2024,11,"Trades, transport and equipment operators and related occupations",Low,Low,3332.5,3190.6,2905.3,285.3,141.9,4.3
+2024,12,"Trades, transport and equipment operators and related occupations",Low,Low,3283.6,3117.1,2831.2,285.9,166.5,5.1
+2025,1,"Trades, transport and equipment operators and related occupations",Low,Low,3293.6,3054.5,2755.4,299.1,239.1,7.3
+2025,2,"Trades, transport and equipment operators and related occupations",Low,Low,3232.6,3024.1,2724,300.1,208.5,6.4
+2025,3,"Trades, transport and equipment operators and related occupations",Low,Low,3301.1,3063.6,2766.8,296.9,237.4,7.2
+2025,4,"Trades, transport and equipment operators and related occupations",Low,Low,3342.4,3130.4,2810.7,319.7,212,6.3
+2025,5,"Trades, transport and equipment operators and related occupations",Low,Low,3349.1,3166.7,2901.4,265.3,182.4,5.4
+2025,6,"Trades, transport and equipment operators and related occupations",Low,Low,3377.5,3223.4,2938.9,284.5,154.1,4.6
+2025,7,"Trades, transport and equipment operators and related occupations",Low,Low,3345.1,3194.5,2937.3,257.1,150.6,4.5
+2025,8,"Trades, transport and equipment operators and related occupations",Low,Low,3403.9,3236.7,2977.4,259.4,167.2,4.9
+2025,9,"Trades, transport and equipment operators and related occupations",Low,Low,3314.9,3174.5,2903.6,270.8,140.4,4.2
+2010,1,"Natural resources, agriculture and related production occupations",Low,Low,330,260.3,218.8,41.5,69.7,21.1
+2010,2,"Natural resources, agriculture and related production occupations",Low,Low,338.1,270.7,225,45.7,67.4,19.9
+2010,3,"Natural resources, agriculture and related production occupations",Low,Low,323.8,252.2,210,42.2,71.6,22.1
+2010,4,"Natural resources, agriculture and related production occupations",Low,Low,352.8,282.5,240,42.5,70.4,20
+2010,5,"Natural resources, agriculture and related production occupations",Low,Low,420.1,365.7,313,52.7,54.4,12.9
+2010,6,"Natural resources, agriculture and related production occupations",Low,Low,453.8,411.8,356.9,54.9,42,9.3
+2010,7,"Natural resources, agriculture and related production occupations",Low,Low,485.2,438,380.5,57.5,47.2,9.7
+2010,8,"Natural resources, agriculture and related production occupations",Low,Low,486.9,438,383.9,54.1,48.9,10
+2010,9,"Natural resources, agriculture and related production occupations",Low,Low,429.2,386,331.1,54.9,43.2,10.1
+2010,10,"Natural resources, agriculture and related production occupations",Low,Low,433.8,377.3,325.1,52.1,56.5,13
+2010,11,"Natural resources, agriculture and related production occupations",Low,Low,401.4,337.4,292.2,45.2,63.9,15.9
+2010,12,"Natural resources, agriculture and related production occupations",Low,Low,372.4,303.8,259.4,44.4,68.6,18.4
+2011,1,"Natural resources, agriculture and related production occupations",Low,Low,365.8,293.5,243,50.5,72.3,19.8
+2011,2,"Natural resources, agriculture and related production occupations",Low,Low,336.1,274.7,227,47.7,61.5,18.3
+2011,3,"Natural resources, agriculture and related production occupations",Low,Low,358.2,278,227.9,50.1,80.2,22.4
+2011,4,"Natural resources, agriculture and related production occupations",Low,Low,353.6,287.9,244.5,43.4,65.7,18.6
+2011,5,"Natural resources, agriculture and related production occupations",Low,Low,424.9,383.6,330.5,53.1,41.4,9.7
+2011,6,"Natural resources, agriculture and related production occupations",Low,Low,468.5,436.3,377.8,58.5,32.2,6.9
+2011,7,"Natural resources, agriculture and related production occupations",Low,Low,479.7,440.1,385.5,54.6,39.5,8.2
+2011,8,"Natural resources, agriculture and related production occupations",Low,Low,476.1,441.6,388.7,52.9,34.5,7.2
+2011,9,"Natural resources, agriculture and related production occupations",Low,Low,432.6,399.2,347.2,52,33.4,7.7
+2011,10,"Natural resources, agriculture and related production occupations",Low,Low,413,370.7,320.3,50.4,42.3,10.2
+2011,11,"Natural resources, agriculture and related production occupations",Low,Low,390,330.6,286,44.6,59.4,15.2
+2011,12,"Natural resources, agriculture and related production occupations",Low,Low,350.5,294.7,258.3,36.5,55.8,15.9
+2012,1,"Natural resources, agriculture and related production occupations",Low,Low,344.4,281.4,242.7,38.7,63,18.3
+2012,2,"Natural resources, agriculture and related production occupations",Low,Low,325.5,265.7,225.2,40.5,59.8,18.4
+2012,3,"Natural resources, agriculture and related production occupations",Low,Low,340.7,277.2,235.7,41.6,63.5,18.6
+2012,4,"Natural resources, agriculture and related production occupations",Low,Low,385.9,317.2,272.9,44.3,68.7,17.8
+2012,5,"Natural resources, agriculture and related production occupations",Low,Low,444.7,391.5,330.5,61,53.2,12
+2012,6,"Natural resources, agriculture and related production occupations",Low,Low,463.5,423.5,362.9,60.6,40,8.6
+2012,7,"Natural resources, agriculture and related production occupations",Low,Low,497.9,452.4,396.4,56,45.6,9.2
+2012,8,"Natural resources, agriculture and related production occupations",Low,Low,496.6,453,394.7,58.3,43.6,8.8
+2012,9,"Natural resources, agriculture and related production occupations",Low,Low,429.1,393.4,346,47.4,35.7,8.3
+2012,10,"Natural resources, agriculture and related production occupations",Low,Low,417.5,371.5,322.7,48.8,45.9,11
+2012,11,"Natural resources, agriculture and related production occupations",Low,Low,402.8,347.7,301.8,45.9,55.1,13.7
+2012,12,"Natural resources, agriculture and related production occupations",Low,Low,400.2,335.3,292.8,42.5,64.9,16.2
+2013,1,"Natural resources, agriculture and related production occupations",Low,Low,369.1,302.3,261,41.3,66.7,18.1
+2013,2,"Natural resources, agriculture and related production occupations",Low,Low,372.2,304.8,261.3,43.5,67.5,18.1
+2013,3,"Natural resources, agriculture and related production occupations",Low,Low,373.1,307.7,264.6,43.1,65.4,17.5
+2013,4,"Natural resources, agriculture and related production occupations",Low,Low,396.4,326.2,282.7,43.5,70.2,17.7
+2013,5,"Natural resources, agriculture and related production occupations",Low,Low,463.7,410.2,351.6,58.6,53.5,11.5
+2013,6,"Natural resources, agriculture and related production occupations",Low,Low,483.1,443.4,378.6,64.8,39.7,8.2
+2013,7,"Natural resources, agriculture and related production occupations",Low,Low,510.2,465.4,403.8,61.6,44.8,8.8
+2013,8,"Natural resources, agriculture and related production occupations",Low,Low,514.6,470.7,403,67.6,43.9,8.5
+2013,9,"Natural resources, agriculture and related production occupations",Low,Low,455.7,420.6,358.7,61.9,35.1,7.7
+2013,10,"Natural resources, agriculture and related production occupations",Low,Low,436.3,396.4,342.2,54.2,39.9,9.1
+2013,11,"Natural resources, agriculture and related production occupations",Low,Low,414.4,350.3,306.5,43.8,64.2,15.5
+2013,12,"Natural resources, agriculture and related production occupations",Low,Low,382.8,321.5,278,43.6,61.2,16
+2014,1,"Natural resources, agriculture and related production occupations",Low,Low,377.8,310.6,268,42.7,67.2,17.8
+2014,2,"Natural resources, agriculture and related production occupations",Low,Low,386.1,322.5,276.7,45.9,63.5,16.4
+2014,3,"Natural resources, agriculture and related production occupations",Low,Low,383.1,320.8,274.8,46.1,62.3,16.3
+2014,4,"Natural resources, agriculture and related production occupations",Low,Low,430.4,356.8,304.7,52.1,73.5,17.1
+2014,5,"Natural resources, agriculture and related production occupations",Low,Low,481.1,427.8,374.4,53.4,53.3,11.1
+2014,6,"Natural resources, agriculture and related production occupations",Low,Low,488.9,456,403.8,52.2,32.9,6.7
+2014,7,"Natural resources, agriculture and related production occupations",Low,Low,508.9,474.7,422,52.7,34.2,6.7
+2014,8,"Natural resources, agriculture and related production occupations",Low,Low,502.1,469.5,415.2,54.3,32.6,6.5
+2014,9,"Natural resources, agriculture and related production occupations",Low,Low,466.2,428.7,370.6,58,37.6,8.1
+2014,10,"Natural resources, agriculture and related production occupations",Low,Low,433.8,388,335.8,52.3,45.8,10.6
+2014,11,"Natural resources, agriculture and related production occupations",Low,Low,411.9,360.3,317.8,42.4,51.6,12.5
+2014,12,"Natural resources, agriculture and related production occupations",Low,Low,399.9,344.5,294.6,49.9,55.4,13.9
+2015,1,"Natural resources, agriculture and related production occupations",Low,Low,364.4,303.3,263.3,40,61.1,16.8
+2015,2,"Natural resources, agriculture and related production occupations",Low,Low,355.3,289.6,242.8,46.8,65.8,18.5
+2015,3,"Natural resources, agriculture and related production occupations",Low,Low,353.7,280.9,242.2,38.8,72.8,20.6
+2015,4,"Natural resources, agriculture and related production occupations",Low,Low,375.4,313.2,276.9,36.3,62.2,16.6
+2015,5,"Natural resources, agriculture and related production occupations",Low,Low,446.2,397.9,348.6,49.4,48.3,10.8
+2015,6,"Natural resources, agriculture and related production occupations",Low,Low,475.3,433.9,379,54.9,41.4,8.7
+2015,7,"Natural resources, agriculture and related production occupations",Low,Low,489.2,447.1,392.9,54.2,42.1,8.6
+2015,8,"Natural resources, agriculture and related production occupations",Low,Low,478.7,440.6,391.9,48.7,38.1,8
+2015,9,"Natural resources, agriculture and related production occupations",Low,Low,443.4,401.9,351.2,50.8,41.5,9.4
+2015,10,"Natural resources, agriculture and related production occupations",Low,Low,405.5,359.9,310.2,49.7,45.6,11.2
+2015,11,"Natural resources, agriculture and related production occupations",Low,Low,372.9,316.7,274.7,42.1,56.1,15
+2015,12,"Natural resources, agriculture and related production occupations",Low,Low,358.4,287.6,257.2,30.4,70.8,19.8
+2016,1,"Natural resources, agriculture and related production occupations",Low,Low,356.2,276.7,238.9,37.8,79.5,22.3
+2016,2,"Natural resources, agriculture and related production occupations",Low,Low,354.7,278.8,242,36.8,75.9,21.4
+2016,3,"Natural resources, agriculture and related production occupations",Low,Low,358.1,279,241.8,37.3,79,22.1
+2016,4,"Natural resources, agriculture and related production occupations",Low,Low,377.9,303.4,260.3,43.1,74.5,19.7
+2016,5,"Natural resources, agriculture and related production occupations",Low,Low,455.2,403.6,346.6,57,51.6,11.3
+2016,6,"Natural resources, agriculture and related production occupations",Low,Low,452.1,408.8,344.8,64,43.3,9.6
+2016,7,"Natural resources, agriculture and related production occupations",Low,Low,462.4,422.3,358.6,63.7,40.1,8.7
+2016,8,"Natural resources, agriculture and related production occupations",Low,Low,449.2,414.4,356.6,57.8,34.8,7.7
+2016,9,"Natural resources, agriculture and related production occupations",Low,Low,411.6,376.2,312.2,64,35.4,8.6
+2016,10,"Natural resources, agriculture and related production occupations",Low,Low,408.2,363.8,308.5,55.4,44.4,10.9
+2016,11,"Natural resources, agriculture and related production occupations",Low,Low,389.4,340.3,289.8,50.5,49.2,12.6
+2016,12,"Natural resources, agriculture and related production occupations",Low,Low,363.4,305.7,262.2,43.4,57.8,15.9
+2017,1,"Natural resources, agriculture and related production occupations",Low,Low,358.1,293.9,253.7,40.2,64.2,17.9
+2017,2,"Natural resources, agriculture and related production occupations",Low,Low,357.4,291.5,249.7,41.8,66,18.5
+2017,3,"Natural resources, agriculture and related production occupations",Low,Low,356.2,296.6,253.4,43.1,59.7,16.8
+2017,4,"Natural resources, agriculture and related production occupations",Low,Low,372.7,307.7,268.9,38.8,65,17.4
+2017,5,"Natural resources, agriculture and related production occupations",Low,Low,444.3,405,353.8,51.2,39.3,8.8
+2017,6,"Natural resources, agriculture and related production occupations",Low,Low,464.8,435.8,378.8,56.9,29,6.2
+2017,7,"Natural resources, agriculture and related production occupations",Low,Low,473.2,443.8,394.2,49.6,29.4,6.2
+2017,8,"Natural resources, agriculture and related production occupations",Low,Low,483.1,451.1,395.5,55.7,32,6.6
+2017,9,"Natural resources, agriculture and related production occupations",Low,Low,429.8,398.7,348.9,49.8,31.1,7.2
+2017,10,"Natural resources, agriculture and related production occupations",Low,Low,416.4,376.7,329.1,47.6,39.7,9.5
+2017,11,"Natural resources, agriculture and related production occupations",Low,Low,392.3,346.2,302.1,44.1,46,11.7
+2017,12,"Natural resources, agriculture and related production occupations",Low,Low,361.3,314.5,269.8,44.7,46.8,13
+2018,1,"Natural resources, agriculture and related production occupations",Low,Low,344.6,296.6,252.7,43.9,48.1,14
+2018,2,"Natural resources, agriculture and related production occupations",Low,Low,355.5,303.3,258,45.3,52.2,14.7
+2018,3,"Natural resources, agriculture and related production occupations",Low,Low,384.8,318.9,276.5,42.5,65.8,17.1
+2018,4,"Natural resources, agriculture and related production occupations",Low,Low,406.7,345.9,297.7,48.2,60.8,14.9
+2018,5,"Natural resources, agriculture and related production occupations",Low,Low,466,424,377.4,46.6,42,9
+2018,6,"Natural resources, agriculture and related production occupations",Low,Low,486.7,459.1,406.3,52.8,27.6,5.7
+2018,7,"Natural resources, agriculture and related production occupations",Low,Low,491.2,464.5,414.5,50,26.7,5.4
+2018,8,"Natural resources, agriculture and related production occupations",Low,Low,498.1,472.3,424.1,48.2,25.8,5.2
+2018,9,"Natural resources, agriculture and related production occupations",Low,Low,465.5,437.9,376.6,61.3,27.6,5.9
+2018,10,"Natural resources, agriculture and related production occupations",Low,Low,444.9,410.8,354,56.8,34.1,7.7
+2018,11,"Natural resources, agriculture and related production occupations",Low,Low,441.7,383.2,330.6,52.6,58.6,13.3
+2018,12,"Natural resources, agriculture and related production occupations",Low,Low,421.5,370.1,317.2,52.9,51.4,12.2
+2019,1,"Natural resources, agriculture and related production occupations",Low,Low,398.5,329.1,277.7,51.4,69.4,17.4
+2019,2,"Natural resources, agriculture and related production occupations",Low,Low,401.6,337,280.8,56.2,64.5,16.1
+2019,3,"Natural resources, agriculture and related production occupations",Low,Low,384.2,323,269.2,53.7,61.2,15.9
+2019,4,"Natural resources, agriculture and related production occupations",Low,Low,390.9,330.1,279.2,50.9,60.8,15.6
+2019,5,"Natural resources, agriculture and related production occupations",Low,Low,451.4,414.1,358.6,55.5,37.3,8.3
+2019,6,"Natural resources, agriculture and related production occupations",Low,Low,473.3,441.8,384,57.8,31.5,6.7
+2019,7,"Natural resources, agriculture and related production occupations",Low,Low,503,465,409.6,55.4,38,7.6
+2019,8,"Natural resources, agriculture and related production occupations",Low,Low,491.1,460.6,404.6,56,30.5,6.2
+2019,9,"Natural resources, agriculture and related production occupations",Low,Low,433,403.4,339.7,63.7,29.7,6.9
+2019,10,"Natural resources, agriculture and related production occupations",Low,Low,431.8,395.7,343.1,52.6,36.1,8.4
+2019,11,"Natural resources, agriculture and related production occupations",Low,Low,403.3,354.4,305.6,48.8,48.9,12.1
+2019,12,"Natural resources, agriculture and related production occupations",Low,Low,381.7,323.5,275.2,48.2,58.3,15.3
+2020,1,"Natural resources, agriculture and related production occupations",Low,Low,378.6,319.5,272.6,46.9,59.1,15.6
+2020,2,"Natural resources, agriculture and related production occupations",Low,Low,379,316.6,270.8,45.8,62.4,16.5
+2020,3,"Natural resources, agriculture and related production occupations",Low,Low,375.4,317.3,269,48.3,58,15.5
+2020,4,"Natural resources, agriculture and related production occupations",Low,Low,368.3,293.1,249.4,43.7,75.2,20.4
+2020,5,"Natural resources, agriculture and related production occupations",Low,Low,440.2,372.4,319.8,52.6,67.8,15.4
+2020,6,"Natural resources, agriculture and related production occupations",Low,Low,465.5,414.3,357.5,56.9,51.2,11
+2020,7,"Natural resources, agriculture and related production occupations",Low,Low,478.4,423.9,359.3,64.6,54.5,11.4
+2020,8,"Natural resources, agriculture and related production occupations",Low,Low,483.3,429.7,363.9,65.8,53.6,11.1
+2020,9,"Natural resources, agriculture and related production occupations",Low,Low,421.9,375.3,313,62.3,46.6,11
+2020,10,"Natural resources, agriculture and related production occupations",Low,Low,422.6,378.4,312.3,66.1,44.1,10.4
+2020,11,"Natural resources, agriculture and related production occupations",Low,Low,395.2,348.7,286.8,62,46.5,11.8
+2020,12,"Natural resources, agriculture and related production occupations",Low,Low,368,312.3,260.8,51.5,55.8,15.2
+2021,1,"Natural resources, agriculture and related production occupations",Low,Low,352.3,290,237.8,52.2,62.3,17.7
+2021,2,"Natural resources, agriculture and related production occupations",Low,Low,352.2,297.3,246.9,50.5,54.8,15.6
+2021,3,"Natural resources, agriculture and related production occupations",Low,Low,361.6,304.9,247.3,57.7,56.7,15.7
+2021,4,"Natural resources, agriculture and related production occupations",Low,Low,401.1,351.4,291.4,60.1,49.6,12.4
+2021,5,"Natural resources, agriculture and related production occupations",Low,Low,449.9,418.9,347.7,71.2,31,6.9
+2021,6,"Natural resources, agriculture and related production occupations",Low,Low,440.9,413.4,353.1,60.3,27.5,6.2
+2021,7,"Natural resources, agriculture and related production occupations",Low,Low,456.8,423.9,376.6,47.4,32.9,7.2
+2021,8,"Natural resources, agriculture and related production occupations",Low,Low,432.3,394.5,354.6,39.9,37.8,8.7
+2021,9,"Natural resources, agriculture and related production occupations",Low,Low,402.4,373.8,323.2,50.6,28.6,7.1
+2021,10,"Natural resources, agriculture and related production occupations",Low,Low,383.3,351.4,309.8,41.6,31.9,8.3
+2021,11,"Natural resources, agriculture and related production occupations",Low,Low,378.3,331.9,290.1,41.8,46.4,12.3
+2021,12,"Natural resources, agriculture and related production occupations",Low,Low,362.5,314.9,269.8,45.1,47.6,13.1
+2022,1,"Natural resources, agriculture and related production occupations",Low,Low,356.5,300.4,258.5,41.9,56,15.7
+2022,2,"Natural resources, agriculture and related production occupations",Low,Low,359.8,307.8,252.1,55.7,52,14.5
+2022,3,"Natural resources, agriculture and related production occupations",Low,Low,369.8,318.7,268.6,50.1,51.1,13.8
+2022,4,"Natural resources, agriculture and related production occupations",Low,Low,382,337.7,291.5,46.2,44.3,11.6
+2022,5,"Natural resources, agriculture and related production occupations",Low,Low,468.8,440.7,388.9,51.8,28.1,6
+2022,6,"Natural resources, agriculture and related production occupations",Low,Low,470.6,449.1,395.3,53.8,21.6,4.6
+2022,7,"Natural resources, agriculture and related production occupations",Low,Low,482.1,462.7,399.6,63.1,19.5,4
+2022,8,"Natural resources, agriculture and related production occupations",Low,Low,479.4,446.1,392.1,54,33.3,6.9
+2022,9,"Natural resources, agriculture and related production occupations",Low,Low,449.5,421,360.4,60.7,28.4,6.3
+2022,10,"Natural resources, agriculture and related production occupations",Low,Low,431.7,400,350.4,49.6,31.7,7.3
+2022,11,"Natural resources, agriculture and related production occupations",Low,Low,420.2,370.7,315.2,55.5,49.5,11.8
+2022,12,"Natural resources, agriculture and related production occupations",Low,Low,379.6,329.4,274.9,54.5,50.3,13.3
+2023,1,"Natural resources, agriculture and related production occupations",Low,Low,357.3,300.8,255.4,45.5,56.5,15.8
+2023,2,"Natural resources, agriculture and related production occupations",Low,Low,342.6,300.8,249.4,51.4,41.8,12.2
+2023,3,"Natural resources, agriculture and related production occupations",Low,Low,350.8,292.1,248,44.1,58.7,16.7
+2023,4,"Natural resources, agriculture and related production occupations",Low,Low,350.8,299.2,255.2,44,51.6,14.7
+2023,5,"Natural resources, agriculture and related production occupations",Low,Low,404.2,377.8,325.9,51.9,26.4,6.5
+2023,6,"Natural resources, agriculture and related production occupations",Low,Low,421,395.2,345.2,50,25.8,6.1
+2023,7,"Natural resources, agriculture and related production occupations",Low,Low,456.1,433.7,375.7,58,22.4,4.9
+2023,8,"Natural resources, agriculture and related production occupations",Low,Low,455.5,427.9,372.6,55.3,27.6,6.1
+2023,9,"Natural resources, agriculture and related production occupations",Low,Low,424.7,394.7,339.9,54.8,30.1,7.1
+2023,10,"Natural resources, agriculture and related production occupations",Low,Low,429.3,391.7,337.7,53.9,37.6,8.8
+2023,11,"Natural resources, agriculture and related production occupations",Low,Low,399.7,356.6,307.8,48.7,43.1,10.8
+2023,12,"Natural resources, agriculture and related production occupations",Low,Low,364.1,319,277.1,41.9,45,12.4
+2024,1,"Natural resources, agriculture and related production occupations",Low,Low,350.1,303.4,258.6,44.8,46.7,13.3
+2024,2,"Natural resources, agriculture and related production occupations",Low,Low,356.6,308.1,262.4,45.7,48.5,13.6
+2024,3,"Natural resources, agriculture and related production occupations",Low,Low,343.2,294.5,256.3,38.2,48.7,14.2
+2024,4,"Natural resources, agriculture and related production occupations",Low,Low,379.3,338.1,297,41.2,41.2,10.9
+2024,5,"Natural resources, agriculture and related production occupations",Low,Low,438.5,410.8,360.3,50.5,27.7,6.3
+2024,6,"Natural resources, agriculture and related production occupations",Low,Low,471.4,440.5,377.5,63,30.9,6.6
+2024,7,"Natural resources, agriculture and related production occupations",Low,Low,509.7,470.2,404.8,65.5,39.4,7.7
+2024,8,"Natural resources, agriculture and related production occupations",Low,Low,459,432.3,372,60.3,26.7,5.8
+2024,9,"Natural resources, agriculture and related production occupations",Low,Low,426.2,393.2,339.3,53.9,33,7.7
+2024,10,"Natural resources, agriculture and related production occupations",Low,Low,406.8,366.4,318.1,48.4,40.4,9.9
+2024,11,"Natural resources, agriculture and related production occupations",Low,Low,389.8,336.7,291,45.7,53.2,13.6
+2024,12,"Natural resources, agriculture and related production occupations",Low,Low,359.1,308.3,263.7,44.6,50.8,14.1
+2025,1,"Natural resources, agriculture and related production occupations",Low,Low,364.8,316.2,264.5,51.7,48.7,13.3
+2025,2,"Natural resources, agriculture and related production occupations",Low,Low,352.2,303.3,255.8,47.5,48.9,13.9
+2025,3,"Natural resources, agriculture and related production occupations",Low,Low,342.9,286.3,246.3,40,56.5,16.5
+2025,4,"Natural resources, agriculture and related production occupations",Low,Low,366.2,313.1,280.1,33,53.1,14.5
+2025,5,"Natural resources, agriculture and related production occupations",Low,Low,399.8,372.9,335.9,37,27,6.8
+2025,6,"Natural resources, agriculture and related production occupations",Low,Low,408.2,387.9,344.5,43.5,20.3,5
+2025,7,"Natural resources, agriculture and related production occupations",Low,Low,412.3,389.3,343.3,46,23,5.6
+2025,8,"Natural resources, agriculture and related production occupations",Low,Low,417,386.5,343.1,43.4,30.5,7.3
+2025,9,"Natural resources, agriculture and related production occupations",Low,Low,393.9,364.8,313.4,51.4,29.1,7.4
+2010,1,Manufacturing and utilities occupations,Low,Low,899.6,793.6,744.8,48.9,106,11.8
+2010,2,Manufacturing and utilities occupations,Low,Low,893.5,798.8,753.6,45.3,94.7,10.6
+2010,3,Manufacturing and utilities occupations,Low,Low,883.8,790.3,750.9,39.5,93.4,10.6
+2010,4,Manufacturing and utilities occupations,Low,Low,869.4,789.8,747.8,42,79.6,9.2
+2010,5,Manufacturing and utilities occupations,Low,Low,889.5,813.7,773.3,40.3,75.8,8.5
+2010,6,Manufacturing and utilities occupations,Low,Low,910.7,845.9,799.1,46.8,64.8,7.1
+2010,7,Manufacturing and utilities occupations,Low,Low,923.9,839.9,806.7,33.2,84.1,9.1
+2010,8,Manufacturing and utilities occupations,Low,Low,913.5,838.3,804,34.3,75.3,8.2
+2010,9,Manufacturing and utilities occupations,Low,Low,894.7,824.5,783.7,40.8,70.2,7.8
+2010,10,Manufacturing and utilities occupations,Low,Low,894.4,827.5,793.3,34.1,66.9,7.5
+2010,11,Manufacturing and utilities occupations,Low,Low,896.9,822.4,791.2,31.2,74.4,8.3
+2010,12,Manufacturing and utilities occupations,Low,Low,898.3,821.1,787.2,33.9,77.2,8.6
+2011,1,Manufacturing and utilities occupations,Low,Low,898.1,806.4,758.8,47.6,91.7,10.2
+2011,2,Manufacturing and utilities occupations,Low,Low,869.6,796.4,754.6,41.8,73.2,8.4
+2011,3,Manufacturing and utilities occupations,Low,Low,882.1,803.4,763.9,39.5,78.6,8.9
+2011,4,Manufacturing and utilities occupations,Low,Low,869.8,804.3,767.1,37.2,65.5,7.5
+2011,5,Manufacturing and utilities occupations,Low,Low,926.4,862.8,820.5,42.3,63.6,6.9
+2011,6,Manufacturing and utilities occupations,Low,Low,908.6,845.2,803.6,41.6,63.4,7
+2011,7,Manufacturing and utilities occupations,Low,Low,945.1,874.2,840.3,33.9,70.9,7.5
+2011,8,Manufacturing and utilities occupations,Low,Low,953.9,891,851.8,39.2,62.9,6.6
+2011,9,Manufacturing and utilities occupations,Low,Low,925.5,861.8,827.8,34,63.7,6.9
+2011,10,Manufacturing and utilities occupations,Low,Low,913,852.1,811.9,40.2,60.9,6.7
+2011,11,Manufacturing and utilities occupations,Low,Low,912.5,843.8,794.7,49,68.8,7.5
+2011,12,Manufacturing and utilities occupations,Low,Low,915,847.8,800.7,47.1,67.2,7.3
+2012,1,Manufacturing and utilities occupations,Low,Low,886.4,798.4,748.7,49.8,88,9.9
+2012,2,Manufacturing and utilities occupations,Low,Low,878.8,801.2,756,45.2,77.6,8.8
+2012,3,Manufacturing and utilities occupations,Low,Low,893.6,821.4,772.1,49.4,72.1,8.1
+2012,4,Manufacturing and utilities occupations,Low,Low,889.2,824.4,788.4,36,64.7,7.3
+2012,5,Manufacturing and utilities occupations,Low,Low,909,847.2,805.7,41.5,61.8,6.8
+2012,6,Manufacturing and utilities occupations,Low,Low,919.7,859.9,824.5,35.4,59.8,6.5
+2012,7,Manufacturing and utilities occupations,Low,Low,946.1,884.1,835.8,48.3,62,6.6
+2012,8,Manufacturing and utilities occupations,Low,Low,960.3,897.9,869.1,28.8,62.4,6.5
+2012,9,Manufacturing and utilities occupations,Low,Low,902.4,844.4,808.6,35.8,58,6.4
+2012,10,Manufacturing and utilities occupations,Low,Low,902.6,845.1,809.9,35.2,57.5,6.4
+2012,11,Manufacturing and utilities occupations,Low,Low,917.1,858.7,824.5,34.3,58.4,6.4
+2012,12,Manufacturing and utilities occupations,Low,Low,908.6,844,810.8,33.2,64.6,7.1
+2013,1,Manufacturing and utilities occupations,Low,Low,883.1,797.9,761.1,36.8,85.1,9.6
+2013,2,Manufacturing and utilities occupations,Low,Low,877.3,808.7,767,41.7,68.6,7.8
+2013,3,Manufacturing and utilities occupations,Low,Low,878.5,815.8,775.1,40.7,62.7,7.1
+2013,4,Manufacturing and utilities occupations,Low,Low,891.3,829.3,786.7,42.5,62,7
+2013,5,Manufacturing and utilities occupations,Low,Low,914.7,857,817.3,39.8,57.7,6.3
+2013,6,Manufacturing and utilities occupations,Low,Low,929.2,868.7,829.4,39.3,60.5,6.5
+2013,7,Manufacturing and utilities occupations,Low,Low,961.4,903,862.8,40.2,58.4,6.1
+2013,8,Manufacturing and utilities occupations,Low,Low,945.1,894.4,865,29.4,50.7,5.4
+2013,9,Manufacturing and utilities occupations,Low,Low,905.2,856.3,823.6,32.7,48.9,5.4
+2013,10,Manufacturing and utilities occupations,Low,Low,893.3,838.5,805.5,33.1,54.7,6.1
+2013,11,Manufacturing and utilities occupations,Low,Low,893.8,837.9,795.1,42.8,55.9,6.3
+2013,12,Manufacturing and utilities occupations,Low,Low,910.9,843,804.5,38.5,67.9,7.5
+2014,1,Manufacturing and utilities occupations,Low,Low,869.9,796.4,752.3,44.1,73.5,8.4
+2014,2,Manufacturing and utilities occupations,Low,Low,878.5,801.8,761.4,40.4,76.7,8.7
+2014,3,Manufacturing and utilities occupations,Low,Low,881.8,809.7,761.2,48.5,72.1,8.2
+2014,4,Manufacturing and utilities occupations,Low,Low,902.3,842.2,796.4,45.7,60.2,6.7
+2014,5,Manufacturing and utilities occupations,Low,Low,920.3,859.1,826.5,32.6,61.2,6.7
+2014,6,Manufacturing and utilities occupations,Low,Low,939.7,889.2,861.5,27.7,50.5,5.4
+2014,7,Manufacturing and utilities occupations,Low,Low,970.8,911.1,864,47.1,59.7,6.1
+2014,8,Manufacturing and utilities occupations,Low,Low,959.6,903.6,865.3,38.3,56,5.8
+2014,9,Manufacturing and utilities occupations,Low,Low,929.3,879.4,847.4,32,50,5.4
+2014,10,Manufacturing and utilities occupations,Low,Low,922.3,872.5,831.2,41.3,49.8,5.4
+2014,11,Manufacturing and utilities occupations,Low,Low,906.4,858.3,815,43.2,48.1,5.3
+2014,12,Manufacturing and utilities occupations,Low,Low,916.9,855.5,810.7,44.9,61.4,6.7
+2015,1,Manufacturing and utilities occupations,Low,Low,887.5,819.1,777.9,41.2,68.4,7.7
+2015,2,Manufacturing and utilities occupations,Low,Low,882.7,817.4,777.2,40.2,65.3,7.4
+2015,3,Manufacturing and utilities occupations,Low,Low,897.6,822.8,784.2,38.6,74.8,8.3
+2015,4,Manufacturing and utilities occupations,Low,Low,906.7,846.8,798.9,47.9,59.9,6.6
+2015,5,Manufacturing and utilities occupations,Low,Low,934.3,887.3,845.9,41.4,47,5
+2015,6,Manufacturing and utilities occupations,Low,Low,913.4,869.6,832.1,37.5,43.8,4.8
+2015,7,Manufacturing and utilities occupations,Low,Low,928.8,875.2,845.9,29.3,53.6,5.8
+2015,8,Manufacturing and utilities occupations,Low,Low,931.4,890.3,861.3,29,41,4.4
+2015,9,Manufacturing and utilities occupations,Low,Low,908,862.9,829.6,33.3,45.1,5
+2015,10,Manufacturing and utilities occupations,Low,Low,898.6,853.4,816.7,36.7,45.2,5
+2015,11,Manufacturing and utilities occupations,Low,Low,883.7,839.1,805,34.1,44.6,5
+2015,12,Manufacturing and utilities occupations,Low,Low,902.8,849.8,810.6,39.3,53,5.9
+2016,1,Manufacturing and utilities occupations,Low,Low,917.5,851.6,809.8,41.7,65.9,7.2
+2016,2,Manufacturing and utilities occupations,Low,Low,922.1,851,812.4,38.6,71,7.7
+2016,3,Manufacturing and utilities occupations,Low,Low,917,845.9,803.7,42.2,71.1,7.8
+2016,4,Manufacturing and utilities occupations,Low,Low,917.4,847.7,804.2,43.5,69.7,7.6
+2016,5,Manufacturing and utilities occupations,Low,Low,967.3,907.6,858.9,48.8,59.7,6.2
+2016,6,Manufacturing and utilities occupations,Low,Low,956.3,902.9,858.5,44.4,53.4,5.6
+2016,7,Manufacturing and utilities occupations,Low,Low,964.3,905.1,867.8,37.4,59.1,6.1
+2016,8,Manufacturing and utilities occupations,Low,Low,971.9,918.7,880.2,38.5,53.2,5.5
+2016,9,Manufacturing and utilities occupations,Low,Low,956.3,905.6,871.1,34.4,50.7,5.3
+2016,10,Manufacturing and utilities occupations,Low,Low,957.6,897.5,857.8,39.8,60.1,6.3
+2016,11,Manufacturing and utilities occupations,Low,Low,943.4,884.2,839.6,44.7,59.1,6.3
+2016,12,Manufacturing and utilities occupations,Low,Low,951.2,895.2,856.1,39.1,56,5.9
+2017,1,Manufacturing and utilities occupations,Low,Low,948.1,870.8,825.3,45.5,77.3,8.2
+2017,2,Manufacturing and utilities occupations,Low,Low,930.8,879.8,826.8,53,51,5.5
+2017,3,Manufacturing and utilities occupations,Low,Low,924,870.7,822,48.6,53.4,5.8
+2017,4,Manufacturing and utilities occupations,Low,Low,939.2,884.7,833.4,51.3,54.5,5.8
+2017,5,Manufacturing and utilities occupations,Low,Low,940.8,897.6,849.9,47.6,43.2,4.6
+2017,6,Manufacturing and utilities occupations,Low,Low,926.4,887,845,42,39.4,4.3
+2017,7,Manufacturing and utilities occupations,Low,Low,976.9,930.1,887.9,42.1,46.8,4.8
+2017,8,Manufacturing and utilities occupations,Low,Low,973.1,932.4,886.3,46.1,40.8,4.2
+2017,9,Manufacturing and utilities occupations,Low,Low,930.7,894.5,856,38.6,36.1,3.9
+2017,10,Manufacturing and utilities occupations,Low,Low,952.5,910.7,859.4,51.3,41.8,4.4
+2017,11,Manufacturing and utilities occupations,Low,Low,953.7,923.9,869.1,54.7,29.9,3.1
+2017,12,Manufacturing and utilities occupations,Low,Low,957.2,926.1,875.9,50.3,31.1,3.2
+2018,1,Manufacturing and utilities occupations,Low,Low,963.6,908.5,867.7,40.8,55.1,5.7
+2018,2,Manufacturing and utilities occupations,Low,Low,943.4,896.6,857.7,38.9,46.8,5
+2018,3,Manufacturing and utilities occupations,Low,Low,958,909.2,870.7,38.6,48.8,5.1
+2018,4,Manufacturing and utilities occupations,Low,Low,931.1,887.5,857.8,29.7,43.7,4.7
+2018,5,Manufacturing and utilities occupations,Low,Low,947.6,903.4,856.7,46.6,44.2,4.7
+2018,6,Manufacturing and utilities occupations,Low,Low,983.6,940.1,892.9,47.2,43.4,4.4
+2018,7,Manufacturing and utilities occupations,Low,Low,986.5,938.9,901.6,37.4,47.5,4.8
+2018,8,Manufacturing and utilities occupations,Low,Low,975.7,926.1,889.6,36.4,49.7,5.1
+2018,9,Manufacturing and utilities occupations,Low,Low,945.3,909.5,871.9,37.6,35.8,3.8
+2018,10,Manufacturing and utilities occupations,Low,Low,933,901.3,866,35.4,31.7,3.4
+2018,11,Manufacturing and utilities occupations,Low,Low,909.3,875.3,841.7,33.5,34,3.7
+2018,12,Manufacturing and utilities occupations,Low,Low,928.8,884,845.2,38.7,44.8,4.8
+2019,1,Manufacturing and utilities occupations,Low,Low,914.2,872.4,838.2,34.2,41.8,4.6
+2019,2,Manufacturing and utilities occupations,Low,Low,893.4,851.6,806.7,44.9,41.8,4.7
+2019,3,Manufacturing and utilities occupations,Low,Low,900,850.9,811.1,39.9,49,5.4
+2019,4,Manufacturing and utilities occupations,Low,Low,919.4,872.1,829,43.1,47.3,5.1
+2019,5,Manufacturing and utilities occupations,Low,Low,940.6,895.4,855.6,39.8,45.2,4.8
+2019,6,Manufacturing and utilities occupations,Low,Low,932.5,893.7,841.4,52.4,38.7,4.2
+2019,7,Manufacturing and utilities occupations,Low,Low,942.6,902.2,855.8,46.4,40.4,4.3
+2019,8,Manufacturing and utilities occupations,Low,Low,955.3,921.4,878.8,42.6,33.9,3.5
+2019,9,Manufacturing and utilities occupations,Low,Low,932.5,894.4,850,44.3,38.1,4.1
+2019,10,Manufacturing and utilities occupations,Low,Low,922.8,881.4,840.1,41.4,41.4,4.5
+2019,11,Manufacturing and utilities occupations,Low,Low,888.4,848.1,808.3,39.9,40.2,4.5
+2019,12,Manufacturing and utilities occupations,Low,Low,892.6,842.3,800.4,41.9,50.2,5.6
+2020,1,Manufacturing and utilities occupations,Low,Low,894.8,829.1,783.5,45.6,65.6,7.3
+2020,2,Manufacturing and utilities occupations,Low,Low,890.8,839.7,800.9,38.8,51,5.7
+2020,3,Manufacturing and utilities occupations,Low,Low,856,792.8,761.2,31.6,63.2,7.4
+2020,4,Manufacturing and utilities occupations,Low,Low,808.7,654.2,625.5,28.7,154.5,19.1
+2020,5,Manufacturing and utilities occupations,Low,Low,847,727.5,690.8,36.7,119.5,14.1
+2020,6,Manufacturing and utilities occupations,Low,Low,876.1,799.5,764,35.4,76.6,8.7
+2020,7,Manufacturing and utilities occupations,Low,Low,900.1,831,797.2,33.8,69,7.7
+2020,8,Manufacturing and utilities occupations,Low,Low,892.2,835,799.6,35.4,57.1,6.4
+2020,9,Manufacturing and utilities occupations,Low,Low,871.2,837.8,796.8,41,33.4,3.8
+2020,10,Manufacturing and utilities occupations,Low,Low,875.7,812.9,772.3,40.6,62.8,7.2
+2020,11,Manufacturing and utilities occupations,Low,Low,877.6,817.9,781.2,36.7,59.7,6.8
+2020,12,Manufacturing and utilities occupations,Low,Low,897.8,840.8,804.3,36.5,57,6.3
+2021,1,Manufacturing and utilities occupations,Low,Low,915.5,834.9,800.1,34.9,80.5,8.8
+2021,2,Manufacturing and utilities occupations,Low,Low,888.3,824.7,795.1,29.6,63.6,7.2
+2021,3,Manufacturing and utilities occupations,Low,Low,900.4,833.1,800.5,32.6,67.4,7.5
+2021,4,Manufacturing and utilities occupations,Low,Low,870.6,804.3,766.8,37.5,66.2,7.6
+2021,5,Manufacturing and utilities occupations,Low,Low,893.8,837.5,799.7,37.8,56.3,6.3
+2021,6,Manufacturing and utilities occupations,Low,Low,891.8,842.4,811.4,30.9,49.4,5.5
+2021,7,Manufacturing and utilities occupations,Low,Low,870.4,824,779.3,44.7,46.4,5.3
+2021,8,Manufacturing and utilities occupations,Low,Low,850.1,804.8,767.9,36.8,45.4,5.3
+2021,9,Manufacturing and utilities occupations,Low,Low,873.6,826.7,785.8,40.9,46.9,5.4
+2021,10,Manufacturing and utilities occupations,Low,Low,868,831.4,797.1,34.3,36.6,4.2
+2021,11,Manufacturing and utilities occupations,Low,Low,859,819.2,764.2,55,39.8,4.6
+2021,12,Manufacturing and utilities occupations,Low,Low,889.9,854.9,802.7,52.1,35,3.9
+2022,1,Manufacturing and utilities occupations,Low,Low,861.9,816,771.4,44.6,45.9,5.3
+2022,2,Manufacturing and utilities occupations,Low,Low,887,850.4,808.4,42.1,36.6,4.1
+2022,3,Manufacturing and utilities occupations,Low,Low,869.5,832.7,786,46.6,36.8,4.2
+2022,4,Manufacturing and utilities occupations,Low,Low,889.1,854.2,809.5,44.7,34.9,3.9
+2022,5,Manufacturing and utilities occupations,Low,Low,899.2,862,817,44.9,37.2,4.1
+2022,6,Manufacturing and utilities occupations,Low,Low,910,871.8,830,41.8,38.2,4.2
+2022,7,Manufacturing and utilities occupations,Low,Low,939.2,906.6,864.6,42.1,32.6,3.5
+2022,8,Manufacturing and utilities occupations,Low,Low,908.7,875.9,835.6,40.3,32.8,3.6
+2022,9,Manufacturing and utilities occupations,Low,Low,895.4,852.9,810.6,42.3,42.6,4.8
+2022,10,Manufacturing and utilities occupations,Low,Low,908.8,865.2,821.8,43.4,43.6,4.8
+2022,11,Manufacturing and utilities occupations,Low,Low,886.9,855.2,808.5,46.7,31.7,3.6
+2022,12,Manufacturing and utilities occupations,Low,Low,879,850.3,806.9,43.4,28.7,3.3
+2023,1,Manufacturing and utilities occupations,Low,Low,886,843.3,798.9,44.4,42.7,4.8
+2023,2,Manufacturing and utilities occupations,Low,Low,903.4,842.8,797.3,45.5,60.5,6.7
+2023,3,Manufacturing and utilities occupations,Low,Low,876.4,842.2,810,32.2,34.2,3.9
+2023,4,Manufacturing and utilities occupations,Low,Low,849.9,820.7,785.8,35,29.2,3.4
+2023,5,Manufacturing and utilities occupations,Low,Low,892.1,858.8,817.8,41,33.3,3.7
+2023,6,Manufacturing and utilities occupations,Low,Low,905.8,869.2,820.1,49.1,36.6,4
+2023,7,Manufacturing and utilities occupations,Low,Low,924.1,889.5,846.5,43.1,34.6,3.7
+2023,8,Manufacturing and utilities occupations,Low,Low,932.3,897.3,851.7,45.6,35,3.8
+2023,9,Manufacturing and utilities occupations,Low,Low,900,856.9,810.1,46.9,43.1,4.8
+2023,10,Manufacturing and utilities occupations,Low,Low,908.4,871.4,820.3,51.1,37,4.1
+2023,11,Manufacturing and utilities occupations,Low,Low,888.1,858.3,811.2,47.1,29.8,3.4
+2023,12,Manufacturing and utilities occupations,Low,Low,867.3,829.3,786.1,43.3,37.9,4.4
+2024,1,Manufacturing and utilities occupations,Low,Low,880.7,836.2,788.7,47.6,44.5,5.1
+2024,2,Manufacturing and utilities occupations,Low,Low,871.8,829.8,788,41.7,42.1,4.8
+2024,3,Manufacturing and utilities occupations,Low,Low,890.4,837.6,793.8,43.8,52.9,5.9
+2024,4,Manufacturing and utilities occupations,Low,Low,901.2,848.7,806.2,42.5,52.5,5.8
+2024,5,Manufacturing and utilities occupations,Low,Low,920,874.2,831.3,43,45.8,5
+2024,6,Manufacturing and utilities occupations,Low,Low,935.7,893.6,848.3,45.3,42.2,4.5
+2024,7,Manufacturing and utilities occupations,Low,Low,956.3,910.1,871.9,38.1,46.2,4.8
+2024,8,Manufacturing and utilities occupations,Low,Low,964,924,878.6,45.4,40,4.1
+2024,9,Manufacturing and utilities occupations,Low,Low,928.6,893.3,844.2,49,35.4,3.8
+2024,10,Manufacturing and utilities occupations,Low,Low,891.2,847.9,788.7,59.3,43.3,4.9
+2024,11,Manufacturing and utilities occupations,Low,Low,874.3,824.6,778.3,46.3,49.7,5.7
+2024,12,Manufacturing and utilities occupations,Low,Low,910.3,869.2,816.5,52.6,41.1,4.5
+2025,1,Manufacturing and utilities occupations,Low,Low,874,830.3,784.2,46.1,43.7,5
+2025,2,Manufacturing and utilities occupations,Low,Low,875.7,830.9,784.5,46.3,44.8,5.1
+2025,3,Manufacturing and utilities occupations,Low,Low,879.9,837.7,793.9,43.8,42.2,4.8
+2025,4,Manufacturing and utilities occupations,Low,Low,865.6,822.2,780.3,41.9,43.4,5
+2025,5,Manufacturing and utilities occupations,Low,Low,876.4,835.2,791.7,43.6,41.2,4.7
+2025,6,Manufacturing and utilities occupations,Low,Low,887.5,851.8,810.4,41.5,35.7,4
+2025,7,Manufacturing and utilities occupations,Low,Low,896,866,830.3,35.7,30,3.3
+2025,8,Manufacturing and utilities occupations,Low,Low,867.1,833.5,795,38.6,33.5,3.9
+2025,9,Manufacturing and utilities occupations,Low,Low,868.5,836.9,793.7,43.2,31.7,3.6
