@@ -29,40 +29,34 @@ Past assignments and answer keys are available upon request.
 9. **Natural Experiments** - Instrumental variables and regression discontinuity designs
 10. **Machine Learning Methods** - A high-level intro to how machine learning can aid causal inference by flexibly controlling for confounders and estimating of heterogeneous treatment effects
 
-### Readings
-
-- Week 1:
-
-
-
-
 
 ## Repository Contents
 
 ### Slides
 
-The `slides/` directory contains lecture materials in markdown format. These slides use the Beamer framework and can be converted to PDF using the included `toBeamerPDF.py` script.
+The `slides/` directory contains lecture materials in markdown and PDF formats. The PDFs are generated from the markdown files using Pandoc and Beamer, using the `toBeamerPDF.py` script in the slides directory.
 
 Core lectures:
 
-- `01_IntroToCausality.md` - Potential outcomes and the eBay advertising case
-- `02_confounders.md` - DAGs and identifying confounding
-- `03_experiments.md` - Randomized experiments and estimation
-- `04_controlling.md` - Introduction to controlling for observables
-- `05_GoodAndBadControls.md` - When to (and not to) control for variables
-- `06_regression.md` - Regression as a tool for causal inference
-- `07_IntroToDiD.md` - Event studies and introduction to difference-in-differences
-- `08_DiD.md` - Difference-in-differences designs in depth
-- `09_NaturalExperiments.md` - Instrumental variables and regression discontinuity
-- `10_ML.md` - Machine learning methods for causal inference
+- `01_IntroToCausality` - Potential outcomes and the eBay advertising case
+- `02_confounders` - DAGs and identifying confounding
+- `03_experiments` - Randomized experiments and estimation
+- `04_controlling` - Introduction to controlling for observables
+- `05_GoodAndBadControls` - When to (and not to) control for variables
+- `06_regression` - Regression as a tool for causal inference
+- `07_IntroToDiD` - Event studies and introduction to difference-in-differences
+- `08_DiD` - Difference-in-differences designs in depth
+- `09_NaturalExperiments` - Instrumental variables and regression discontinuity
+- `10_ML` - Machine learning methods for causal inference
 
 Appendices:
-- `A1_StatisticalInference.md` - Statistical inference refresher
-- `A2_MatchingWeightingAndMore.md` - Advanced methods for controlling
+- `A1_StatisticalInference` - Statistical inference refresher
+- `A2_MatchingWeightingAndMore` - Advanced methods for controlling
+- `A3_PropensityScores` - Propensity score methods
 
 ### R Demos
 
-The `R_demos/` directory contains R Markdown files demonstrating the concepts covered in lectures through simulated examples and real data applications.
+The `R_demos/` directory contains R Markdown files demonstrating the concepts covered in lectures through simulated examples and real data applications. The `_blank` files can be used as templates for in-class coding demonstrations.
 
 ### Activities
 
@@ -89,7 +83,7 @@ These materials emphasize real-world applications of causal inference methods, i
 
 ## About
 
-These materials were developed by Brad Hackinen for use in graduate business education. The course assumes familiarity with basic statistics and regression, and uses R for all computational examples.
+These materials were developed by Brad Hackinen for use in teaching at Ivey Business School.
 
 ## License
 
