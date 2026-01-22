@@ -1,0 +1,233 @@
+---
+title: 'Intro to Controlling for Observables: NSW Case Study'
+author: "Brad Hackinen"
+date: "Fall 2025"
+output:
+  html_document:
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ggplot2)
+```
+
+
+# Data Description
+
+The following data comes from a job training program run by the U.S. federal government in the 1970s called the National Supported Work Demonstration (NSW). At the time, the government was concerned about "*a group of people, largely concentrated in its principle cities, who live at the margin of society... simultaneously the source and victims of urban decay*". The new program was designed to help people who had been excluded from the labour market find full-time employment. The study focused on four groups in particular: female long-term welfare recipients with dependent children, ex-offenders recently released from prison, former drug addicts recently in treatment, and young school dropouts. Participants were selected randomly from a larger group of eligible individuals, and participation was voluntary. The program provided job training, work experience, and a variety of counselling and support services. You can read more about the program [here](https://www.irp.wisc.edu/publications/focus/pdfs/foc53a.pdf).
+
+
+The data below comes from two sources:
+
+- Treated observations describe male participants in the job training program who joined after December 1975 and completed the program by January 1978.
+- Untreated control observations from the Panel Study of Income Dynamics which follows a representative sample of american families and tracks their income and characteristics over time. The sample is limited to male "household heads" with data during the same years as the treated observations.
+
+**Variables:**
+
+- **treat**: Indicates if the observation is a program participant (treat=1) or a non-participant drawn from the PSID (treat=0).
+- **age**: Participant age at time of enrollment
+- **education**: Years of education at time of enrollment
+- **black**: A binary indicator for whether the participant was black
+- **hispanic**: A binary indicator for whether the participant was hispanic
+- **married**: A binary indicator for whether the participant was married at time of enrollment
+- **nodegree**: A binary indicator for whether the participant had dropped out of highschool before completing their degree
+- **re74**: Real earnings in 1974 (before program start)
+- **re78**: Real earnings in 1978 (after program completion)
+
+
+```{r}
+data <- read_csv('https://raw.githubusercontent.com/bradhackinen/causal_inference_teaching/main/data/nsw_psid.csv')
+
+head(data,10)
+```
+
+# Research Question
+
+The question we will explore is whether the NSW program was successful in increasing participants success in the labour market, as measured by their earnings in 1978. In particular, the goal is to see if we can estimate the effect using only the observational data provided above. Note that the control data does not come directly from the study itself. Instead, it is a nationally representative sample of individuals that includes the same descriptive variables.
+
+**Experimental Estimate**
+
+The NSW job training program has become well known among social science researchers because it was actually run as a randomized trial: only a random subset of eligible individuals were allowed to enroll, but surveys were conducted to collected equivalent information on eligible non-participants. The experimental data (not included in the table above) allowed researchers to estimate that the job training program increased the earnings of participants in this sample by an average of $1,794 per participant in 1978.
+
+**Observational "estimate"**
+
+Using the provided observational data, compute the difference-in-means estimate below. How does it compare to the experimental estimate? 
+
+```{r}
+data |> 
+  summarize(
+    diff_in_means = mean(re78[treat==1]) - mean(re78[treat==0])
+  )
+```
+
+
+# Part 1: Data Exploration
+
+Use `ggplot` and `summarize` to explore the data. Can you see any patterns that might help explain the difference between the experimental estimate and your simple observational estimate?
+
+*Hint: What confounders might exist in this setting? Can any of them be observed? What patterns would they be likely to create?*
+
+```{r}
+# Table of means by treatment status
+data |> 
+  group_by(treat) |> 
+  summarize_all('mean')
+```
+
+```{r}
+# A prettier version
+data |> 
+  pivot_longer(cols=-treat) |> 
+  group_by(name) |> 
+  summarize(
+    treated = mean(value[treat==1]),
+    control = mean(value[treat==0]),
+    difference = treated - control,
+  ) |> 
+  mutate(across(where(is.numeric),round,2))
+```
+
+```{r}
+# Mirrored histograms
+long_data <- data |> 
+  pivot_longer(cols=-treat)
+
+long_data |> 
+  ggplot(aes(x=value,fill=treat)) +
+  stat_bin(data=filter(long_data,treat==1),aes(y=after_stat(density)),fill='red',bins=10) +
+  stat_bin(data=filter(long_data,treat==0),aes(y=-after_stat(density)),fill='blue',bins=10) +
+  facet_wrap('name',scales='free')
+```
+
+```{r}
+# Scatter plots with lines of best fit
+data |> 
+  pivot_longer(-re78) |> 
+  mutate(re78 = round(re78/10000)) |> 
+  ggplot(aes(x=value,y=re78)) +
+  geom_count() +
+  geom_smooth(method='lm') +
+  facet_wrap('name',scales='free_x') +
+  scale_size_continuous(range = c(0,2))
+```
+
+
+# Part 2: Improving the Causal Estimate with Imputation
+
+Let's explore how we can improve our causal estimate by estimating better counterfactuals. 
+
+**Using groups of similar individuals**
+
+One approach to controlling for observables is to find groups of individuals that share some common characteristics (often called "strata")
+
+We might believe that, *within strata*, treatment is effectively random. 
+
+Then we can, for example, use the average outcome of untreated individuals within each strata to impute the missing potential outcomes for treated individuals.
+
+We are going to make use of some new tidyverse functions:
+
+- `filter(tibble,condition)`: Keep only rows that meet some condition
+- `group_by(tibble,variable)`: Add invisible grouping information to the data frame. After grouping, summary statistics like `mean` and `sum` will be computed *within* each group.
+- `ungroup(tibble)`: Remove grouping information
+- `dropna(tibble,variable)`: Remove rows with missing values in the specified variable
+
+We are going to chain several operations together. This code will also be a lot easier to write and read if we use the pipe operator (`|>`), which takes the output of one function and uses it as the first argument of the next function.
+
+e.g. `filter(data,condition)` becomes `data |> filter(condition)`
+
+Here's how we can control for age by computing *within-age* counterfactual estimates:
+
+```{r}
+data |> 
+  group_by(age) |>
+  mutate(
+    Y0_pred = mean(re78[treat==0])
+  ) |>
+  ungroup() |>
+  drop_na(Y0_pred) |>
+  filter(treat==1) |>
+  summarize(
+    ATT_est = mean(re78 - Y0_pred)
+  ) 
+```
+
+What do you think of this estimate? Is there anything we could do to improve it?
+
+
+**Method 3: Using a predictive model to impute missing potential outcomes**
+
+**Q:** What happens if we try to control for pre-treatment income (`re74`) using the approach above? (try it!) Do you see any issues with the estimate?
+
+Here's a hint: Which treated individuals can you find controls for with the same income?
+
+Another general way to control for observables is to use some sort of general predictive model to estimate the missing potential outcomes. Many different machine learning models could be used for this purpose, but for this class we will stick to the basics and use linear regression. Note that, in this example we are not going to use regression to estimate the treatment effect directly (as you may have seen in other classes). Instead, we will use a regression model purely as a way to predict counterfactual outcomes.
+
+Here's a plot that illustrates the concept using `geom_smooth` with `method='lm'` to add a regression line through the data.
+
+```{r}
+data |> 
+  ggplot(aes(re74,re78)) +
+    geom_point(data = filter(data,treat==0),color='darkblue',alpha=0.05) +
+    geom_point(data = filter(data,treat==1),color='red',alpha=0.75) +
+    geom_smooth(data = filter(data,treat==0),method='lm') +
+    coord_cartesian(xlim = c(0, 40000), ylim = c(0,65000)) +
+    theme_classic()
+```
+
+And here is how we can estimate the ATT using this approach:
+
+Steps:
+
+1. Fit a regression model using `lm` that predicts outcomes for untreated units as a function of observed covariates.
+2. Use the `predict` function to impute the missing potential outcomes for treated units.
+3. Compute the ATT using the predicted counterfactuals.
+
+We are going to talk about `lm` more later in the course, but for now just think of it as a way to fit a simple prediction model that summarizes the relationship between two variables. The key functions we'll need are:
+
+- `lm(formula, data)`: Fit the model (i.e., learn the relationship between the variables). The `formula` argument describes the relationship we want to learn. For example, `re78 ~ re74` means "predict `re78` as a function of `re74`".
+- `predict(model,newdata)`: Use the fitted model to make predictions for new data. The `newdata` argument should be a data frame with the same predictor variables used to fit the model.
+
+
+```{r}
+# Split the data based on treatment
+treated_data <- data |> filter(treat==1)
+control_data <- data |> filter(treat==0)
+
+# Fit a linear regression model on the untreated observations
+Y0_model <- lm(re78 ~ re74, data=control_data)
+
+# Predict the counterfactual outcomes for the treated observations
+treated_data <- treated_data |>
+          mutate(
+            Y0_pred = predict(Y0_model,newdata=treated_data)
+          )
+```
+
+Let's plot the predicted counterfactuals against the actual treated outcomes.
+
+```{r}
+data |> 
+  ggplot(aes(re74,re78)) +
+    geom_point(data = filter(data,treat==0),color='darkblue',alpha=0.05) +
+    geom_point(data = filter(data,treat==1),color='red',alpha=0.75) +
+    geom_smooth(data = filter(data,treat==0),method='lm') +
+    geom_point(data = treated_data,aes(y=Y0_pred),color='orange') +
+    coord_cartesian(xlim = c(0, 40000), ylim = c(0,65000)) +
+    theme_classic()
+```
+
+
+Now we can estimate the ATT using the imputed values:
+
+```{r}
+treated_data |> 
+  summarize(
+    ATT_est = mean(re78 - Y0_pred)
+  )
+```
+
+**Q:** Is this the best we can do? What else might we want to do to improve our estimate?
+

@@ -1,0 +1,356 @@
+---
+title: 'Exeriments and Uncertainty'
+author: "Brad Hackinen"
+date: "Fall 2025"
+output:
+  html_document:
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ggplot2)
+```
+
+
+
+# Introduction
+
+The goal of this exercise is to explore the nature of statistical uncertainty in causal estimates using Monte Carlo methods. When we say "evaluate", we essentially mean that we want to understand how informative an estimate is about the true parameter value. For this class we will take a frequentist (as opposed to Bayesian) approach, and examine three measures: *Bias*, *Variance*, and *Mean Squared Error*. We will also explore how observable data can be used to estimate confidence intervals using the Central Limit Theorem.
+
+
+# Shopping Cart Recommendations
+
+The causal model in this exercise is loosely based on the [brief story](http://glinden.blogspot.com/2006/04/early-amazon-shopping-cart.html) from Greg Linden about his experience as a software developer at Amazon.com. Linden had the idea to show shoppers personalized recommendations based on their shopping cart contents before checking out. According to Linden's telling, at least one senior manager was worried that the feature would distract users at a critical point in the shopping process and lead to reduced sales. The manager forbid Linden from working on the feature. Linden implemented it anyway, and ran an A/B test to see how it affected sales. The results were so strong that senior management was instantly convinced of the value of the new feature. In this exercise, we will explore when we should be convinced by the results of an experiment from a purely statistical perspective.
+
+Let's simulate some data to match the A/B test conducted by Greg Linden. Suppose we are interested in measuring the effect of the new recommendation feature on the total value of each customer's purchases. During the test, each visitor is randomly assigned to one of two groups:
+
+- The control group (A) continues to see the same version of the Amazon.com website as before ($D_i=0$)
+- The treatment group (B) is delivered a version of the Amazon.com website with products recommendations shown before checkout ($D_i=1$)
+
+The test runs until outcomes have been observed for a total of $N$ site visitors. 90% of users are placed in the control group, and 10% are placed in the treatment group. When the test ends, we count the number of items each user purchased during the test period.
+
+To keep things simple, we will assume that the potential outcomes for each user are Poisson distributed with different means for each treatment group.
+
+Poisson distributions can be used to model non-negative count data. The Poisson distribution has a single parameter $\lambda$ which represents the mean number of items purchased.
+
+We will assume:
+
+- $E[Y_0] = 0.5$
+- $E[Y_1] = 0.51$
+
+**Q:** What is the Average Treatment Effect (ATE) in this model?
+
+```{r}
+N = 1000
+
+Y0_mean = 0.5
+Y1_mean = 0.51
+
+data <- tibble(
+            i=1:N,
+            Y0 = rpois(N,Y0_mean),
+            Y1 = rpois(N,Y1_mean),
+            D = rbinom(N,1,0.1),
+            Y = ifelse(D==1,Y1,Y0)
+)
+
+head(data,5)
+```
+
+The ATE in this model is equal to:
+```{r}
+ATE <- Y1_mean - Y0_mean
+
+ATE
+```
+
+We can visualize the distribution of sales under each potential outcome with `ggplot`:
+```{r}
+data |> 
+  pivot_longer(c(Y0,Y1),names_to='potential_outcome') |> 
+  ggplot(aes(x=value,fill=potential_outcome)) +
+  geom_histogram(binwidth=0.5,position='dodge2') +
+  labs(
+    title='Distribution of Potential Outcomes in the Sample')
+
+```
+
+Now, the Fundamental Problem of Causal Inference tells us that it is impossible to directly measure each person's individual treatment effect. However, we can estimate the *average treatment effect* (ATE) in this study by comparing the observed outcomes in the treatment and control groups.
+
+Specifically, we will estimate the ATE with the *difference-in-means* estimator ($\Delta Y$):
+
+$$\Delta Y := mean(Y_i|D_i=1) - mean(Y_i|D_i=0)$$
+
+Let's compute the difference-in-means for our sample:
+
+```{r}
+data |> 
+  summarize(
+    diff_in_means = mean(Y[D==1]) - mean(Y[D==0])
+  )
+
+```
+Notice that the two numbers are not exactly the same. We have not perfectly recovered the true ATE. But we are still ... kind of close?
+
+You might also have noticed that each time we run this code, we get slightly different numbers for difference-in-means. We can think of our simulation as sampling from a hypothetical infinite population of employees. Each time we run the simulation, we get a different sample of employees, and therefore a different estimate of difference-in-means.
+
+The practical question is: how much confidence should we have in our estimate of the ATE? And can we quantify this uncertainty using only observable data?
+
+We call the difference between the estimate and the true value the "error". To quantify the average error we can consider several statistics:
+
+- **Bias:** The expected value of the error (an "unbiased estimator" will have an *average* error of zero)
+- **Standard Error:** The standard deviation of the error in the estimator (this describes how much the error varies from sample to sample)
+- **Mean Squared Error (MSE):** The sum of the bias squared and the variance (this gives an idea of the overall accuracy of the estimator)
+
+
+# Monte Carlo Methods
+
+You can gain a lot of intuition simply by running the code above many times (try the "Run All Chunks Above" button). However, a much more powerful approach is to use the power of R to run many simulations automatically. In general, this is kind of approach goes by the name "*Monte Carlo methods*"".
+
+*Monte Carlo (MC) methods* refers to any algorithm where the goal is to compute some fixed quantity using many randomly generated samples. In this class, we will use MC methods to evaluate the statistical properties of causal estimators.
+
+The main idea is that instead of computing just one estimate, we will compute many of them on different random samples. Then we can examine the *distribution* of sample estimates.
+
+Steps:
+
+1. Define a `simulate_data` function for generating simulated data
+2. Define a `mc_estimate` which generates one sample of simulated data, runs an estimator, and returns the estimate
+3. Run `mc_estimate` many times and store the results
+
+
+**Step 1: Defining a function that simulates data**
+
+We can complete step 1 by converting our simulation code above into an R function. This function will take a single argument `N` which specifies the number of observations to simulate.
+
+```{r}
+simulate_data <- function(N){
+
+  data <- tibble(
+            i=1:N,
+            Y0 = rpois(N,Y0_mean),
+            Y1 = rpois(N,Y1_mean),
+            D = rbinom(N,1,0.1),
+            Y = ifelse(D==1,Y1,Y0)
+  )
+
+  data # Return the data
+}
+
+simulate_data(5)
+```
+
+
+
+**Step 3: Define an function that generates one MC estimate**
+
+Next, we write a function that simulates a new sample of data, and computes our estimate (the difference-in-means). We will also compute the error of the estimate so that we can explore the distribution of these errors.
+
+```{r}
+mc_estimate <- function(N){
+
+    # Simulate data
+    sample_data <- simulate_data(N)
+    
+    estimate <- sample_data |> 
+                summarize(
+                  # Compute the sample difference-in-means estimate
+                  diff_in_means = mean(Y[D==1]) - mean(Y[D==0]),
+                  error = diff_in_means - ATE
+                )
+
+    # Return the estimate
+    estimate
+}
+
+mc_estimate(N=1000)
+```
+
+
+
+**Step 3: Produce many MC estimates**
+
+There are many ways run a function multiple times in R, but in this case the simplest is probably to use the `map_df` function which executes a function once for each element in a vector, and attempts to combine the all the results into a tibble.
+
+```{r}
+N_samples = 1000
+sample_size = 1000
+
+mc_estimates <- rep(sample_size,N_samples) |>
+  map_df(mc_estimate,.id='sample')
+
+head(mc_estimates,10)
+```
+
+Here's a quick way to visualize the results as a scatter plot:
+
+```{r}
+mc_estimates |> 
+  ggplot(aes(x=as.numeric(sample),y=diff_in_means)) +
+  geom_point() +
+  theme_classic() + 
+  labs(
+    y = 'Difference-in-Means',
+    x = 'Sample'
+  )
+```
+
+
+We can also examine the results as a histogram:
+
+```{r}
+mc_estimates |> 
+  ggplot(aes(diff_in_means)) +
+  geom_histogram() +
+  theme_classic()
+```
+
+
+**What can we do with all these estimates?**
+
+1: Estimate the bias, variance, and MSE, and standard deviation of our estimator
+
+```{r}
+mc_estimates |>
+  summarize(
+    diff_bias = mean(diff_in_means - ATE),
+    diff_var = mean((diff_in_means - mean(diff_in_means))^2),
+    diff_se = sqrt(diff_var),
+    diff_mse = mean((diff_in_means - ATE)^2),
+  )
+```
+
+
+2: Examine how much confidence we should put in our result
+
+Bias isn't the only thing that matters. For example, at the end of the A/B test we need to decide whether to go with the original design, or the variant we are testing. How should we decide? And how often will our estimate lead us to make the wrong call?
+
+
+```{r}
+mc_estimates |>
+  summarise(
+    frac_wrong_sign = mean(diff_in_means < 0)
+  )
+```
+
+
+**Problem:** When working with real data, we only get one estimate, and we don't know the true value of the ATE. How can we tell if our estimate is likely to have the correct sign?
+
+
+# Asymptotic Normality
+
+Many estimators are "asymptotically normal", meaning that the distribution of estimates converges to a normal distribution as the sample size increases. We can use MC methods to visualize this result for our diff_in_means estimator. Note that there are no normal distributions in our data generating process!
+
+The plot below shows both:
+
+- A histogram of MC point estimates
+- The PDF of a normal distribution with the same mean and standard deviation as the point estimates (in blue)
+
+```{r}
+mc_summary <- mc_estimates |>
+            summarize(
+                diff_mean = mean(diff_in_means),
+                diff_var = mean((diff_in_means - mean(diff_in_means))^2),
+                diff_se = sqrt(diff_var)
+            )
+
+mc_estimates |> 
+  ggplot(aes(diff_in_means)) +
+    geom_histogram(aes(y = after_stat(density)),fill='grey') +
+    stat_function(fun = dnorm, args = list(mean = mc_summary |> pull(diff_mean), sd = mc_summary |> pull(diff_se)),color='blue',size=1) +
+    theme_classic()
+```
+
+
+# Confidence intervals and coverage
+
+Asymptotic normality allows us to *estimate* the sampling distribution of the an estimator from only a single sample of data. We do this in two steps:
+
+1. Estimate the standard deviation of the estimator (called the ***standard error***).
+2. Use the estimated standard error to estimate confidence intervals or p-values
+
+- Confidence intervals give a range of values that are likely to cover the true value
+- P-values give you an estimated probability that a value as extreme as the observed estimate would occur if the true value was actually zero.
+
+Most statistical software will provide built-in methods to estimate either standard errors, confidence intervals, and p-values. The example below is just to illustrate roughly how it works.
+
+
+```{r}
+mc_estimate <- function(N){
+
+    # Simulate data
+    sample_data <- simulate_data(N)
+    
+    estimate <- sample_data |> 
+                summarize(
+                  # Compute the sample diff_in_means estimate
+                  diff_in_means = mean(Y[D==1]) - mean(Y[D==0]),
+
+                  # Estimate the standard error of the diff_in_means
+                  mean_YT = mean(Y[D==1]),
+                  mean_YU = mean(Y[D==0]),
+                  var_YT = sum(((Y - mean_YT)^2)[D==1])/(sum(D)-1),
+                  var_YU = sum(((Y - mean_YT)^2)[D==0])/(sum(1-D)-1),
+                  se = sqrt(var_YT/sum(D) + var_YU/sum(1-D)),
+
+                  # Estimate a 95% confidence interval using the standard error
+                  ci_lower = diff_in_means - 1.96*se,
+                  ci_upper = diff_in_means + 1.96*se,
+                  
+                  # Store the sample size for later
+                  N = n()
+                ) |>
+                select(N,diff_in_means,se,ci_lower,ci_upper)
+
+    # Return the estimate
+    estimate
+}
+
+mc_estimate(1000)
+```
+
+Let's generate some new samples, this time with confidence intervals:
+
+```{r}
+N_samples = 1000
+sample_size = 1000
+
+mc_estimates <- rep(sample_size,N_samples) |>
+  map_df(mc_estimate,.id='sample')
+
+head(mc_estimates,10)
+```
+
+Now we can plot the estimates and their confidence intervals
+
+```{r}
+mc_estimates |> 
+  slice_sample(n=100) |> 
+  mutate(
+    in_ci = (ATE > ci_lower) & (ATE < ci_upper),
+  ) |>  
+  ggplot(aes(x=sample,y=diff_in_means,color=in_ci)) +
+  geom_hline(yintercept = ATE,color='orange') +
+  geom_point() +
+  geom_errorbar(aes(ymin=ci_lower,ymax=ci_upper)) +
+  theme_classic()
+```
+
+
+```{r}
+mc_estimates |> 
+  summarize(
+    coverage = mean((ATE > ci_lower) & (ATE < ci_upper)),
+  )
+```
+
+# Concluding Notes on Monte Carlo methods
+
+When we are working with real data we must accept the sample size we are given. But when we are using Monte Carlo methods, we can usually increase the number of MC samples and N until the results are completely unambiguous:
+
+  - Increasing the sample size in each MC sample gives higher precision for each estimate, and smaller confidence intervals
+  - Increasing the number of MC samples gives higher precision for statistics describing an estimator.
+
+**Important:** Any consistent estimator will have bias that goes to zero as the sample size increases. One of the big advantages of Monte Carlo methods it that they allow you to estimate this bias in the sample size you have for your real data. Similarly, confidence intervals can usually be made arbitrarily small by increasing the sample size, leading to estimates of zero coverage if there is even a small bias. Therefore your sample size should usually be set to match your real data (unless you are interested in exploring how your estimator's performance changes with sample size).

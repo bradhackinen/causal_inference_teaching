@@ -1,0 +1,170 @@
+---
+title: 'Regression for Causal Inference'
+author: "Brad Hackinen"
+date: "Fall 2025"
+output:
+  html_document:
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ggplot2)
+```
+
+# Setup
+
+Consider the simulated data below:
+
+```{r}
+set.seed(123)
+
+simulate_data <- function(N){
+
+  data <- tibble(
+    X = pmax(rnorm(N,0.5,0.75),0),
+    D = as.numeric(X + rnorm(N,0,0.25) < 0.5),
+    Y0 = pmax(X + rnorm(N,0,0.1),0),
+    Y1 = pmax(rnorm(N,1,0.1),Y0),
+    Y = if_else(D==1,Y1,Y0)
+    )
+  
+  data
+}
+
+plot_data <- function(data){
+  data |> 
+    ggplot(aes(x=X,y=Y)) +
+    geom_point(data=filter(data,D==0),color='blue',size=1) +
+    geom_point(data=filter(data,D==1),color='red',size=1) +
+    annotate("segment", x = 0, y = 0, xend = 3, yend = 3,color='blue',alpha=0.2) +
+    annotate("segment", x = 0, y = 1, xend = 1, yend = 1, color = "red", alpha = 0.2) +
+    annotate("segment", x = 1, y = 1, xend = 3, yend = 3, color = "red", alpha = 0.2) +
+    theme_minimal() +
+    labs(
+      color='Treated'
+    )
+}
+
+# Simulate 1000 observations
+data <- simulate_data(1000)
+
+plot_data(data)
+```
+
+We can interpret the data as a stylized version of the relationship between income in 1974 and 1978 in the NSW job training study.
+
+- **X** is income in 1974 (pre-treatment covariate)
+- **D** is whether the person received job training (treatment)
+- **Y** is income in 1978 (outcome)
+
+The basic story in the simulation is that the job training program can bring people with very low income in 1974 up to an average income of 1 in 1978, but it has no effect on people who would have earned more than that without treatment. At the same time, people with lower income in 1974 are more likely to receive treatment.
+
+In this simulation it's hard to tell what the ATE, ATT, and ATU are from just looking at the equations. We can *estimate* the true values using the potential outcomes. Our estimates will be more precise if we use a very large sample.
+
+```{r}
+# Estimate the ATE, ATT, ATU using sample size of 1 million obs
+simulate_data(1000000) |> 
+  summarize(
+    ATE = mean(Y1 - Y0),
+    ATT = mean(Y1[D==1]) - mean(Y0[D==1]),
+    ATU = mean(Y1[D==0]) - mean(Y0[D==0]),
+    diff_in_means = mean(Y[D==1]) - mean(Y[D==0])
+  )
+```
+
+
+In this data the ATE, ATT, and ATU are very different. Can you see why?
+
+The difference in means is also very biased, regardless of which estimand you are interested in.
+
+
+# OLS Regression
+
+Suppose we want to estimate the ATT using OLS regression.
+
+Let's first see what happens if we just regress Y on D.
+
+```{r}
+# TODO
+```
+
+**Q:** How should we interpret this output? Does it give a good estimate of the ATT?
+
+Let's see if we can do better by controlling for X. The most common approach is to just include D and X in the regression equation.
+
+```{r}
+# TODO
+```
+
+**Q:** How should we interpret *this* output? Does it give a good estimate of the ATT?
+
+
+Let's consider what counterfactuals are implied by the OLS regression. We can add counterfactual predictions to the data by using the `predict` function and setting D to 0 or 1 for all observations.
+
+```{r}
+data |> 
+  mutate(
+    Y0_additive_est = predict(additive_model,data |> mutate(D=0)),
+    Y1_additive_est = predict(additive_model,data |> mutate(D=1)),
+  ) |>
+  plot_data() +
+  geom_point(aes(y=Y0_additive_est),color='orange') +
+  geom_point(aes(y=Y1_additive_est),color='purple')
+```
+
+The implied counterfactuals are not very good! 
+
+Many people ignore this problem. They assume that treatment effects are constant across X, which is one case where the OLS estimate will be correct (Note this also implies ATE=ATT=ATU). However, it often not very realistic.
+
+
+# G-Computation
+
+As we have seen in previous classes, it is possible to estimate better counterfactuals with linear models if we split the data and only use the treated or control units when fitting the model.
+
+It can be slightly more convenient (and mathematically equivalent) to fit a single model with an interaction between D and X. This allows the slope of the relationship between X and Y to be different in the treated and control groups.
+
+This is only part of the solution, however. Let's see how the estimate and counterfactuals look if we just add an interaction between D and X in the regression equation:
+
+```{r}
+# TODO
+```
+
+This estimate is also not very good!
+
+On the other hand, the counterfactuals look much better (at least for the treated units):
+
+```{r}
+data |> 
+  mutate(
+    Y0_interaction_est = predict(interaction_model,data |> mutate(D=0)),
+    Y1_interaction_est = predict(interaction_model,data |> mutate(D=1)),
+  ) |>
+  plot_data() +
+  geom_point(aes(y=Y0_interaction_est),color='orange') +
+  geom_point(aes(y=Y1_interaction_est),color='purple')
+```
+
+The problem is that the estimate for the coefficient on D is "measured" where all the other variables in the regression are equal to 0.
+
+There are two ways to fix our estimate:
+1. We can demean X by subtracting the mean of X for the treated units. This way, the coefficient on D is "measured" where X is equal to the average value for the treated units.
+2. Impute predicted Y1 and Y0 and use these to estimate the ATT directly.
+
+The second approach is called G-computation. Let's try it:
+
+```{r}
+# TODO
+```
+
+Finally, a good estimate of the ATT!
+
+Now let's try the ATU:
+
+```{r}
+# TODO
+```
+
+Whoops. For the ATU, we still have a problem. Can you see what it is?

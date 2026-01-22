@@ -1,0 +1,50 @@
+---
+title: 'Table 2 Fallacy'
+author: "Brad Hackinen"
+date: "Fall 2025"
+output:
+  html_document:
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ggplot2)
+library(fixest)
+```
+
+# The Table 2 Fallacy
+
+It is common for researchers to present a table of estimation results that includes both the main treatment effect and the coefficients on the control variables. This is fine.
+
+However, people often drift into interpreting the coefficients on the control variables as if they were causal effects. This is an error.
+
+The set of variables that we select as control variables generally will not also work as a set of control variables for measuring a different causal effect.
+
+The following example illustrates this point. Given the DAG describing how the data is generated, the backdoor criterion suggests three valid adjustment sets for estimating the causal effect of $D$ on $Y$:
+
+{X}
+{W}
+{X,W}
+
+All three sets of controls can be used to estimate the ATE (equal to 1 in this demo). However, the coefficient estimates on the control variables can change dramatically depending on which set of controls is used.
+
+```{r}
+N <- 100000
+
+data <- tibble(
+  X = rnorm(N),
+  W = X + rnorm(N),
+  D = X + rnorm(N) > 0,
+  Y = D + W + rnorm(N)
+)
+
+fit1 <- feols(Y ~ D,data)
+fit2 <- feols(Y ~ D + X,data)
+fit3 <- feols(Y ~ D + W,data)
+fit4 <- feols(Y ~ D + X + W,data)
+
+etable(fit1,fit2,fit3,fit4)
+```

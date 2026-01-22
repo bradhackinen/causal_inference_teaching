@@ -1,0 +1,66 @@
+---
+title: 'Event Studies: Canadian Airlines in the time of Covid'
+author: "Brad Hackinen"
+date: "Fall 2025"
+output:
+  html_document:
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ggplot2)
+```
+
+
+
+# Setting
+
+In this exercise we are going to use an event study design to estimate the impact of Covid-19 on the Canadian airline industry. The data below describes total industry revenue for each quarter from 2016 to 2023 Q1. 
+
+Variable Descriptions:
+
+- **revenue**: Total quarterly revenue for the Canadian airline industry
+- **year**: Year the revenue was earned
+- **quarter**: Quarter in which the revenue was earned
+
+Data source: [Table 23-10-0260-01  Civil aviation financial statistics, Canadian air carriers, Levels I and II, quarterly](https://doi.org/10.25318/2310026001-eng)
+
+```{r}
+data <- read_csv('https://raw.githubusercontent.com/bradhackinen/causal_inference_teaching/main/data/CanadianAirlineRevenue.csv')
+
+head(data)
+```
+
+If we plot the data, it is clear that Covid had a large effect on revenue.
+
+```{r}
+data |> 
+  # Create a "time" variable that combines year and quarter
+  mutate(t=year + quarter/4) |> 
+
+  # Plot revenue over time
+  ggplot(aes(x=t,y=revenue/1e6))+
+  geom_line() +
+  ylim(0,8.5) +
+  labs(
+    title='Canadian Airline Industry Revenue',
+    x='Year',
+    y='Total Quarterly Revenue ($ Billions)'
+  ) +
+  theme_minimal()
+```
+
+
+# Exercise
+
+1. If we are interested in the effect of Covid on quarterly revenue, what observations should we consider "treated" and what observations should we consider "control"?
+
+2. Use `lm` to predict counterfactual revenues in a world without Covid. Add these predicted revenues to your data.
+
+3. Create an event study plot that compares the observed and predicted counterfactual revenue for all time periods. Does this plot increase or decrease your confidence in your estimate in part 2?
+
+4. Consider: What are we estimating here? The ATT, ATE, ATU? Or something else?
+

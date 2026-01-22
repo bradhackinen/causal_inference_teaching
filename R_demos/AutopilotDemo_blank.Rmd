@@ -1,0 +1,113 @@
+---
+title: "Tesla Autopilot Safety: Causality or Counfounding?"
+author: "Brad Hackinen"
+date: "Fall 2025"
+output:
+  html_document:
+    df_print: kable
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggplot2)
+```
+
+
+# Introduction
+
+The purpose of this demo is to explore how alternative causal stories can generate the same observed patterns in data. We consider the case of Tesla's claims about Autopilot safety. 
+
+The key piece of evidence that Tesla presents is the average number of miles traveled before an accident occurs. This measure is a bit tricky because it obscures what an "observation" is (a trip? a car? a mile?). So let's start by re-formulating Tesla's claim in terms of the probability of an accident occuring in a given mile driven. We can think of this as the "accident rate" for a car with Autopilot and without Autopilot.
+
+Tesla's claim is that Autopilot has a causal effect on the accident rate, reducing the accident rate from 1.03 accidents per million miles driven to 0.15 per million miles driven in Tesla cars (using Q2 2025 data). We will inflate these numbers by a factor of 100,000,000 so that we can ensure that we have a reasonable number of accidents in our data without having to simulate millions of miles driven.
+
+Our stylized results will look like this:
+
+```{r}
+# This code creates a simple plot based on Tesla's 2025 Q2 crash data (https://www.tesla.com/en_ca/VehicleSafetyReport)
+
+p_us = 0.142
+p_tesla = 0.103
+p_autopilot = 0.015
+
+crash_data <- tibble(
+  mode = c("U.S. Average","Tesla No Autopilot","Tesla Autopilot"),
+  miles = c(p_us,p_tesla,p_autopilot)
+)
+
+ggplot(crash_data,aes(x=mode,y=miles)) +
+  geom_bar(stat='identity',width=0.5) + 
+  theme_minimal() +
+  labs(
+    y = "Accidents per Mile",
+    x = ""
+  )
+```
+
+
+However, there are many ways that a pattern like this could emerge. In this demo, we will explore two alternative causal stories that could generate the similar differences in accident rates between Tesla cars with and without Autopilot.
+
+
+# Model 1: Autopilot is Safe
+
+First, let's simulate a scenario where the differences between Tesla Autopilot and Tesla No Autopilot are driven entirely by a causal effect of Autopilot on the accident rate.
+
+We want to write a piece of code where:
+
+- We simulate a large number of observations (start with 100,000). Each observation represents a mile of driving (imagine recording random pieces of people's car trips all across the US).
+- In a given mile, we will randomly decide whether autopilot is on or off and whether an accident occurs.
+- The probability of an accident occurring will depend on whether Autopilot is on or off.
+
+
+```{r}
+# TODO
+```
+
+Let's plot the data to see if it matches the pattern we expect:
+
+```{r}
+# TODO
+```
+
+We can also summarize the relationship between D and Y numerically by computing:
+
+- The correlation coefficient between D and Y
+- The *Average Treatment Effect* (ATE) of D on Y
+
+```{r}
+# TODO
+```
+
+# Model 2: It's all Confounding
+
+Now we will simulate a scenario where the differences between Tesla Autopilot and Tesla No Autopilot are driven entirely by confounding. The simplest way to do this is to assume that people who drive on highways always use autopilot and people who drive in the city never use autopilot. We will assume that highway driving is safer than city driving, and that this is the only reason why Autopilot appears to be safer.
+
+The code will have a similar structure as before, but we will add a new variable `X` that indicates whether the mile was driven on a highway or not. The accident rate will only depend on whether the mile was driven on a highway or not.
+
+```{r}
+# TODO
+```
+
+When we plot the data, we see the same pattern as before:
+
+```{r}
+# TODO
+```
+
+And the same numerical relationships as well:
+
+```{r}
+# TODO
+```
+
+
+# Takeaways
+
+- We can us R to simulate realistic data that matches Tesla's claims about Autopilot safety using two very different causal models.
+- Both models generate the same observed patterns in the data: The correlations between D and Y, and average values of Y for D=0 and D=1 are equal (up to random noise).
+- However, the models have different causal structures and *unobserved* variables (Y0,Y1,X) that generate the observed data.
+  - In the first model, Autopilot has a large causal effect on the accident rate (E[Y1 - Y0] is large and negative).
+  - In the second model, Autopilot has no causal effect on the accident rate, and the observed differences are driven entirely by confounding (E[Y1 - Y0] = 0).
+- Implication: We cannot learn much about the safety of Autopilot from the statistics that Tesla reports without additional assumptions or data.

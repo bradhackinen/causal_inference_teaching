@@ -1,0 +1,99 @@
+---
+title: 'Experiments and Average Treatment Effects'
+author: "Brad Hackinen"
+date: "Fall 2025"
+output:
+  html_document:
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ggplot2)
+```
+
+
+
+# Introduction
+
+The goal of this exercise is to explore how randomized experiments allow us to estimate average treatment effects.
+
+
+# Setting
+
+Large Language Models (LLMs) are a new technology that have the potential to increase productivity in many industries. However, the abilities and impacts of these models are not yet well understood. In this exercise, we will consider a recent study that attempted to measure the impact providing GPT4 access and training on employee productivity in a major consulting firm. 
+
+The [study](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4573321) was conducted by Boston Consulting Group (BCG) and several academic researchers. You can find a summary in a [blog post written by Ethan Mollick](https://www.oneusefulthing.org/p/centaurs-and-cyborgs-on-the-jagged), one of the study's co-authors. 
+
+In the study, 758 BCG employees took part in a randomized experiment. Participants in the study was given 5 hours to work on a fake, but realistic task. Each participant was assigned randomly to one of three treatment conditions:
+
+- "Control": These participants had to complete the tasks without access to GPT4
+- "GPT Only": These participants were provided access to GPT4 through OpenAI's enterprise product
+- "GPT + Overview": These participants were provided access to GPT4, plus some additional training on how to use it effectively
+
+After the tasks were completed, each participant's output was scored according to a general "quality" measure. Employees were given monetary rewards as an incentive to perform as well as they could on the tasks.
+
+
+# Exercise: Simulating a Randomized Experiment
+
+**Instructions:**
+
+Try to generate simulated data that is similar to the real experiment.
+
+- Assume treatment is binary with approximately 50% of units treated:
+  - $D_i=0$ for the control group
+  - $D_i=1$ for the treatment group that receives GPT4 access
+- Use simple equations and `rnorm` to generate potential outcomes.
+- Compute the observed outcome `Y`
+- Adjust your code so that the plot below looks similar to the first figure in the blog post summary of the paper.
+
+```{r}
+N = 758
+
+data <- tibble(
+  i=1:N,
+  D = rbinom(N,1,0.5),
+  Y0 = rnorm(N,mean=4,sd=1),
+  Y1 = rnorm(N,mean=6,sd=1),
+  Y = ifelse(D==1,Y1,Y0)
+)
+```
+
+
+We can can replicate one of the main plots in the paper by plotting the distribution of outcomes in the control and treatment groups.
+
+```{r}
+
+data |> # Note: This is called a "pipe" operator. It passes the argument to the left (data) into the function on the right (ggplot)
+  ggplot(aes(x=Y,fill=factor(D))) +
+  geom_density(alpha=0.5) +
+  labs(
+    fill='Treated',
+    x='Quality',
+    y='Density'
+  )
+
+```
+
+Now, the Fundamental Problem of Causal Inference tells us that it is impossible to directly measure each person's individual treatment effect. However, we can estimate the *average treatment effect* (ATE) in this study by comparing the observed outcomes in the treatment and control groups.
+
+Specifically, we will estimate the ATE with the *difference-in-means* estimator ($\Delta Y$):
+
+$$\Delta Y := mean(Y_i|D_i=1) - mean(Y_i|D_i=0)$$
+
+Can you figure out how to compute the difference-in-means estimate for your data? See if you can do it using only *observable* variables (Y and D).
+
+*Hint: I haven't taught you everything you need to know to do this yet. You are going to need help. Try Google or Chat GPT, and see what you can come up with!*
+
+```{r}
+data |> 
+  summarize(
+    diff_in_means = mean(Y[D==1]) - mean(Y[D==0])
+  )
+```
+Q: What is the true ATE in your simulation? How does it compare to your estimate?
+
+
+You might also have noticed that each time we run this code, you get slightly different numbers for the difference-in-means. Is this realistic?

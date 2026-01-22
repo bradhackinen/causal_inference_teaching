@@ -1,0 +1,234 @@
+---
+title: "Natural Experiments"
+author: "Brad Hackinen"
+date: "Fall 2025"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ggplot2)
+```
+
+
+The following R markdown file is intended to demonstrate:
+
+1. How to simulate data that satisfies the requirements for an Instrumental Variables research design
+2. How IV works, at an intuitive level
+3. How to use the `ivreg` function (from the `AER` package) to estimate the LATE using 2SLS
+
+
+## Example Setting
+
+Suppose we want to estimate the impact of online learning as in Xu & Jaggers (2019). The researchers collected data on students who had the opportunity to choose between online and in-person versions of college classes. They were able to observe each student's course grade, and the distance that the student lived from campus. Can we use an IV strategy to estimate the effect of online learning on grades?
+
+
+## Simulating Data
+
+We begin by simulating some data where:
+
+- $Z_i$ is student $i$'s distance from campus, measured relative to the campus boundary (students with Z<0 live on campus)
+- $U_i$ is an unobserved confounder (e.g. motivation)
+- $D_i=1$ indicates the student chose the online version of a course
+- $Y_i$ is the student's final normalized grade
+
+The code below defines a R function for simulating data that depends on three parameters:
+
+- `delta` is the treatment effect
+- `pi` controls how treatment changes with Z
+- `gamma` controls how Z changes with U
+
+
+```{r}
+simulate_iv_data <- function(N=10000,delta=-1,pi,gamma){
+
+  # Create a basic tibble with one row per observation
+  tibble(
+    i=1:N,
+    U = rnorm(N), # Motivation
+    Z = gamma*U + rnorm(N), # Distance from campus boundary
+    D = as.numeric((pi*Z - U) > 0), # Students choose online if they are far from campus or low motivation
+    Y = delta*D + U + rnorm(N),
+    )
+  }
+```
+
+
+**Q:** Which parameter determines whether the instrument is relevant?
+**Q:** Which parameter determines whether there is a violation of the exclusion restriction?
+
+
+First we will simulate some data where the exclusion restriction holds:
+
+```{r}
+iv_data <- simulate_iv_data(pi=1,gamma=0)
+
+head(iv_data)
+```
+
+Let's visualize the data by separately plotting the treatment and outcome variables as a function of distance from campus. We can use `ggplot` and `geom_smooth` to help see some of the patterns.
+
+
+```{r}
+iv_data |>
+  ggplot(aes(Z,fill=as.factor(D))) +
+  geom_density(alpha=0.5) +
+  theme_classic() + 
+  labs(
+    fill = "D"
+  )
+```
+
+```{r}
+iv_data |>
+  ggplot(aes(x=Z,y=Y)) +
+  geom_point(size=0.5,alpha=0.5) +
+  geom_smooth(method='lm') +
+  theme_classic()  
+```
+
+
+We can verify that the difference-in-means estimate is wrong with a quick regression using `lm`:
+
+```{r}
+# TODO
+```
+
+Note that an OLS regression controlling for U would work (try it!). But we are assuming that is not feasible because U is unobserved.
+
+
+
+# IV Estimation
+
+
+## 2SLS as two OLS regressions
+
+First, let's implement 2SLS "manually" as two OLS regressions.
+
+Steps:
+
+1. Fit a model that predicts treatment using the instrument
+2. Use the fitted model to predict treatment for each observation
+3. Run a regression using predicted treatment as the independent variable (instead of actual treatment)
+
+```{r}
+# TODO
+```
+
+Note the much better estimate! The problem is that none of the statistics estimated from the second stage (standard errors, F-stat, etc) are correct.
+
+
+## Control Function Approach
+
+You can also obtain the same estimate using the control function approach.
+
+Steps:
+
+1. Fit a model that predicts treatment using the instrument
+2. Use the fitted model to predict treatment for each observation
+3. Compute the first-stage "residual" as the difference between observed and predicted treatment for each observation
+4. Run a regression of the outcome on treatment, controlling for the first-stage residual
+
+```{r}
+# TODO
+```
+
+## 2SLS using `ivreg`
+
+`ivereg` implements the 2SLS estimator as a one-step operation, with improved standard errors and diagnostic statistics (note: set `diagnostics=TRUE` when calling `summary` to see all the stats).
+
+```{r}
+library(AER)
+
+# TODO
+```
+
+Note that the estimate is exactly the same, while the other stats are slightly different.
+
+
+# Weak instruments
+
+What if distance to campus has a very small effect on the choice to attend online?
+
+**Q:** How do simulate data that matches this story?
+
+Let's see what happens to the iv regression using `ivreg`
+
+```{r}
+# TODO
+```
+
+Note the "Weak instruments" test statistic. This is the same as the first-stage F-stat, and a common rule of thumb is that you should worry about weak instruments if F<10.
+
+
+# Violating the exclusion restriction
+
+What if more motivated students choose to leave closer to campus?
+
+**Q:** How do we simulate data that matches this story?
+
+Let's see what happens to the iv regression using `ivreg`
+
+```{r}
+# TODO
+```
+
+
+# An alternative estimation strategy (RDD)
+
+Suppose that, in an effort to boost in-person enrollment, the university only allows students to choose the online option if they live off campus (Z>0).
+
+This generates a discontinuity in treatment probability that can be used to estimate a local treatment effect even if there is a (global) violation of the exclusion restriction.
+
+First, let's modify our simulation to add the discontinuity:
+
+```{r}
+simulate_rd_data <- function(N=10000,delta=-1,pi=1,gamma=0){
+
+  # Create a basic tibble with one row per observation
+  tibble(
+    i=1:N,
+    U = rnorm(N), # Motivation
+    Z = gamma*U + rnorm(N), # Distance from campus boundary
+    D = ((pi*Z - U) > 0)*(Z>0), # Students choose online if they are far from campus or low motivation AND live off campus
+    Y = delta*D + U + rnorm(N)
+  )
+  }
+
+simulate_rd_data(10)
+```
+
+
+Then we'll simulate some data with a violation in the exclusion restriction
+
+```{r}
+rd_data <- simulate_rd_data(pi=1,gamma=-1)
+```
+
+
+
+...And then plot the treatment and outcome. If we use the `aes` `group` argument we can split the data above and below the discontinuity:
+
+```{r}
+rd_data |> 
+  ggplot(aes(Z,D,group=as.factor(Z>0))) +
+  geom_smooth(method='loess')
+```
+
+
+```{r}
+rd_data |> 
+  ggplot(aes(Z,Y,group=as.factor(Z>0))) +
+  geom_smooth() + 
+  theme_classic()
+```
+
+Now... How can we estimate the treatment effect at the discontinuity?
+
+
+```{r}
+# TODO
+```
+

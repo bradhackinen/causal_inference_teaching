@@ -1,0 +1,86 @@
+---
+title: 'Fixed Effects'
+author: "Brad Hackinen"
+date: "Fall 2025"
+output:
+  html_document:
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ggplot2)
+library(fixest)
+```
+
+# Setup
+
+Fixed effects estimators are useful when we have data with a grouped structure, and there are unobserved confounders that operate at the group level.
+
+Imagine we are studying the effect of the new U.S. import tarriffs on sales revenue of Canadian firms located in different cities and provinces, and operating in different industries. We will simulate some data where:
+
+- **D** is whether the firm sells any product covered by a U.S. import tariff (treatment)
+- **Y** is the firm's sales revenue (outcome)
+
+We might worry that there are unobserved confounders that vary at the city, province, or industry level that could bias our estimates.
+
+For example:
+
+- Cities vary in geographic proximity to ports and the border crossings, which could affect how much of a firm's relies US exports for sales
+- Provinces vary in economic conditions and policies that could affect how much firms sell to the U.S.
+- Industries vary in their exposure to tariff policies as well as overall demand conditions.
+
+We can simulate some simple data with these characteristics by:
+
+1. Creating group IDs for provinces, cities, and industries
+2. Simulating unobserved group-level confounders for each group
+3. Simulating treatment and outcome variables that depend on the group-level confounders
+
+```{r}
+N = 10000
+
+data <- tibble(
+  province_id = sample(1:10,N,replace=TRUE),
+  industry_id = sample(1:100,N,replace=TRUE),
+  ) |> 
+  group_by(province_id) |>
+  mutate(
+    X_province = rnorm(1,0,1),
+    city_id = province_id*1000 + sample(1:50,n(),replace=TRUE)
+  ) |>
+  group_by(city_id) |>
+  mutate(
+    X_city = rnorm(1,0,1)
+  ) |>
+  group_by(industry_id) |>
+  mutate(
+    X_industry = rnorm(1,0,1)
+  ) |> 
+  ungroup() |>
+  mutate(
+    D = X_city + X_province + X_industry + rnorm(N,0,1) > 0,
+    Y = -0.1*D + X_city + X_province + X_industry + rnorm(N,0,1)
+  )
+
+head(data)
+```
+
+**Q:** What is the true ATE, ATT and ATU in this data?
+
+Now we can estimate the effect of treatment on the outcome using different approaches:
+
+- A simple OLS regression of Y on D
+- An OLS regression of Y on D controlling directly for the confounding variables
+- A fixed effects regression of Y on D controlling for city, province, and industry fixed effects
+
+```{r}
+fit1 <- feols(Y ~ D, data = data)
+fit2 <- feols(Y ~ D + X_city + X_province + X_industry, data = data)
+fit3 <- feols(Y ~ D | city_id + province_id + industry_id, data = data)
+
+etable(fit1,fit2,fit3)
+```
+
+**Q:** Do we need to control for all three levels of fixed effects (city, province, industry) to get an unbiased estimate of the treatment effect? Why or why not?

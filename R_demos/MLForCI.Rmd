@@ -1,0 +1,340 @@
+---
+title: "Machine Learning for Causal Inference"
+author: "Brad Hackinen"
+date: "Fall 2025"
+output: html_document
+---
+  
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ggplot2)
+library(rpart)
+library(rpart.plot)
+library(fixest)
+```
+
+The following R markdown file is intended to demonstrate:
+  
+1. How to estimate a CATE function using regression trees
+2. How to estimate an optimal treatment assignment rule using the CATE
+3. How to use Double ML to estimate ATEs in the presence of non-linear confounding
+
+# Part 1: Estimating Non-linear Relationships with Regression Trees
+
+First of all, a quick demo on regression trees. Regression trees are an algorithm for approximating a non-linear function of one or more variables, where the predicted value can be a scalar (as opposed to a discrete class). They use a decision tree to split the data into smaller regions ("leaves"), and within each region the fitted function takes a constant value (the mean of the predicted variable in that region).
+
+Let's set up some complex non-linear data to work with (extreme non-linearity is easier to visualize than a high-dimensional X and presents some of the same challenges for estimation).
+
+Below, we defines some weird non-linear functions that we can re-use when we simulate or plot the data:
+
+```{r}
+f1 <- function(x){
+  -0.3 + sin(7*x + 2.5) + 0.2*sin(25*x) + 0.3*sin(60*x) + 0.2*sin(90*x) + 0.1*sin(130*x) + 0.1*sin(290*x) + 0.05*sin(924*x)
+}
+
+f0 <- function(x){
+ sin(6*x + 2)
+}
+
+# Plot the functions
+tibble(
+  X = 1:1000/1000,
+  f1 = f1(X),
+  f0 = f0(X),
+) |>
+ggplot(aes(X)) +
+  geom_line(aes(y=f1),color='red') + 
+  geom_line(aes(y=f0),color='blue') + 
+  theme_classic()
+```
+
+
+Suppose we simulate some data where the observed outcome Y depends on a single variable X in a highly non-linear way:
+
+```{r}
+N = 10000
+
+data1 <- tibble(
+    i = 1:N,
+    X = runif(N),
+    Y = f1(X) + rnorm(N),
+)
+```
+
+Let's use a regression tree to predict $Y$ as a function of $X$.
+
+We'll use the `rpart` library. When we call the `rpart` function, the syntax is similar to a regression. However, instead of optimizing a linear function to minimize the sum of squared errors, the `rpart` function builds a "tree" of decision nodes that, in the end, assign a constant value to all points that end at the same node. By default, the objective is the same however: The location of each branch in the tree is chosen to minimize the sum of squared errors.
+
+```{r}
+tree <- rpart(Y ~ X, data=data1)
+
+tree
+```
+
+`rpart.plot` will visualize the fitted tree as a nested set of decision nodes.
+
+```{r}
+rpart.plot(tree)
+```
+
+We can also plot the predicted values:
+
+```{r}
+data1 |>
+  mutate(
+    Y_pred = predict(tree)
+  ) |>
+  ggplot(aes(X)) +
+  geom_line(aes(y=Y_pred)) +
+  geom_point(aes(y=Y),size=0.5,alpha=0.1) +
+  theme_classic()
+```
+
+We can control the maximum number of splits indirectly with the `cp` attribute of an `rpart.control` object. This will set the minimum improvement in fit that adding a new split must generate. We can also control the relative importance of each observation with the `weights` argument to `rpart`.
+
+```{r}
+tree = rpart(Y ~ X, data=data1,control=rpart.control(cp=0.001))
+```
+
+**Q:** How do we know what value to use for `cp`?
+
+
+
+# Part 2: Non-linear Counfounding
+
+
+### Setup
+Now let's consider how ML can be useful when we have an observed confounder with a non-linear relationship to the treatment and outcome. The code below simulates some data where X is a confounder that affects both D and Y, and the treatment effect is 1 for all units.
+
+```{r}
+data2 <- tibble(
+    i = 1:N,
+    X = runif(N),
+    D = f1(X) + rnorm(N) > 0,
+    Y = D + f1(X) + rnorm(N),
+)
+```
+
+### Linear Regression
+
+Let's see how well linear regression works with this nonlinear confounder:
+
+```{r}
+feols(Y~ D + X,data=data2) |> 
+  etable()
+```
+
+
+### Double ML
+
+Double ML is a method for using machine learning to flexibly control for confounders in a way that still allows us to get valid estimates and inference for treatment effects. The basic idea is to use ML to estimate the parts of Y and D that can be predicted by X, then run a regression of the residualized Y on the residualized D. Because ML algorithms tend to be biased in complex ways, Double ML also uses sample splitting and out-of-sample predictions to minimize bias.
+
+Without sample splitting:
+
+```{r}
+Y_tree <- rpart(Y ~ X,data=data2,cp=0.001)
+D_tree <- rpart(D ~ X,data=data2,cp=0.001)
+
+data2 |> 
+  mutate(
+    Y_res = Y - predict(Y_tree),
+    D_res = D - predict(D_tree)
+  ) |> 
+  feols(Y_res ~ D_res) |> 
+  etable()
+```
+
+With sample splitting:
+
+```{r}
+data2_fit <- data2 |> filter(i<N/2)
+data2_predict <- data2 |> filter(i>=N/2)
+
+# Use only the fit sample to train the trees
+Y_tree <- rpart(Y ~ X,data=data2_fit,cp=0.001)
+D_tree <- rpart(D ~ X,data=data2_fit,cp=0.001)
+
+# Use only the predict sample to estimate the treatment effect
+data2_predict |> 
+  mutate(
+    Y_res = Y - predict(Y_tree,data2_predict),
+    D_res = D - predict(D_tree,data2_predict)
+  ) |> 
+  feols(Y_res ~ D_res) |> 
+  etable()
+```
+
+Note: In practice, we would want to do multiple splits ("folds" in ML jargon) to create out-of-sample predictions for all observations and then use the full data to estimate the treatment effect.
+
+# Part 3: CATE and the Treatment Assignment Problem
+
+
+### Example: Assigning Playlist Generation Algorithms
+
+Following Fernandez-Loria, et al (2021), suppose we are helping Spotify solve a treatment assignment problem. Their playlist generation team has come up with a new algorithm for automatically generating a playlist based on user's previously played songs. It is easy to switch users to the new algorithm, but harder to know what the effects are. The Spotify team thinks it is possible that the new algorithm will increase engagement in some users and decrease it in others. They are looking for a way to choose which users should be switched to the new system.
+
+They start with a large A/B test where a random 10% of users are switched to the new system for a month. At the end of the month, they measure the change of engagement in each group. Is there a way to use data from this single A/B test to get precise information about the treatment effects for different users?
+
+
+### Non-linear Potential Outcomes Functions
+
+We are going to assume that the main observable characteristic that differentiates users is a single variable $X_i$ (e.g. user tenure). However, the relationship between $X_i$ and the potential outcomes is very complex and non-linear.
+
+We will use our non-linear functions defined earlier to determine the potential outcomes in our simulated data so that:
+
+- $E[Y_i(1) | X_i = x] = f1(x)$
+- $E[Y_i(0) | X_i = x] = f0(x)$
+
+Given these functions, we can plot the CATE as follows:
+
+```{r}
+tibble(
+  X = 1:1000/1000,
+  EY1 = f1(X),
+  EY0 = f0(X),
+  delta = EY1 - EY0,
+) |>
+ggplot(aes(X,delta)) +
+  geom_line() +
+  geom_area(alpha=0.25) +
+  geom_hline(yintercept = 0) +
+  theme_classic()
+```
+
+**Q:** If Spotify could observe the CATE directly, what would the optimal treatment assignment look like?
+
+
+### Simulating the data
+
+Now simulate a sample of data where the potential outcomes follow the expected value functions defined above, plus some random noise.
+
+```{r}
+N = 10000
+
+data3 <- tibble(
+    i = 1:N,
+    X = runif(N),
+    Y1 = f1(X) + rnorm(N),
+    Y0 = f0(X) + rnorm(N),
+    D = rbinom(N,1,0.1),
+    Y = if_else(D==1,Y1,Y0),
+  )  
+
+head(data3)
+```
+
+And plot the observed values
+
+```{r}
+ggplot(data3,aes(X,Y,color=as.factor(D))) +
+  geom_point(size=0.5) +
+  theme_classic()
+```
+
+
+Let's also compute the difference-in-means:
+
+```{r}
+lm(Y ~ D,data=data3)
+```
+
+**Q:** Is this an unbiased estimate of the ATE? 
+
+**Q:** If we had to choose between treating everyone and no one, which should we do?
+
+
+
+### CATE estimation with regression trees
+
+
+How can we use regression trees to flexibly estimate the CATE?
+
+```{r}
+Y1_tree = rpart(Y ~ X,data=filter(data3,D==1),control=rpart.control(cp=0.001))
+Y0_tree = rpart(Y ~ X,data=filter(data3,D==0),control=rpart.control(cp=0.001))
+
+predicted <- data3 |>
+    mutate(
+    Y1_hat = predict(Y1_tree,data3),
+    Y0_hat = predict(Y0_tree,data3),
+    CATE_est = Y1_hat - Y0_hat,
+  )
+```
+
+
+Plot estimated potential outcomes:
+
+```{r}
+predicted |>
+  ggplot(aes(X)) +
+  geom_line(aes(y=Y1_hat),color='red') +
+  geom_line(aes(y=Y0_hat),color='blue') +
+  geom_line(aes(y=f1(X)),color='red',linetype='dotted') +
+  geom_line(aes(y=f0(X)),color='blue',linetype='dotted') + 
+  geom_hline(yintercept=0,linetype='dotted') +
+  theme_classic()
+```
+
+
+Plot the estimated CATE:
+
+```{r}
+predicted |>
+  ggplot(aes(X)) +
+  geom_line(aes(y=CATE_est)) +
+  geom_line(aes(y=f1(X) - f0(X)),linetype='dotted') +
+  geom_hline(yintercept=0,linetype='dotted') +
+  theme_classic()
+```
+
+**Q:** How can we use the estimated CATE to solve the Treatment Assignment Problem?
+
+
+### Scoring the treatment assignment rule
+
+Let's compute the mean oucome (level of engagement) that would be observed if:
+
+1. All units are treated
+2. No units are treated
+3. Treatment is assigned based on our estimated CATE
+4. Treatment is assigned optimally assuming we could observe $Y_i^0$ and $Y_i^1$
+
+
+```{r}
+predicted |>
+  mutate(
+    D_assigned = CATE_est > 0,
+    D_optimal = Y1 > Y0,
+    Y_assigned = if_else(D_assigned,Y1,Y0),
+    Y_optimal = if_else(D_optimal,Y1,Y0),
+  ) |>
+  summarize(
+    EY_all = mean(Y1),
+    EY_none = mean(Y0),
+    EY_assigned = mean(Y_assigned),
+    EY_optimal = mean(Y_optimal),
+  )
+```
+
+**Q:** What doe these values suggest about the value of the treatment assignment rule?
+
+**Q:** Is there any way for the Spotify team to estimate these values with real data from their experiment?
+
+
+Estimating the mean assigned outcome from observable data:
+
+```{r}
+predicted |>
+  mutate(
+    D_assigned = CATE_est > 0,
+  ) |>
+  filter(D == D_assigned) |> 
+  summarize(
+    Y_assigned_est = mean(Y)
+  )
+```
+
+Note: This works because D is randomly assigned. So, whether an observation has the same observed treatment assignment as the new assignment rule is also random, and independent of the outcome.

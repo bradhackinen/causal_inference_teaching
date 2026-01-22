@@ -1,0 +1,244 @@
+---
+title: "Difference-in-Differences Designs"
+author: "Brad Hackinen"
+date: "Fall 2025"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ggplot2)
+library(fixest)
+```
+
+
+The following R case study intended to demonstrate:
+
+1. How to simulate data consistent with a DiD design
+2. How to run a simple DiD estimator with `lm`
+3. How to estimate a dynamic DiD design and plot the coefficients using `feols` from the `fixest` package
+
+
+# Setting
+
+On February 8th, 2023, Netflix announced that it would no longer allow subscribers to share account passwords with people outside of their household.
+
+Here's how Netflix [announced the change](https://about.netflix.com/en/news/an-update-on-sharing):
+
+> **An Update on Sharing**
+>
+> We’ve always made it easy for people who live together to share their Netflix account with features like profiles and multiple streams. While these have been hugely popular, they’ve also created confusion about when and how you can share Netflix. Today, over 100 million households are sharing accounts — impacting our ability to invest in great new TV and films. 
+>
+> So over the last year, we’ve been exploring different approaches to address this issue in Latin America, and we’re now ready to roll them out more broadly in the coming months, starting today in Canada, New Zealand, Portugal and Spain. Our focus has been on giving  members greater control over who can access their account.
+>
+> - **Set primary location:** We’ll help members set this up, ensuring that anyone who lives in their household can use their Netflix account. 
+> - **Manage account access and devices:** Members can now easily manage who has access to their account from our new Manage Access and Devices page. 
+> - **Transfer profile:** People using an account can now easily transfer a profile to a new account, which they pay for — keeping their personalized recommendations, viewing history, My List, saved games and more. 
+> - **Watch while you travel:** Members can still easily watch Netflix on their personal devices or log into a new TV, like at a hotel or holiday rental. 
+> - **Buy an extra member:** Members on our Standard or Premium plan in many countries (including Canada, New Zealand, Portugal and Spain) can add an extra member sub account for up to two people they don’t live with — each with a profile, personalized recommendations, login and password — for an extra CAD$7.99 a month per person in Canada, NZD$7.99 in New Zealand, Euro 3.99 in Portugal, and Euro 5.99 in Spain. 
+>
+> We value our members and recognize that they have many entertainment choices. A Netflix account is intended for one household and members can choose from a range of plans with different features. As always, we’ll refine these new features based on member feedback so that we continue to improve Netflix in the years ahead.
+
+
+The changes were also discussed in Netflix's April 18th [2023 Q1 Shareholder letter](https://s22.q4cdn.com/959853165/files/doc_financials/2023/q1/Final-Q1-23-Shareholder-Letter.pdf):
+
+> Paid sharing is another important initiative as widespread account sharing (100M+ households) undermines our ability to invest in and improve Netflix for our paying members, as well as build our business. We’re pleased with the results of our Q1 launches in Canada, New Zealand, Spain and Portugal, strengthening our confidence that we have the right approach. As with Latin America, we see a cancel reaction in each market when we announce the news, which impacts near term member growth. But as borrowers start to activate their own accounts and existing members add “extra member” accounts, we see increased acquisition and revenue. For example, in Canada, which we believe is a reliable predictor for the US, our paid membership base is now larger than prior to the launch of paid sharing and revenue growth has accelerated and is now growing faster than in the US.
+>
+> With each launch, we learn more about how best to roll out these changes and what matters to members the most, in particular maintaining travel/watching on the go and the ability for people to better control access to their accounts as well as transfer profiles to separate accounts. We could have launched broadly in late Q1, but we found enough improvement opportunities in these areas to shift a broad launch to Q2 to implement those changes. As noted above, while this will shift some of the membership growth and revenue benefit from Q2 to Q3, we believe it will result in a better outcome for our members and our business. Longer term, paid sharing will ensure a bigger revenue base from which we can grow as we improve our service.
+> 
+> As a reminder, as we roll out paid sharing – and as some borrowers stop watching either because they don’t convert to extra members or full paying accounts – near term engagement, as measured by third parties like Nielsen, will likely shrink modestly. However, we believe the pattern will be similar to what we’ve seen in Latin America, with engagement growth resuming over time as we continue to improve our programming and borrowers sign-up for their own accounts.
+
+
+# Simulating Data
+
+We don't have access to Netflix's proprietary data, but we can simulate some simplified data that captures the story outlined in the shareholder letter. The variables in the simulated data are defined as follows:
+
+- `country`: An integer country id
+- `t`: time, measured in months relative to the February 8th policy change.
+- `subscribers`: The number of subscribers in a given country at the start of end of month t (in millions)
+- `ever_treated`: Equal to 1 if a country one of those that is affected by the policy change (like Canada), 0 otherwise (like the US).
+- `post_treatment`: Equal to 1 if t>=0 and 0 otherwise.
+- `D`: Equal to 1 if a country is affected by the policy change, and the policy has changed (t>=0)
+
+```{r}
+set.seed(123)
+N = 30
+t_start = -24
+t_end = 12
+
+# Create index of i and t values
+data <- tibble(
+  country = rep(1:N,times=1,each=t_end - t_start + 1),
+  t = rep(t_start:t_end,times=N,each=1),
+  ) |> 
+  # Create unit-level fixed effects
+  group_by(country) |>
+  mutate(    
+    U_i = rnorm(1,15,25),
+  ) |>
+  # Create period-level fixed effects
+  group_by(t) |>
+  mutate(    
+    U_t = 5*sqrt(t + 36) + 10/(abs(t+18) + 3) + rnorm(1,0,0.5),
+  ) |>
+  # Create remaining variables
+  ungroup() |>
+  mutate(
+    ever_treated = as.integer(U_i<10),
+    post_treatment = as.integer(t>=0),
+  
+    D = ever_treated*post_treatment,
+  
+    Y0 = U_i + U_t + rnorm(n(),0,0.5),
+    Y1 = Y0 - 3 + 2*sqrt(t*post_treatment),
+
+    Y = if_else(D==1,Y1,Y0),
+    
+    subscribers = round(1e6*exp(0.05*Y))
+  ) |> 
+  # Select only observable variables
+  select(country,t,subscribers,ever_treated,post_treatment,D)
+
+```
+
+**Visualizing the data**
+
+We can use the `group` argument in ggplot's `aes` settings to render each unit's sales trajectory as a separate line with `geom_line`
+
+```{r,fig.asp=0.6}
+# TODO
+```
+
+Let's use `lm` to compute the difference-in-means between treated and untreated observations:
+
+```{r}
+# TODO
+```
+
+Ok, so instead, we are going to use a DiD design. The key assumption that we need to hold is parallel trends:
+
+$$E[Y_{it}^0 | D_{i}=1] = E[Y_{it}^0 | D_{i}=0] + c$$
+
+**Q:** Based on the plot above, do you think parallel trends holds inthis data?
+
+
+## DiD estimation
+
+First, let's try estimating the effect of treatment with `lm` and printing a summary:
+
+DiD estimation with `lm`:
+```{r}
+# TODO
+```
+*Note: The standard error estimates produced by `lm` can be very biased in regressions with panel data. Don't take them seriously without making corrections first. One option is to used clustered standard errors (though `lm` does not have this option built in).*
+
+We can use the `fixest` package to make estimating DiD designs a bit easier, including calculating clustered standard errors. Let's compare two approaches: "basic" DiD and 2-Way FE.
+
+"Basic" DiD:
+```{r}
+# TODO
+```
+
+2-Way FE:
+```{r}
+# TODO
+```
+
+
+# Dynamic DiD
+
+A dynamic DiD breaks treatment effects down by time period to show how the differences between ever-treated and never-treated units evolve over time. The regression formula for a dynamic DiD 2-way FE estimator looks like this:
+
+$$ Y_{it} \sim \alpha_i + \alpha_t + \sum_{k=1}^{\tau-2} \delta_{k} 1_{\{t=k\}} D_{i} + \sum_{k=\tau}^{T} \delta_{k}  1_{\{t=k\}} D_{i}  + \varepsilon_{it} $$
+
+
+It can be tedious to code these regressions and plots from scratch. The `fixest` package has some useful tools built in.
+
+- Using `i(x,y,ref=0)` in the formula converts `x` to a factor, and creates all the interaction terms between `x` and `y`. The argument `ref` takes one or more values of `x` and omits them from the interaction terms. For example, suppose x can take values 0,1,2,3. Then `i(x,y,ref=0)` is equivalent to manually adding three additional variables `(x==1)*y + (x==2)*y + (x==3)*y`.
+- Once the dynamic DiD is estimated using interactions terms created with `i()`, we can use the function `iplot` to plot the coefficients on these interaction terms.
+
+
+```{r,fig.asp=0.6}
+# TODO
+```
+
+**Q:** Is this what you expected? What determines where "0" is on the vertical axis of this plot?
+
+**Q:** What do the pre-treatment estimates (the "pre-trend") tell us about how to interpret the results?
+
+
+
+# Staggered Treatment
+
+"Staggered Treatment" occurs when different units become treated at different times. When Netflix rolled out their new password sharing policy, they actually did it in several phases, starting with a handful of small countries and then adding groups of countries over several months.
+
+
+```{r}
+set.seed(123)
+N = 30
+t_start = 1
+t_end = 36
+
+# Create index of i and t values
+staggered_data <- tibble(
+  country = rep(1:N,times=1,each=t_end - t_start + 1),
+  t = rep(t_start:t_end,times=N,each=1),
+  ) |> 
+  # Create unit-level fixed effects and treatment
+  group_by(country) |>
+  mutate(    
+    U_i = rnorm(1,15,25),
+    t0 = 27 + 9*floor(U_i/25)
+  ) |>
+  # Create period-level fixed effects
+  group_by(t) |>
+  mutate(    
+    U_t = 5*sqrt(t + 36) + 10/(abs(t+18) + 3) + rnorm(1,0,0.5),
+  ) |>
+  # Create remaining variables
+  ungroup() |>
+  mutate(
+    event_t = t-t0,
+    D = (event_t>=0),
+  
+    Y0 = U_i + U_t + rnorm(n(),0,0.5),
+    Y1 = Y0 - 3 + 2*sqrt((t>=t0)*(t-t0)),
+
+    Y = if_else(D==1,Y1,Y0),
+    
+    subscribers = round(1e6*exp(0.05*Y))
+  ) |> 
+  # Select only observable variables
+  select(country,t,subscribers,t0,D)
+
+```
+
+**Visualizing the data**
+
+We can use the `group` argument in ggplot's `aes` settings to render each unit's sales trajectory as a separate line with `geom_line`
+
+```{r,fig.asp=0.5}
+# TODO
+```
+
+We can make a similar event-study plot by estimating coefficients that explain outcomes in *event time* rather than our regular time periods:
+
+```{r,fig.asp=0.6}
+# TODO
+```
+
+However, it turns out that 2-way FE estimators with dynamic treatment effects and staggered treatment can perform poorly if the magnitude of the treatment changes over time. The problem is that the regression above implicitly uses treated observations to make predictions about untreated outcomes.
+
+One solution calls back to our previous sessions: Even with panel data we can estimate the causal effect by predicting the counterfactual from untreated data alone and then comparing the observed outcomes to the predicted counterfactuals:
+
+```{r}
+# Fit a model to predict counterfactuals for treated units
+# TODO
+
+# Make an event study plot
+# TODO
+```
+
+**Q:** How could we modify the simulation so that the parallel trends assumption is violated? And how will that affects the results?

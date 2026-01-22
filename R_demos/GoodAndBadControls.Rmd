@@ -1,0 +1,113 @@
+---
+title: 'Good and Bad Controls'
+author: "Brad Hackinen"
+date: "Fall 2025"
+output:
+  html_document:
+    df_print: kable
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# Import packages we will need
+library(tidyverse)
+library(ggplot2)
+```
+
+# Introduction
+
+In this demo, we will generate data consistent with three different causal structures and then estimate the effect of a treatment variable on an outcome variable. We will then compare the results of the estimation when we include or exclude a confounder, a collider, and a mediator.
+
+The data is generated such that the true treatment effect is 1 in every simulation.
+
+# Confounder
+
+```{r}
+N = 1000000
+
+confounder_data <- tibble(
+  X = rnorm(N),
+  D = X + rnorm(N) > 0,
+  Y = X + D + rnorm(N)
+)
+
+# Report the correlation between the variables
+summarize(confounder_data,
+  cor_DY = cor(D, Y),
+  cor_DX = cor(D, X),
+  cor_XY = cor(X, Y)
+)
+```
+
+
+# Collider
+
+```{r}
+collider_data <- tibble(
+  D = rnorm(N) > 0,
+  Y = D + rnorm(N),
+  X = D + Y + rnorm(N),
+)
+
+# Report the correlation between the variables
+summarize(collider_data,
+  cor_DY = cor(D, Y),
+  cor_DX = cor(D, X),
+  cor_XY = cor(X, Y)
+)
+
+```
+
+
+# Mediator
+
+```{r}
+mediator_data <- tibble(
+  D = rnorm(N) > 0,
+  X = D + rnorm(N),
+  Y = X + rnorm(N),
+)
+
+# Report the correlation between the variables
+summarize(mediator_data,
+  cor_DY = cor(D, Y),
+  cor_DX = cor(D, X),
+  cor_XY = cor(X, Y)
+)
+
+```
+
+
+
+# Estimation
+
+
+```{r}
+data <- confounder_data
+
+treated_data <- filter(data, D==1)
+control_data <- filter(data, D==0)
+
+Y0_model <- lm(Y ~ X, data=control_data)
+
+treated_data |>
+  mutate(
+    Y0_est = predict(Y0_model, newdata=treated_data),
+  ) |>
+  summarize(
+    True_ATT = 1,
+    diff_in_means = mean(Y) - mean(control_data$Y),
+    ATT_est = mean(Y - Y0_est),
+  )
+```
+
+
+```{r}
+# Plot the relationship between X and Y, colored by D
+ggplot(sample_n(data,1000), aes(x=X, y=Y, color=as.factor(D))) +
+  geom_point(size=1,alpha=0.5) +
+  geom_smooth(method="lm") +
+  labs(title="Relationship between X and Y, colored by D")
+```

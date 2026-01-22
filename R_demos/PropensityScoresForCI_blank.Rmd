@@ -1,0 +1,180 @@
+---
+title: 'Propensity Scores for Causal Inference'
+author: "Brad Hackinen"
+date: "Fall 2025"
+output:
+  html_document:
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ggplot2)
+```
+
+# Setup
+
+Consider the simulated data below (the same as in `RegressionForCI.Rmd`):
+
+```{r}
+set.seed(123)
+
+simulate_data <- function(N){
+
+  data <- tibble(
+    X = pmax(rnorm(N,0.5,0.75),0),
+    D = as.numeric(X + rnorm(N,0,0.25) < 0.5),
+    Y0 = pmax(X + rnorm(N,0,0.1),0),
+    Y1 = pmax(rnorm(N,1,0.1),Y0),
+    Y = if_else(D==1,Y1,Y0)
+    )
+  
+  data
+}
+
+plot_data <- function(data){
+  data |> 
+    ggplot(aes(x=X,y=Y)) +
+    geom_point(data=filter(data,D==0),color='blue',size=1) +
+    geom_point(data=filter(data,D==1),color='red',size=1) +
+    annotate("segment", x = 0, y = 0, xend = 3, yend = 3,color='blue',alpha=0.2) +
+    annotate("segment", x = 0, y = 1, xend = 1, yend = 1, color = "red", alpha = 0.2) +
+    annotate("segment", x = 1, y = 1, xend = 3, yend = 3, color = "red", alpha = 0.2) +
+    theme_minimal() +
+    labs(
+      color='Treated'
+    )
+}
+
+# Simulate 1000 observations
+data <- simulate_data(1000)
+
+plot_data(data)
+```
+
+We can interpret the data as a stylized version of the relationship between income in 1974 and 1978 in the NSW job training study.
+
+- **X** is income in 1974 (pre-treatment covariate)
+- **D** is whether the person received job training (treatment)
+- **Y** is income in 1978 (outcome)
+
+The basic story in the simulation is that the job training program can bring people with very low income in 1974 up to an average income of 1 in 1978, but it has no effect on people who would have earned more than that without treatment. At the same time, people with lower income in 1974 are more likely to receive treatment.
+
+In this simulation It's hard to tell what the ATE, ATT, and ATU are from just looking at the equations. We can *estimate* the true values using the potential outcomes. Our estimates will be more precise if we use a very large sample.
+
+```{r}
+# Estimate the ATE, ATT, ATU using sample size of 1 million obs
+simulate_data(1000000) |> 
+  summarize(
+    ATE = mean(Y1 - Y0),
+    ATT = mean(Y1[D==1]) - mean(Y0[D==1]),
+    ATU = mean(Y1[D==0]) - mean(Y0[D==0]),
+    diff_in_means = mean(Y[D==1]) - mean(Y[D==0])
+  )
+```
+
+
+In this data the ATE, ATT, and ATU are very different. Can you see why?
+
+The difference in means is also very biased, regardless of which estimand you are interested in.
+
+
+# Estimating Propensity Scores
+
+Propensity Scores describe the probability that a unit will receive treatment given its observed characteristics. The can be used to estimate the ATE, ATT, or ATU using inverse propensity score weighting, or to check for units that are outside the common support.
+
+We estimate propensity scores for each unit by fitting a model that predicts treatment probability using unit characteristics.
+
+To predict treatment, we'll use a logistic regression model. This is a common prediction algorithm for binary data. IN R, we go this with `glm` (for "generalized linear model"), setting the `family` argument to `binomial(link='logit')`.
+
+The first argument of `glm` indicates which variables to use for prediction. The basic syntax is `target ~ predictor_1 + predictor_2`. 
+
+```{r}
+propensity_model = glm(D ~ X, family=binomial(link='logit'),data=data)
+```
+
+
+We can use the `predict` function to ask R to run the model and produce some predictions. By default, the predictions will be based on the same data that was used to fit the model, which is fine in this case. 
+
+Note: With `glm` models we have to set `type='response'` to get probabilities instead of binary predictions.
+
+```{r}
+data <- data |>
+  mutate(
+    PS = predict(propensity_model,type='response')
+    )
+```
+
+It's useful to plot the predicted values to see what the model is doing. Here is a simple line plot:
+```{r}
+data |> 
+  ggplot(aes(x=X,y=PS)) +
+  geom_line()
+```
+
+Here is another way to visualize the predictions using color to show the propensity scores for each data point:
+```{r}
+data |> 
+  ggplot(aes(x=X,y=Y,color=PS)) +
+  geom_point(size=0.7) +
+  scale_color_viridis_c() +
+  theme_minimal()
+```
+
+
+
+# Checking Common Support
+
+We can also use the propensity scores to check for units that are outside the common support. This is useful for identifying units that require extrapolation to estimate their counterfactual outcomes. We may want to drop them from the analysis.
+
+```{r}
+data |> 
+  ggplot(aes(x=PS)) +
+  geom_histogram(data=filter(data,D==1),fill='red',alpha=0.5) +
+  geom_histogram(data=filter(data,D==0),fill='blue',alpha=0.5) +
+  labs(fill='Treated')
+```
+
+We can drop units outside the common support by filtering the data:
+
+```{r}
+common_support_data <- # TODO
+```
+Let's plot the filtered data:
+
+```{r}
+plot_data(common_support_data)
+```
+
+
+
+# Estimating Treatment Effects
+
+We can also use propensity scores to estimate treatment effects directly.
+
+First, for intution, consider what happens if we stratify the data according to rounded propensity scores.
+ 
+- Within each stratum, treated and control units have similar propensity scores
+- Therefore, within each stratum, the difference in means between treated and control units should be an (approximately) unbiased estimate of the treatment effect for that stratum.
+
+```{r}
+# TODO
+```
+
+To compute a final estimate of the ATE, we could take a weighted average of the CATE estimates across strata, weighting by the number of units in each stratum.
+
+However, if you look at how the strata CATE estimates are computed you can see that we are just computing weighted averages of the outcomes for treated and control units. We can do this directly using inverse propensity score weights.
+
+Specifically,
+- To estimate the ATE, we weight treated units by 1/PS and control units by 1/(1-PS)
+- To estimate the ATT, we weight treated units by 1 and control units by PS/(1-PS)
+- To estimate the ATU, we weight treated units by (1-PS)/PS and control units by 1
+
+Let's estimate the ATT:
+
+```{r}
+# TODO
+```
+

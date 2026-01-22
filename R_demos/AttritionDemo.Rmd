@@ -1,0 +1,90 @@
+---
+title: "Attrition Bias: Colliders in Action"
+author: "Brad Hackinen"
+date: "Fall 2025"
+output:
+  html_document:
+    df_print: kable
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggplot2)
+```
+
+
+# Context
+
+In many experiments, it is possible for participants to drop out of the study before it is completed. This is known as attrition. For example, in the NSW job training program, researchers had to find participants months after the program ended to ask about their employment status and income. As you can imagine, not all participants could be located. If a participant couldn't be found, they were considered to have attrited from the study.
+
+**A key idea:** If we only observe units that complete the study, we are *conditioning* our estimate on their attrition status. This is equivalent to *controlling* for attrition status, regardless of whether we want to.
+
+Attrition can cause big problems for measuring causal effects with experiments. Let's explore how with a simple simulation.
+
+
+# A Simulated Experiment
+
+Let's simulate a simple experiment with attrition.
+
+- `D` will be our randomized treatment
+- `Y` will be our outcome
+- `X` will be a binary characteristic that affects attrition (and maybe the outcome too)
+- `R` will be an indicator for whether the individual remains in the study (i.e. does not attrit)
+
+We will assume that the true effect of `D` on `Y` is 1.
+
+
+We are going to write this as a re-usable function so we can run it multiple times with different parameters.
+
+```{r}
+data <- tibble(
+    D = rbinom(N,1,0.5),
+    X = rbinom(N,1,0.5),
+    Remain = X + D + rnorm(N) > 0,
+    Y = D + 5*X + rnorm(N),
+    ) |> 
+    filter(Remain==1) |>
+    select(D,X,Y)
+
+head(data)
+```
+
+**Q:** How would we interpet this causal story in the context of the NSW job training program?
+
+
+# Attrition Bias
+
+Let's run the experiment, starting with the assumption that X affects Remain and Y, and D affects S.
+
+What happens to the difference-in-means estimate?
+
+```{r}
+# Compute difference in means
+data |>
+  summarize(
+    diff_in_means = mean(Y[D==1]) - mean(Y[D==0])
+  )
+```
+
+
+# Controlling for X
+
+Could controlling for `X` help us get rid of the bias? Unfortunately, the Backdoor Criterion gives us no guidance on what to do when we are already conditioning on a collider. However, we can use our simulated data to check what happens.
+
+Let's use post-stratification to estimate the ATE controlling for `X`.
+
+```{r}
+data |> 
+  group_by(X) |> 
+  mutate(
+    ITE_est = mean(Y[D==1]) - mean(Y[D==0])
+  ) |> 
+  ungroup() |> 
+  summarize(
+    ATE_est = mean(ITE_est)
+  )
+```
+
+**Q:** Are there any practical limitations to this approach?

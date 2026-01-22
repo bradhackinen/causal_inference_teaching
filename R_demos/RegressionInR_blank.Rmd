@@ -1,0 +1,195 @@
+---
+title: 'Intro to Regression in R'
+author: "Brad Hackinen"
+date: "Fall 2025"
+output:
+  html_document:
+    df_print: kable
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# Import packages we will need
+library(tidyverse)
+library(ggplot2)
+```
+
+# Part 1: Intro to Linear Regression
+
+For this demo, we will use IMDB movie data scraped by Daniel Grikalva (shared on his GitHub page here: https://github.com/danielgrijalva/movie-stats).
+
+```{r}
+movies <- as_tibble(read.csv('https://raw.githubusercontent.com/danielgrijalva/movie-stats/master/movies.csv'))
+```
+
+We can inspect a small sample of the data with the `sample_n` function:
+
+```{r}
+sample_n(movies,10)
+```
+
+
+## Linear regression in R
+
+R has a built-in function for estimating linear models (with OLS) called `lm`. It is allows you to specify the regression equation as a formula. 
+
+Here we estimate a linear approximation of the conditional expectation $E[score_i | budget_i]$.
+
+```{r}
+# TODO
+```
+
+**Intercepts**
+
+Note that R automatically inserts an "*intercept*" term, so that the formula `score ~ budget` corresponds to the following regression equation:
+$$ \text{score}_i = \alpha + \beta *\text{budget}_i + \varepsilon_i $$
+If desired, it is possible to run a regression with
+
+- No intercept using a formula like `y ~ 0 + x`
+- Only and intercept using a formula like `y ~ 1`
+
+```{r}
+# TODO
+```
+
+**Factor Variables**
+
+Some variables are naturally categorical rather than quantitative. In these cases we can use *indicator variables* to represent each category in the regression:
+
+- Each indicator variable describe the whether an observation is a member of a specific category (e.g. `genre=='Comedy'`)
+- The complete set of indicator variables is collinear with the constant term, so we always leave one out. The left-out group becomes the "reference value", and the estimated coefficients on the indicators measure the average difference between the focal group and the reference group.
+
+The `lm` function does it's best to automatically identify categorical variables and generate the indicators automatically. For example, look at the output when we regress `score` on `genre`:
+```{r}
+# TODO
+```
+
+We can see what R is doing under the hood using `model.matrix`. This function is used internally by `lm` to use the regression formula to build the data that will be fed into the OLS regression.
+
+```{r}
+model.matrix(score ~ genre,data=movies) |> 
+  as.tibble() |> 
+  head(10)
+```
+
+**Q:**How do we interpret the coefficient estimate on `genreComedy`?
+
+If we want to set the reference group manually, we can use `as.factor` and `relevel`:
+
+```{r}
+# TODO
+```
+
+**Q:** What happens if we include a variable like `director` or `star` in a regression? (Hint: Don't try it with `lm`!)
+
+
+Some variables can conceivably be treated as categorical or continuous depending on the context. For example, we can treat `year` as either a category or a continuous variable:
+
+```{r}
+# TODO
+```
+
+**Q:** Can you imagine any trade-offs involved in treating `year` as a categorical or numeric variable? 
+
+
+**Multiple Regression**
+
+Multiple independent variables can be added to a regression by adding terms to the regression formula:
+
+```{r}
+# TODO
+```
+
+
+**Regression Summaries**
+
+```{r}
+# First, save the regression output
+#TODO
+
+# Then use summary() to get additional information about the estimation results
+# TODO
+```
+
+We can also easily use the estimated standard errors produce confidence intervals for each coefficient:
+```{r}
+# TODO
+```
+
+
+## Visualizing Simple Linear Regression
+
+One way to visualize what a simple linear regression is doing would be to estimate the first regression above, save the coefficients, and then plot a line with a slope of $\hat \beta$ and intercept of $\hat \alpha$.
+
+`ggplot` gives us a shortcut with the `geom_smooth` element. Setting `method='lm'` tells ggplot to use a linear model to estimate the relationship between the two plotted variables and plot the predicted conditional mean.
+
+```{r}
+ggplot(movies,aes(budget,score)) +
+  geom_point(alpha=0.5,size=0.5) +
+  geom_smooth(method='lm') +
+  theme_classic()
+```
+
+We can also split the data by a factor variable:
+
+```{r}
+ggplot(movies,aes(budget,score,color=genre=='Comedy')) +
+  geom_point(alpha=0.5,size=0.5) +
+  geom_smooth(method='lm') +
+  theme_classic()
+```
+
+If our X variable is binary, the scatter plot is less informative. But it still helps visualize what OLS is doing. Let's plot `score ~ (genre=='Comedy')`
+
+```{r}
+movies |>
+  drop_na(rating,score) |> 
+  ggplot(aes(as.numeric(genre=='Comedy'),score)) +
+  geom_point(alpha=0.5,size=0.5,position = position_jitter(width=0.02)) +
+  geom_smooth(method='lm') +
+  theme_classic()
+```
+
+Hopefully the plot above helps illustrate something important: When we run a regression with only one binary independent variable, the coefficient measures the *difference-in-means* of the subgroups with each binary value.
+
+
+# High-dimensional Fixed Effects
+
+Sometimes we want to run a regression that includes categorical variable with thousands (or even millions) of different categories. As mentioned above, the algorithm employed by `lm` creates a large matrix with an indicator for every distinct category, which can require a very large amount of computer memory. However, there are more efficient algorithms available. Here I will demonstrate how to use the `fixest` package to run a regression of this kind.
+
+**Terminology:**
+
+- **"Fixed Effects"** refers to the coefficient associate with each category. If you say that you are "including year fixed effects" it means that you are including year in your regression as a categorical variable and estimating a separate coefficient for each year.
+- **"High-dimensional Fixed Effects"** refers to cases where the categorical variables have an inconveniently-large number of categories.
+
+**High-dimensional Fixed Effects Regressions with `fixest`**
+
+First, you'll probably need to install `fixest` with `install.packages("fixest")`
+
+Then, you should be able to run the following code:
+
+```{r}
+library(fixest)
+
+fit <- feols(score ~ budget + rating + year | star, data=movies)
+
+summary(fit)
+```
+Notice the modified formula `score ~ budget + rating + year | star`. When using `fixest`, the variables to the right of the vertical bar `|` are included as fixed effects. When you print the summary, these coefficients are not reported, but all the other estimates in the regression are still estimated conditional on the fixed effects. It is also possible to include multiple fixed effects separated by `+`, just as on on the left side of the vertical bar `|`.
+
+Observe that these two regressions give the same coefficient on `budget`:
+```{r}
+fit1 <- feols(score ~ budget + rating + genre,data=movies)
+fit2 <- feols(score ~ budget | rating + genre,data=movies)
+
+etable(fit1,fit2) # Create a table showing the results of both regressions
+```
+
+
+
+
+
+
+

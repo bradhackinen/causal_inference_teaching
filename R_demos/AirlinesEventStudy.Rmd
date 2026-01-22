@@ -1,0 +1,135 @@
+---
+title: 'Event Studies: Canadian Airlines in the time of Covid'
+author: "Brad Hackinen"
+date: "Fall 2023"
+output:
+  html_document:
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(ggplot2)
+```
+
+
+
+# Setting
+
+In this exercise we are going to use an event study design to estimate the impact of Covid-19 on the Canadian airline industry. The data below describes total industry revenue for each quarter from 2016 to 2023 Q1. 
+
+Variable Descriptions:
+
+- **revenue**: Total quarterly revenue for the Canadian airline industry
+- **year**: Year the revenue was earned
+- **quarter**: Quarter in which the revenue was earned
+
+Data source: [Table 23-10-0260-01  Civil aviation financial statistics, Canadian air carriers, Levels I and II, quarterly](https://doi.org/10.25318/2310026001-eng)
+
+```{r}
+data <- read_csv('https://raw.githubusercontent.com/bradhackinen/causal_inference_teaching/main/data/CanadianAirlineRevenue.csv')
+
+head(data)
+```
+
+If we plot the data, it is clear that Covid had a large effect on revenue.
+
+```{r}
+data |> 
+  # Create a "time" variable that combines year and quarter
+  mutate(t=year + quarter/4) |> 
+
+  # Plot revenue over time
+  ggplot(aes(x=t,y=revenue/1e6))+
+  geom_line() +
+  ylim(0,8.5) +
+  labs(
+    title='Canadian Airline Industry Revenue',
+    x='Year',
+    y='Total Quarterly Revenue ($ Billions)'
+  ) +
+  theme_minimal()
+```
+
+**Q:** If we are interested in the effect of Covid on quarterly revenue, what observations should we consider "treated" and what observations should we consider "control"?
+
+Let's fit a simple forecasting model using `lm`. We'll include linear time trend and quarterly "fixed effects" (i.e., we will treat time as a continuous variable and quarter as a categorical variable).
+
+```{r}
+forecast_model <- data |> 
+  filter(year < 2020) |> 
+  lm(revenue ~ year + as.factor(quarter),data=_)
+```
+
+Now we can predict the counterfactual revenue and compare it to the observed outcomes.
+
+```{r}
+# predict revenue with forecast model
+forecast_data <- data |> 
+  mutate(
+    predicted_revenue = predict(forecast_model,data)
+    )
+
+head(forecast_data)
+```
+
+
+```{r}
+# Create a "time" variable that combines year and quarter
+forecast_data <- forecast_data |> 
+  mutate(t=year + quarter/4)
+
+# Get the last observation for labeling
+last_obs <- forecast_data |> 
+  arrange(desc(t)) |> 
+  slice(1)
+
+# Plot the observed and predicted revenue
+forecast_data |> 
+  ggplot(aes(x=t,y=revenue/1e6)) +
+  geom_line(aes(y=predicted_revenue/1e6),color='blue') +
+  geom_line() +
+  geom_text(data = last_obs, aes(x = t, y = revenue/1e6, label = "Observed"), hjust = -0.1) +
+  geom_text(data = last_obs, aes(x = t, y = predicted_revenue/1e6, label = "Predicted"), color='blue', hjust = -0.1) +
+  ylim(0,10) +
+  xlim(2016,2024) +
+  labs(
+    title='Canadian Airline Industry Revenue',
+    x='Year',
+    y='Total Quarterly Revenue ($ Billions)'
+  ) +
+  theme_minimal()
+```
+
+**Q:** Do you think this is a good prediction of the counterfactual revenue? What reasons do you have for thinking so?
+
+
+Finally, let's make an event study plot.
+
+```{r}
+forecast_data |> 
+  # Create a "time" variable that combines year and quarter
+  mutate(
+    delta = revenue - predicted_revenue,
+    t=year + quarter/4
+    ) |> 
+
+  # Plot impact over time
+  ggplot(aes(x=t,y=delta/1e6))+
+  geom_line() +
+  labs(
+    title='Impact of Covid on Canadian Airline Industry Revenue',
+    x='Year',
+    y='Impact on Total Quarterly Revenue ($ Billions)'
+  ) +
+  theme_minimal()
+```
+
+**Q:** If you saw only this plot, can you judge whether the predicted counterfactual is believable?
+
+**Q:** How do your results change if you control for quarter as a continuous variable rather than a categorical variable? Which do you think is more appropriate?
+
+
+
