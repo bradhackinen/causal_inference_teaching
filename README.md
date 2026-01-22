@@ -73,13 +73,11 @@ The `data/` directory contains datasets used in demos and exercises.
 
 ## Applications
 
-These materials emphasize real-world applications of causal inference methods, including examples from:
+Alongside more common social science and program evaluation applications, the materials emphasize business applications of causal inference methods, including examples from:
 
-- **Online advertising effectiveness** (eBay keyword ads)
-- **Product features and safety** (Tesla Autopilot)
-- **Policy evaluation** (minimum wage, environmental regulations)
-- **Technology adoption** (Netflix password sharing, Spotify recommendations)
-- **Labor economics** (returns to education, work-from-home policies)
+- Online advertising and marketing
+- Product design and A/B testing
+- Human resources and personnel management
 
 ## About
 
